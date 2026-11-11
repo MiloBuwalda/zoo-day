@@ -1,0 +1,13 @@
+{
+  "parks": [
+    {
+      "id": "example-park",
+      "name": "Example Zoo (demo coordinates)",
+      "file": "example-park.json",
+      "center": {
+        "lat": 51,
+        "lng": 4
+      }
+    }
+  ]
+}

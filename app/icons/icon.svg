@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f7d5b"/>
+      <stop offset="1" stop-color="#c98a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#g)"/>
+  <!-- map pin -->
+  <path d="M256 92c-70 0-126 55-126 124 0 92 126 204 126 204s126-112 126-204c0-69-56-124-126-124z" fill="#fff"/>
+  <!-- paw print inside the pin -->
+  <g fill="#2f7d5b">
+    <ellipse cx="256" cy="238" rx="38" ry="32"/>
+    <ellipse cx="206" cy="190" rx="16" ry="21"/>
+    <ellipse cx="240" cy="168" rx="16" ry="21"/>
+    <ellipse cx="274" cy="168" rx="16" ry="21"/>
+    <ellipse cx="306" cy="190" rx="16" ry="21"/>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+/* Styles for the GPS features. Builds on the tokens in guide.css. */
+
+.loading, .load-error { padding: 48px 16px; color: var(--muted); }
+.load-error pre { white-space: pre-wrap; font-size: .85rem; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; color: var(--ink); }
+
+/* ---- header GPS bar ---- */
+.gps { margin: 16px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; font-size: .9rem; }
+.gps:empty { display: none; }
+.gps-btn {
+  font: inherit; font-weight: 800; border: 0; border-radius: 999px; padding: 7px 16px; cursor: pointer;
+  background: #fff; color: #1d4d38; box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+.gps-btn[aria-pressed="true"] { background: rgba(255,255,255,.18); color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,.6); }
+.gps-status {
+  font: inherit; font-weight: 700; color: #fff; background: rgba(0,0,0,.18); border: 0;
+  border-radius: 999px; padding: 5px 12px; display: inline-flex; align-items: center; gap: 6px;
+}
+.gps-status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.55); }
+.gps-status[data-state="searching"]::before { animation: gps-pulse 1s ease-in-out infinite; }
+.gps-status[data-state="near"]::before, .gps-status[data-state="none"]::before { background: #7dffb6; }
+.gps-status[data-state="weak"]::before { background: #ffd36b; }
+.gps-status[data-state="denied"]::before, .gps-status[data-state="unsupported"]::before,
+.gps-status[data-state="insecure"]::before, .gps-status[data-state="unavailable"]::before { background: #ff8b8b; }
+button.gps-status { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.gps-park { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
+.gps-park select { font: inherit; font-size: .85rem; border-radius: 8px; border: 1px solid rgba(255,255,255,.6); background: rgba(255,255,255,.12); color: #fff; padding: 3px 6px; max-width: 220px; }
+.gps-park option { color: #222; }
+.gps-demo { font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; background: #ffd36b; color: #3a2a00; border-radius: 6px; padding: 2px 8px; }
+@keyframes gps-pulse { 50% { opacity: .2; } }
+
+/* ---- "not at this park" ---- */
+.tiles a.not-here { opacity: .42; filter: grayscale(.7); }
+.card-badges { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.not-here-badge { font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border: 1px dashed var(--line); border-radius: 999px; padding: 3px 10px; }
+
+/* ---- card you are standing at ---- */
+.animal.is-near, .sec.is-near { box-shadow: 0 0 0 3px var(--sec), var(--shadow); }
+.animal.flash, .sec.flash { animation: card-flash 2s ease-out; }
+@keyframes card-flash { 0%, 30% { box-shadow: 0 0 0 6px var(--sec); } 100% { box-shadow: 0 0 0 0 transparent; } }
+
+/* ---- bottom pop-up ---- */
+.nearby {
+  position: fixed; z-index: 30; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
+  max-width: 560px; margin: 0 auto;
+  display: grid; grid-template-columns: 64px 1fr auto; gap: 4px 12px; align-items: center;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-top: 5px solid var(--sec, var(--accent));
+  border-radius: 16px; padding: 12px 12px 12px 14px; box-shadow: 0 8px 30px rgba(20,15,5,.25);
+}
+.nearby[hidden] { display: none; }
+.nearby.show { animation: nearby-in .28s cubic-bezier(.2,.8,.3,1.2); }
+@keyframes nearby-in { from { transform: translateY(120%); opacity: 0; } to { transform: none; opacity: 1; } }
+.nearby-thumb { width: 64px; height: 64px; border-radius: 12px; object-fit: cover; grid-row: span 1; }
+.nearby-dot { width: 64px; height: 64px; border-radius: 12px; background: var(--sec); opacity: .85; }
+.nearby-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.nearby-kicker { font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.nearby-name { font-size: 1.35rem; font-weight: 800; }
+.nearby-alt, .nearby-dist { font-size: .85rem; color: var(--muted); }
+.nearby-close { align-self: start; font: inherit; font-size: 1.5rem; line-height: 1; width: 36px; height: 36px; border-radius: 50%; border: 0; background: var(--bg); color: var(--muted); cursor: pointer; }
+.nearby-actions { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+.nearby-open { font: inherit; font-weight: 800; border: 0; border-radius: 999px; padding: 8px 18px; background: var(--accent); color: var(--accent-ink); cursor: pointer; margin-left: auto; }
+body.has-nearby .to-top { display: none; }
+body.has-nearby main { padding-bottom: 180px; }
+
+/* ---- GPS simulator (?sim) ---- */
+.sim {
+  position: fixed; z-index: 40; top: 10px; right: 10px; width: min(300px, calc(100vw - 20px));
+  background: var(--surface); color: var(--ink); border: 2px dashed #c98a2b; border-radius: 12px;
+  padding: 8px 12px; font-size: .82rem; box-shadow: var(--shadow);
+}
+.sim summary { cursor: pointer; font-weight: 800; }
+.sim label { display: flex; flex-direction: column; gap: 2px; margin-top: 6px; font-weight: 700; }
+.sim select, .sim input { font: inherit; width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 3px 6px; background: var(--bg); color: var(--ink); }
+.sim-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.sim-readout { display: block; margin-top: 6px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* ---- record mode (?record=1) ---- */
+.record { background: var(--surface); border: 2px dashed var(--accent); border-radius: 16px; padding: 16px 20px; margin: 28px 0 8px; }
+.record h2 { margin: 0 0 8px; font-size: 1.4rem; }
+.record button { font: inherit; font-weight: 700; border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px; background: var(--bg); color: var(--ink); cursor: pointer; }
+.record button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.record button.link { border: 0; background: none; color: var(--accent); text-decoration: underline; padding: 2px 4px; }
+.record button:disabled { opacity: .45; cursor: default; }
+.record select, .record input[type=text] { font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; background: var(--bg); color: var(--ink); max-width: 100%; }
+.record-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 8px 0; }
+.record-fix { font-variant-numeric: tabular-nums; }
+.record-fix.good span { color: var(--accent); font-weight: 700; }
+.record-fix.poor span { color: #c0392b; font-weight: 700; }
+.record-msg { font-weight: 700; }
+.record-export { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 8px; display: grid; gap: 8px; }
+.record-export label { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-weight: 700; }
+.record-keep { font-weight: 600 !important; }
+.record caption { text-align: left; font-weight: 800; padding: 4px 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nearby.show, .animal.flash, .sec.flash, .gps-status::before { animation: none !important; }
+}
+@media print {
+  .gps, .nearby, .sim, .record, .not-here-badge { display: none !important; }
+}

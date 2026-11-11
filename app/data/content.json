@@ -1,0 +1,2743 @@
+{
+  "version": 1,
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "ui": {
+    "en": {
+      "title": "Zoo Day with Jesus",
+      "kicker": "Home school · Oct 7, 2026",
+      "sub": "47 animals you can find in a typical Dutch zoo (ARTIS, Blijdorp, Burgers’ Zoo, Ouwehands, Beekse Bergen, Wildlands, DierenPark Amersfoort), each with fun facts, a Bible link that points to Jesus, an Ellen White insight where she wrote about it, and questions with answers for the kids.",
+      "progress": "{seen} of {total} animals seen",
+      "reset": "Reset",
+      "resetConfirm": "Clear all ticks?",
+      "contents": "Contents",
+      "tocLabel": "Table of contents",
+      "toTop": "↑ Contents",
+      "toTopLabel": "Back to contents",
+      "didYouKnow": "Did you know?",
+      "bible": "Bible",
+      "ellenWhite": "Ellen White",
+      "tryThis": "Try this",
+      "seenIt": "Seen it!",
+      "photoCredit": "Photo: Wikipedia",
+      "quizPrefix": "Q",
+      "tapForAnswer": "Tap for answer",
+      "answerPrefix": "A: ",
+      "useLocation": "📍 Use my location",
+      "stopLocation": "Stop location",
+      "gpsOff": "Location off",
+      "gpsSearching": "Finding your location…",
+      "gpsNear": "Near: {name}",
+      "gpsNothingNear": "No animal nearby",
+      "gpsWeak": "Weak GPS signal (±{acc} m)",
+      "gpsNotInPark": "You're not in a known park",
+      "gpsDenied": "Location permission denied",
+      "gpsUnsupported": "This browser has no location support",
+      "gpsUnavailable": "Location unavailable",
+      "nearYou": "You're near",
+      "openLesson": "Open lesson",
+      "close": "Close",
+      "distance": "about {m} m away",
+      "notAtPark": "Not at this park",
+      "park": "Park",
+      "noPark": "No park selected",
+      "language": "Nederlands",
+      "simTitle": "GPS simulator",
+      "simJump": "Jump to",
+      "simOffset": "Offset (m)",
+      "simAccuracy": "Accuracy (m)",
+      "recordTitle": "Record locations",
+      "recordTarget": "Animal or page",
+      "recordSave": "Save point here",
+      "recordSampling": "Measuring… {n}/{total}",
+      "recordPoorAccuracy": "Accuracy is ±{acc} m. Wait for a better signal or save anyway?",
+      "recordSaved": "Saved {id} (±{acc} m)",
+      "recordDownload": "Download park JSON",
+      "recordCopy": "Copy JSON",
+      "recordCopied": "Copied!",
+      "recordClear": "Clear recorded points",
+      "recordClearConfirm": "Remove all recorded points?",
+      "recordPoints": "Recorded points",
+      "recordNoFix": "Waiting for GPS…",
+      "recordParkId": "Park id",
+      "recordParkName": "Park name",
+      "recordKeep": "Keep the loaded park's points for animals I haven't recorded",
+      "recordDelete": "Delete",
+      "gpsInsecure": "Location only works on an https:// page",
+      "demoPark": "demo coordinates",
+      "simOutside": "Outside the park"
+    },
+    "nl": {
+      "title": "Dierentuindag met Jezus",
+      "kicker": "Thuisonderwijs · 7 oktober 2026",
+      "sub": "47 dieren die je in een gewone Nederlandse dierentuin kunt vinden (ARTIS, Blijdorp, Burgers’ Zoo, Ouwehands, Beekse Bergen, Wildlands, DierenPark Amersfoort), elk met leuke weetjes, een Bijbeltekst die naar Jezus wijst, een gedachte van Ellen White waar zij erover schreef, en vragen met antwoorden voor de kinderen.",
+      "progress": "{seen} van de {total} dieren gezien",
+      "reset": "Wissen",
+      "resetConfirm": "Alle vinkjes wissen?",
+      "contents": "Inhoud",
+      "tocLabel": "Inhoudsopgave",
+      "toTop": "↑ Inhoud",
+      "toTopLabel": "Terug naar de inhoud",
+      "didYouKnow": "Wist je dat?",
+      "bible": "Bijbel",
+      "ellenWhite": "Ellen White",
+      "tryThis": "Probeer dit",
+      "seenIt": "Gezien!",
+      "photoCredit": "Foto: Wikipedia",
+      "quizPrefix": "V",
+      "tapForAnswer": "Tik voor het antwoord",
+      "answerPrefix": "A: ",
+      "useLocation": "📍 Gebruik mijn locatie",
+      "stopLocation": "Locatie stoppen",
+      "gpsOff": "Locatie uit",
+      "gpsSearching": "Locatie zoeken…",
+      "gpsNear": "In de buurt: {name}",
+      "gpsNothingNear": "Geen dier in de buurt",
+      "gpsWeak": "Zwak GPS-signaal (±{acc} m)",
+      "gpsNotInPark": "Je bent niet in een bekend park",
+      "gpsDenied": "Geen toestemming voor locatie",
+      "gpsUnsupported": "Deze browser ondersteunt geen locatie",
+      "gpsUnavailable": "Locatie niet beschikbaar",
+      "nearYou": "Je bent bij",
+      "openLesson": "Open de les",
+      "close": "Sluiten",
+      "distance": "ongeveer {m} m hiervandaan",
+      "notAtPark": "Niet in dit park",
+      "park": "Park",
+      "noPark": "Geen park gekozen",
+      "language": "English",
+      "simTitle": "GPS-simulator",
+      "simJump": "Spring naar",
+      "simOffset": "Afstand (m)",
+      "simAccuracy": "Nauwkeurigheid (m)",
+      "recordTitle": "Locaties vastleggen",
+      "recordTarget": "Dier of pagina",
+      "recordSave": "Punt hier opslaan",
+      "recordSampling": "Meten… {n}/{total}",
+      "recordPoorAccuracy": "Nauwkeurigheid is ±{acc} m. Wachten op beter signaal of toch opslaan?",
+      "recordSaved": "{id} opgeslagen (±{acc} m)",
+      "recordDownload": "Park-JSON downloaden",
+      "recordCopy": "JSON kopiëren",
+      "recordCopied": "Gekopieerd!",
+      "recordClear": "Vastgelegde punten wissen",
+      "recordClearConfirm": "Alle vastgelegde punten verwijderen?",
+      "recordPoints": "Vastgelegde punten",
+      "recordNoFix": "Wachten op GPS…",
+      "recordParkId": "Park-id",
+      "recordParkName": "Naam van het park",
+      "recordKeep": "Punten van het geladen park houden voor dieren die ik niet heb vastgelegd",
+      "recordDelete": "Verwijderen",
+      "gpsInsecure": "Locatie werkt alleen op een https://-pagina",
+      "demoPark": "demo-coördinaten",
+      "simOutside": "Buiten het park"
+    }
+  },
+  "sections": [
+    {
+      "id": "gate",
+      "type": "page",
+      "color": "#c98a2b",
+      "title": {
+        "en": "At the zoo gate",
+        "nl": "Bij de ingang van de dierentuin"
+      },
+      "html": {
+        "en": "<div class=\"intro\"><p>Every animal today is an idea of Jesus, because \"all things were made by him\" (John 1:3). Start with this 5-minute devotional before you go in.</p>\r\n<p class=\"lead\"><span class=\"tag\">Read together</span> \"But ask now the beasts, and they shall teach thee; and the fowls of the air, and they shall tell thee\" (Job 12:7).</p>\r\n<p class=\"lead\"><span class=\"tag\">Think about it</span> Jesus loved to teach with animals. He talked about sheep, sparrows, fish, foxes, a hen and her chicks, and even a camel squeezing through a needle. Ellen White explains: \"The parables by which, during His ministry, He loved to teach His lessons of truth show how open His spirit was to the influences of nature\" (The Desire of Ages, p. 70).</p>\r\n<blockquote class=\"egw\"><span class=\"tag\">Ellen White</span> \"Nature and revelation alike testify of God's love\" (Steps to Christ, p. 9). \"Upon all created things is seen the impress of the Deity. Nature testifies of God\" (Education, p. 99).</blockquote>\r\n<p class=\"lead\"><span class=\"tag\">Pray</span> \"Dear Jesus, thank You for making every animal. Open our eyes today to see what You want to teach us about You. Amen.\"</p>\r\n<h4>Gate questions</h4>\r\n<ol class=\"quiz\"><li><details><summary>Who made all the animals?</summary><p>God. The Bible says Jesus was there making them (John 1:3, Colossians 1:16).</p></details></li><li><details><summary>On which days of Creation were the animals made?</summary><p>Fish and birds on day 5. Land animals on day 6, the same day as people (Genesis 1:20-25).</p></details></li><li><details><summary>Who gave the animals their names?</summary><p>Adam (Genesis 2:19-20). Bonus: what name would you give a brand-new animal?</p></details></li><li><details><summary>In Eden, did lions eat other animals?</summary><p>No. God gave every animal plants to eat (Genesis 1:30). Fear and hunting came after sin. In God's new earth \"the wolf also shall dwell with the lamb\" again (Isaiah 11:6).</p></details></li></ol>\r\n<h4>How to use the lessons</h4>\r\n<ol class=\"steps\"><li>Pick 8 to 12 animals the kids love. Each lesson takes about 3 minutes at the enclosure.</li><li>One child reads \"Did you know?\" out loud while everyone watches the animal.</li><li>A parent reads the Bible part and asks: \"What does this teach us about Jesus?\"</li><li>Ask the questions. Give a point per right answer, or let the kids quiz you.</li><li>Tick the animal off in the checklist at the end.</li></ol>\r\n<p>Dutch names are in the headings so the kids can match them to the zoo signs. Bible quotes are from the King James Version.</p></div>",
+        "nl": "<div class=\"intro\"><p>Elk dier dat je vandaag ziet, is een idee van Jezus, want “alle dingen zijn door Hem gemaakt” (Johannes 1:3). Begin met deze korte overdenking van 5 minuten voordat je naar binnen gaat.</p>\r\n<p class=\"lead\"><span class=\"tag\">Lees samen</span> “Maar vraag toch de dieren, en zij zullen het u leren, of de vogels in de lucht, en zij zullen het u bekendmaken” (Job 12:7).</p>\r\n<p class=\"lead\"><span class=\"tag\">Denk erover na</span> Jezus vond het fijn om les te geven met dieren. Hij vertelde over schapen, mussen, vissen, vossen, een kip met haar kuikens en zelfs over een kameel die door het oog van een naald moest. Ellen White legt uit: “De gelijkenissen waarmee Hij tijdens Zijn bediening zo graag Zijn lessen van waarheid onderwees, laten zien hoe open Zijn geest stond voor de invloeden van de natuur” (The Desire of Ages, blz. 70).</p>\r\n<blockquote class=\"egw\"><span class=\"tag\">Ellen White</span> “De natuur en de openbaring getuigen allebei van Gods liefde” (Steps to Christ, blz. 9). “Op alle geschapen dingen is de stempel van de Godheid te zien. De natuur getuigt van God” (Education, blz. 99).</blockquote>\r\n<p class=\"lead\"><span class=\"tag\">Bid</span> “Lieve Heer Jezus, dank U wel dat U alle dieren hebt gemaakt. Wilt U vandaag onze ogen openen, zodat we zien wat U ons over Uzelf wilt leren? Amen.”</p>\r\n<h4>Vragen bij de ingang</h4>\r\n<ol class=\"quiz\"><li><details><summary>Wie heeft alle dieren gemaakt?</summary><p>God. De Bijbel zegt dat Jezus erbij was en ze gemaakt heeft (Johannes 1:3, Kolossenzen 1:16).</p></details></li><li><details><summary>Op welke scheppingsdagen zijn de dieren gemaakt?</summary><p>De vissen en vogels op dag 5. De landdieren op dag 6, dezelfde dag als de mensen (Genesis 1:20-25).</p></details></li><li><details><summary>Wie heeft de dieren hun naam gegeven?</summary><p>Adam (Genesis 2:19-20). Extra vraag: welke naam zou jij een gloednieuw dier geven?</p></details></li><li><details><summary>Aten leeuwen in de hof van Eden andere dieren?</summary><p>Nee. God gaf alle dieren planten om te eten (Genesis 1:30). Angst en jagen kwamen pas na de zonde. Op Gods nieuwe aarde zal “de wolf bij het lam verblijven” (Jesaja 11:6).</p></details></li></ol>\r\n<h4>Zo gebruik je de lessen</h4>\r\n<ol class=\"steps\"><li>Kies 8 tot 12 dieren waar de kinderen dol op zijn. Elke les duurt ongeveer 3 minuten bij het verblijf.</li><li>Eén kind leest “Wist je dat?” hardop voor, terwijl iedereen naar het dier kijkt.</li><li>Een ouder leest het stukje uit de Bijbel voor en vraagt: “Wat leert dit ons over Jezus?”</li><li>Stel de vragen. Geef een punt voor elk goed antwoord, of laat de kinderen jou overhoren.</li><li>Vink het dier aan in de checklist aan het eind.</li></ol>\r\n<p>De Nederlandse namen staan in de kopjes, zodat de kinderen ze kunnen vergelijken met de bordjes in de dierentuin. De bijbelteksten zijn weergegeven in de stijl van de (Herziene) Statenvertaling.</p></div>"
+      }
+    },
+    {
+      "id": "savanna",
+      "type": "animals",
+      "color": "#d08a2e",
+      "title": {
+        "en": "African savanna",
+        "nl": "Afrikaanse savanne"
+      },
+      "intro": {
+        "en": "The savanna animals show God's power and His care: the strongest lion and the smallest hyrax both point to Jesus.",
+        "nl": "De dieren van de savanne laten Gods kracht en Zijn zorg zien: de sterkste leeuw en de kleinste klipdas wijzen allebei naar Jezus."
+      }
+    },
+    {
+      "id": "apes",
+      "type": "animals",
+      "color": "#7a8b3a",
+      "title": {
+        "en": "Apes and monkeys",
+        "nl": "Apen"
+      },
+      "intro": {
+        "en": "Apes are clever and caring, but only people are made in God's image, and Jesus became a human to save us.",
+        "nl": "Apen zijn slim en zorgzaam, maar alleen mensen zijn gemaakt naar Gods beeld. En Jezus werd zelf een mens om ons te redden."
+      },
+      "ellenWhite": {
+        "en": "\"Man was to bear God's image, both in outward resemblance and in character\" (Patriarchs and Prophets, p. 45).",
+        "nl": "“De mens moest Gods beeld dragen, zowel in uiterlijke gelijkenis als in karakter” (Patriarchs and Prophets, blz. 45)."
+      }
+    },
+    {
+      "id": "north",
+      "type": "animals",
+      "color": "#4a7fa8",
+      "title": {
+        "en": "Desert, Asia and the far north",
+        "nl": "Woestijn, Azië en het hoge noorden"
+      },
+      "intro": {
+        "en": "From the hot desert to the Arctic ice, these animals teach kindness, rest, courage and how Jesus makes us new.",
+        "nl": "Van de hete woestijn tot het ijs van de Noordpool: deze dieren leren ons over vriendelijkheid, rust, moed en hoe Jezus ons nieuw maakt."
+      }
+    },
+    {
+      "id": "birds",
+      "type": "animals",
+      "color": "#c2577a",
+      "title": {
+        "en": "Birds",
+        "nl": "Vogels"
+      },
+      "intro": {
+        "en": "Jesus said God feeds the birds and knows when a sparrow falls (Matthew 6:26, 10:29), so every bird here is a reminder that He cares for you.",
+        "nl": "Jezus zei dat God de vogels voedt en weet wanneer er een mus valt (Mattheüs 6:26, 10:29). Elke vogel hier herinnert je eraan dat Hij voor jou zorgt."
+      },
+      "ellenWhite": {
+        "en": "\"He who upholds the unnumbered worlds throughout immensity, at the same time cares for the wants of the little brown sparrow that sings its humble song without fear\" (Steps to Christ, p. 86).",
+        "nl": "“Hij Die de ontelbare werelden in de onmetelijke ruimte in stand houdt, zorgt tegelijk voor wat het kleine bruine musje nodig heeft, dat zonder angst zijn eenvoudige liedje zingt” (Steps to Christ, blz. 86)."
+      }
+    },
+    {
+      "id": "reptiles",
+      "type": "animals",
+      "color": "#4f8f4a",
+      "title": {
+        "en": "Reptiles and amphibians",
+        "nl": "Reptielen en amfibieën"
+      },
+      "intro": {
+        "en": "In the reptile house the Bible stories get exciting: the serpent in Eden, the bronze snake, leviathan and the frogs of Egypt all point to Jesus.",
+        "nl": "In het reptielenhuis worden de Bijbelverhalen spannend: de slang in de hof van Eden, de koperen slang, de leviathan en de kikkers in Egypte wijzen allemaal naar Jezus."
+      }
+    },
+    {
+      "id": "ocean",
+      "type": "animals",
+      "color": "#2a86a8",
+      "title": {
+        "en": "Ocean and aquarium",
+        "nl": "Oceaan en aquarium"
+      },
+      "intro": {
+        "en": "Jesus spent much of His life by the sea and chose fishermen as His first disciples, so the aquarium is full of His stories.",
+        "nl": "Jezus was een groot deel van Zijn leven bij de zee en koos vissers als Zijn eerste discipelen. Daarom zit het aquarium vol met Zijn verhalen."
+      }
+    },
+    {
+      "id": "insects",
+      "type": "animals",
+      "color": "#b8892a",
+      "title": {
+        "en": "Insects",
+        "nl": "Insecten"
+      },
+      "intro": {
+        "en": "The smallest animals carry some of the biggest lessons: new life, hard work and sharing good news.",
+        "nl": "De kleinste dieren hebben soms de grootste lessen: over nieuw leven, hard werken en goed nieuws delen."
+      }
+    },
+    {
+      "id": "farm",
+      "type": "animals",
+      "color": "#a8653a",
+      "title": {
+        "en": "Children's farm · Kinderboerderij",
+        "nl": "Kinderboerderij"
+      },
+      "intro": {
+        "en": "The farm animals are the ones Jesus talked about most, and here the kids can touch them.",
+        "nl": "Over de boerderijdieren vertelde Jezus het vaakst, en hier mogen de kinderen ze aaien."
+      }
+    },
+    {
+      "id": "end",
+      "type": "page",
+      "color": "#6f5aa8",
+      "title": {
+        "en": "End of the day",
+        "nl": "Einde van de dag"
+      },
+      "html": {
+        "en": "<div class=\"intro\"><p>Finish with a Bible animal hunt, a few talk questions on the way home and a thank-you prayer.</p></div>\r\n<h4>Bible animal hunt: tick each one when you find it</h4>\r\n<ol class=\"hunt\"><li><label><input type=\"checkbox\" data-key=\"hunt0\"> The animal Jesus rode into Jerusalem (Matthew 21:7)</label><details><summary>Answer</summary><p>Donkey</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt1\"> A small “feeble folk” that makes its house in the rocks (Proverbs 30:26)</label><details><summary>Answer</summary><p>Rock hyrax</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt2\"> The animal Jesus is named after in Revelation 5:5</label><details><summary>Answer</summary><p>Lion</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt3\"> The bird that “knoweth her appointed times” (Jeremiah 8:7)</label><details><summary>Answer</summary><p>Stork</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt4\"> The bird whose crowing made Peter remember Jesus’ words (Matthew 26:75)</label><details><summary>Answer</summary><p>Rooster</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt5\"> The bird that brought Noah an olive leaf (Genesis 8:11)</label><details><summary>Answer</summary><p>Dove</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt6\"> The bird God says laughs at the horse and its rider (Job 39:18)</label><details><summary>Answer</summary><p>Ostrich</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt7\"> The animal Solomon’s ships brought together with apes (1 Kings 10:22)</label><details><summary>Answer</summary><p>Peacock</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt8\"> The insect Proverbs tells lazy people to watch (Proverbs 6:6)</label><details><summary>Answer</summary><p>Ant</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt9\"> The animal Jesus said could go through the eye of a needle more easily than a rich man into heaven (Matthew 19:24)</label><details><summary>Answer</summary><p>Camel</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt10\"> The animal the lost son had to feed (Luke 15:15)</label><details><summary>Answer</summary><p>Pig</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt11\"> An animal that becomes the colour of what it eats</label><details><summary>Answer</summary><p>Flamingo</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt12\"> An animal that walks through deep water instead of swimming</label><details><summary>Answer</summary><p>Hippo</p></details></li></ol>\r\n<h4>Talk on the way home</h4>\r\n<ol class=\"steps\">\r\n<li>Which animal was your favourite today, and what did it teach you about Jesus?</li>\r\n<li>Which animal reminded you most of Jesus? (Lion, lamb, shepherd, mother hen... why?)</li>\r\n<li>Which animal showed God’s power? His care? His sense of humour?</li>\r\n<li>Which animal would you like to be more like this week, and how?</li>\r\n<li>What will animals be like when Jesus makes everything new? (Isaiah 11:6-9)</li>\r\n</ol>\r\n<p class=\"bible\"><span class=\"tag\">Memory verse</span> “O LORD, how manifold are thy works! in wisdom hast thou made them all: the earth is full of thy riches” (Psalm 104:24).</p>\r\n<blockquote class=\"egw\"><span class=\"tag\">Ellen White</span> In the very last words of The Great Controversy she pictures the new earth, where everything God made, “in their unshadowed beauty and perfect joy, declare that God is love” (p. 678).</blockquote>\r\n<p class=\"lead\"><span class=\"tag\">Closing prayer</span> “Dear Jesus, thank You for every animal we saw today: the strong ones, the funny ones and the tiny ones. Thank You that You made them all and that You care for us even more. Help us to trust You like sheep trust their shepherd. We can’t wait to see the lion and the lamb together in Your new earth. Amen.”</p>",
+        "nl": "<div class=\"intro\"><p>Sluit af met een Bijbelse dierenjacht, een paar gespreksvragen op weg naar huis en een dankgebed.</p></div>\r\n<h4>Bijbelse dierenjacht: vink elk dier aan als je het gevonden hebt</h4>\r\n<ol class=\"hunt\"><li><label><input type=\"checkbox\" data-key=\"hunt0\"> Het dier waarop Jezus Jeruzalem binnenreed (Mattheüs 21:7)</label><details><summary>Antwoord</summary><p>Ezel</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt1\"> Een “volk dat niet sterk is”, dat zijn huis in de rotsen maakt (Spreuken 30:26)</label><details><summary>Antwoord</summary><p>Klipdas</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt2\"> Het dier waarnaar Jezus genoemd wordt in Openbaring 5:5</label><details><summary>Antwoord</summary><p>Leeuw</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt3\"> De vogel die “zijn vastgestelde tijden kent” (Jeremia 8:7)</label><details><summary>Antwoord</summary><p>Ooievaar</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt4\"> De vogel door wiens kraaien Petrus zich de woorden van Jezus herinnerde (Mattheüs 26:75)</label><details><summary>Antwoord</summary><p>Haan</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt5\"> De vogel die Noach een olijfblad bracht (Genesis 8:11)</label><details><summary>Antwoord</summary><p>Duif</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt6\"> De vogel die volgens God het paard en zijn ruiter uitlacht (Job 39:21)</label><details><summary>Antwoord</summary><p>Struisvogel</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt7\"> Het dier dat de schepen van Salomo samen met apen meebrachten (1 Koningen 10:22)</label><details><summary>Antwoord</summary><p>Pauw</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt8\"> Het insect waar luie mensen volgens Spreuken naar moeten kijken (Spreuken 6:6)</label><details><summary>Antwoord</summary><p>Mier</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt9\"> Het dier dat volgens Jezus makkelijker door het oog van een naald gaat dan een rijke de hemel in (Mattheüs 19:24)</label><details><summary>Antwoord</summary><p>Kameel</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt10\"> Het dier dat de verloren zoon moest voeren (Lukas 15:15)</label><details><summary>Antwoord</summary><p>Varken</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt11\"> Een dier dat de kleur krijgt van wat het eet</label><details><summary>Antwoord</summary><p>Flamingo</p></details></li><li><label><input type=\"checkbox\" data-key=\"hunt12\"> Een dier dat door diep water loopt in plaats van te zwemmen</label><details><summary>Antwoord</summary><p>Nijlpaard</p></details></li></ol>\r\n<h4>Praten op weg naar huis</h4>\r\n<ol class=\"steps\">\r\n<li>Welk dier vond je vandaag het leukst, en wat leerde het je over Jezus?</li>\r\n<li>Welk dier deed je het meest aan Jezus denken? (Leeuw, lam, herder, moederkip... waarom?)</li>\r\n<li>Welk dier liet Gods kracht zien? Zijn zorg? Zijn gevoel voor humor?</li>\r\n<li>Op welk dier zou je deze week meer willen lijken, en hoe?</li>\r\n<li>Hoe zullen de dieren zijn als Jezus alles nieuw maakt? (Jesaja 11:6-9)</li>\r\n</ol>\r\n<p class=\"bible\"><span class=\"tag\">Tekst om te onthouden</span> “Hoe groot zijn Uw werken, HEERE! U hebt ze allemaal met wijsheid gemaakt; de aarde is vol van Uw rijkdommen” (Psalm 104:24).</p>\r\n<blockquote class=\"egw\"><span class=\"tag\">Ellen White</span> In de allerlaatste woorden van The Great Controversy beschrijft ze de nieuwe aarde, waar alles wat God gemaakt heeft “in onbewolkte schoonheid en volmaakte vreugde verkondigt dat God liefde is” (blz. 678).</blockquote>\r\n<p class=\"lead\"><span class=\"tag\">Slotgebed</span> “Lieve Heer Jezus, dank U wel voor alle dieren die we vandaag gezien hebben: de sterke, de grappige en de piepkleine. Dank U dat U ze allemaal gemaakt hebt en dat U nog veel meer voor ons zorgt. Help ons om U te vertrouwen zoals schapen hun herder vertrouwen. We kunnen niet wachten om de leeuw en het lam samen te zien op Uw nieuwe aarde. Amen.”</p>"
+      }
+    },
+    {
+      "id": "sources",
+      "type": "page",
+      "color": "#6c675d",
+      "title": {
+        "en": "Sources",
+        "nl": "Bronnen"
+      },
+      "html": {
+        "en": "<p>Bible quotes are from the King James Version. Every Ellen White quote was checked against the full text on <a href=\"https://m.egwwritings.org/\" target=\"_blank\" rel=\"noopener\">EGW Writings</a> from the Ellen G. White Estate. Animal figures are approximate and were checked against the zoo and science sources below. Not every zoo has every animal, so check your zoo’s website before you go.</p>\r\n<div class=\"tbl\"><table><thead><tr><th>Ellen G. White book</th><th>Pages quoted</th></tr></thead><tbody><tr><td>Steps to Christ</td><td><a href=\"https://m.egwwritings.org/en/book/108.22\" target=\"_blank\" rel=\"noopener\">9</a>, <a href=\"https://m.egwwritings.org/en/book/108.336\" target=\"_blank\" rel=\"noopener\">86</a></td></tr><tr><td>Education</td><td><a href=\"https://m.egwwritings.org/en/book/29.470\" target=\"_blank\" rel=\"noopener\">99</a>, <a href=\"https://m.egwwritings.org/en/book/29.568\" target=\"_blank\" rel=\"noopener\">117-118</a>, <a href=\"https://m.egwwritings.org/en/book/29.573\" target=\"_blank\" rel=\"noopener\">118-119</a></td></tr><tr><td>The Desire of Ages</td><td><a href=\"https://m.egwwritings.org/en/book/130.247\" target=\"_blank\" rel=\"noopener\">70</a>, <a href=\"https://m.egwwritings.org/en/book/130.448\" target=\"_blank\" rel=\"noopener\">112</a>, <a href=\"https://m.egwwritings.org/en/book/130.1142\" target=\"_blank\" rel=\"noopener\">249</a>, <a href=\"https://m.egwwritings.org/en/book/130.2351\" target=\"_blank\" rel=\"noopener\">479</a>, <a href=\"https://m.egwwritings.org/en/book/130.3488\" target=\"_blank\" rel=\"noopener\">713</a></td></tr><tr><td>Patriarchs and Prophets</td><td><a href=\"https://m.egwwritings.org/en/book/84.124\" target=\"_blank\" rel=\"noopener\">45</a>, <a href=\"https://m.egwwritings.org/en/book/84.163\" target=\"_blank\" rel=\"noopener\">53</a>, <a href=\"https://m.egwwritings.org/en/book/84.704\" target=\"_blank\" rel=\"noopener\">172-173</a>, <a href=\"https://m.egwwritings.org/en/book/84.1980\" target=\"_blank\" rel=\"noopener\">431</a>, <a href=\"https://m.egwwritings.org/en/book/84.2039\" target=\"_blank\" rel=\"noopener\">443</a>, <a href=\"https://m.egwwritings.org/en/book/84.3019\" target=\"_blank\" rel=\"noopener\">644</a></td></tr><tr><td>Prophets and Kings</td><td><a href=\"https://m.egwwritings.org/en/book/88.2425\" target=\"_blank\" rel=\"noopener\">543</a>, <a href=\"https://m.egwwritings.org/en/book/88.2437\" target=\"_blank\" rel=\"noopener\">545</a></td></tr><tr><td>The Great Controversy</td><td><a href=\"https://m.egwwritings.org/en/book/132.2513\" target=\"_blank\" rel=\"noopener\">555</a>, <a href=\"https://m.egwwritings.org/en/book/132.2915\" target=\"_blank\" rel=\"noopener\">645</a>, <a href=\"https://m.egwwritings.org/en/book/132.3065\" target=\"_blank\" rel=\"noopener\">678</a></td></tr><tr><td>Christ’s Object Lessons</td><td><a href=\"https://m.egwwritings.org/en/book/15.858\" target=\"_blank\" rel=\"noopener\">203</a>, <a href=\"https://m.egwwritings.org/en/book/15.871\" target=\"_blank\" rel=\"noopener\">206</a></td></tr><tr><td>Testimonies for the Church, vol. 4</td><td><a href=\"https://m.egwwritings.org/en/book/114.2244\" target=\"_blank\" rel=\"noopener\">455</a></td></tr></tbody></table></div>\r\n<div class=\"tbl\"><table><thead><tr><th>Animal facts</th><th>Source</th></tr></thead><tbody><tr><td>Lion</td><td><a href=\"https://nationalzoo.si.edu/animals/lion\" target=\"_blank\" rel=\"noopener\">Smithsonian’s National Zoo</a>, <a href=\"https://animals.sandiegozoo.org/animals/lion\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Giraffe</td><td><a href=\"https://animals.sandiegozoo.org/animals/giraffe\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Elephant</td><td><a href=\"https://neurocure.de/118/dexterous-elephants.html\" target=\"_blank\" rel=\"noopener\">NeuroCure trunk study</a>, <a href=\"https://animals.sandiegozoo.org/animals/elephant\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Hippopotamus</td><td><a href=\"https://www.nationalgeographic.com/animals/mammals/facts/hippopotamus\" target=\"_blank\" rel=\"noopener\">National Geographic</a></td></tr><tr><td>Rock hyrax</td><td><a href=\"https://animals.sandiegozoo.org/animals/rock-hyrax\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a>, <a href=\"https://www.zootierliste.de/en/?klasse=1&ordnung=117&familie=11701&art=50906377\" target=\"_blank\" rel=\"noopener\">Zootierliste</a></td></tr><tr><td>Gorilla</td><td><a href=\"https://berggorilla.org/en/gorillas/general/everyday-life/how-do-gorillas-sleep\" target=\"_blank\" rel=\"noopener\">Berggorilla &amp; Regenwald Direkthilfe</a></td></tr><tr><td>Orangutan</td><td><a href=\"https://www.sciencenews.org/article/orangutans-take-motherhood-extremes-nursing-young-more-eight-years\" target=\"_blank\" rel=\"noopener\">Science News</a>, <a href=\"https://www.worldwildlife.org/species/orangutan\" target=\"_blank\" rel=\"noopener\">WWF</a></td></tr><tr><td>Camel</td><td><a href=\"https://www.nationalgeographic.com/animals/mammals/facts/arabian-camel\" target=\"_blank\" rel=\"noopener\">National Geographic</a></td></tr><tr><td>Polar bear</td><td><a href=\"https://seaworld.org/animals/all-about/polar-bears/characteristics/\" target=\"_blank\" rel=\"noopener\">SeaWorld: characteristics</a>, <a href=\"https://seaworld.org/animals/all-about/polar-bears/senses/\" target=\"_blank\" rel=\"noopener\">SeaWorld: senses</a></td></tr><tr><td>Wolf in the Netherlands</td><td><a href=\"https://natuurtijdschriften.nl/pub/1031019/zoogdier-32-1-De-wolvenwelpen-van-de-Lage-Landen.pdf\" target=\"_blank\" rel=\"noopener\">Zoogdier: De wolvenwelpen van de Lage Landen</a></td></tr><tr><td>Ostrich</td><td><a href=\"https://animals.sandiegozoo.org/animals/ostrich\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a>, <a href=\"https://www.guinnessworldrecords.com/world-records/516760-largest-eyes-for-a-land-animal\" target=\"_blank\" rel=\"noopener\">Guinness World Records</a></td></tr><tr><td>Owl</td><td><a href=\"https://www.smithsonianmag.com/science-nature/solving-the-mystery-of-owls-head-turning-abilities-9561557/\" target=\"_blank\" rel=\"noopener\">Smithsonian Magazine</a></td></tr><tr><td>Peacock</td><td><a href=\"https://wildlifepark.novascotia.ca/species/indian-peafowl\" target=\"_blank\" rel=\"noopener\">Shubenacadie Wildlife Park</a></td></tr><tr><td>Stork in the Netherlands</td><td><a href=\"https://stats.sovon.nl/stats/soort/1340\" target=\"_blank\" rel=\"noopener\">Sovon</a></td></tr><tr><td>Crocodile</td><td><a href=\"https://www.smithsonianmag.com/science-nature/solving-an-alligator-mystery-may-help-humans-regrow-lost-teeth-60257334/\" target=\"_blank\" rel=\"noopener\">Smithsonian Magazine</a></td></tr><tr><td>Giant tortoise (Jonathan)</td><td><a href=\"https://en.wikipedia.org/wiki/Jonathan_%28tortoise%29\" target=\"_blank\" rel=\"noopener\">Wikipedia</a></td></tr><tr><td>Poison dart frog</td><td><a href=\"https://nationalzoo.si.edu/center-species-survival/news/after-insect-detox-can-once-poisonous-frogs-get-their-spice-back\" target=\"_blank\" rel=\"noopener\">Smithsonian’s National Zoo</a></td></tr><tr><td>Chameleon</td><td><a href=\"https://www.nationalgeographic.com/animals/article/160105-chameleons-tongue-speed-animals-science\" target=\"_blank\" rel=\"noopener\">National Geographic</a>, <a href=\"https://animals.sandiegozoo.org/animals/chameleon\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Shark</td><td><a href=\"https://www.fisheries.noaa.gov/feature-story/12-shark-facts-may-surprise-you\" target=\"_blank\" rel=\"noopener\">NOAA Fisheries</a></td></tr><tr><td>Jellyfish</td><td><a href=\"https://oceanservice.noaa.gov/facts/jellyfish.html\" target=\"_blank\" rel=\"noopener\">NOAA Ocean Service</a></td></tr><tr><td>Butterfly</td><td><a href=\"https://carleton.ca/biology/cu-faq/do-butterflies-really-taste-through-their-feet/\" target=\"_blank\" rel=\"noopener\">Carleton University</a>, <a href=\"https://www.scientificamerican.com/article/caterpillar-butterfly-metamorphosis-explainer/\" target=\"_blank\" rel=\"noopener\">Scientific American</a></td></tr><tr><td>Honeybee</td><td><a href=\"https://extension.illinois.edu/blogs/prairies-perennials/2017-08-19-national-honey-bee-day\" target=\"_blank\" rel=\"noopener\">University of Illinois Extension</a></td></tr><tr><td>Sheep</td><td><a href=\"https://www.scientificamerican.com/article/study-shows-sheep-have-ke/\" target=\"_blank\" rel=\"noopener\">Scientific American</a></td></tr><tr><td>Rabbit</td><td><a href=\"https://www.rspca.org.uk/adviceandwelfare/pets/rabbits\" target=\"_blank\" rel=\"noopener\">RSPCA</a></td></tr></tbody></table></div>\r\n<p class=\"small\">Photos are thumbnails from each animal’s Wikipedia article (Wikimedia Commons, various free licences); the “Photo: Wikipedia” link under each picture goes to its article.</p>",
+        "nl": "<p>De Bijbelteksten zijn vrij vertaald uit de King James Version (de Engelse Bijbel die de oorspronkelijke les gebruikt), in de stijl van de Statenvertaling. Leg ze gerust naast je eigen Bijbel. Elk citaat van Ellen White is gecontroleerd met de volledige tekst op <a href=\"https://m.egwwritings.org/\" target=\"_blank\" rel=\"noopener\">EGW Writings</a> van de Ellen G. White Estate en hier vertaald; de paginanummers horen bij de Engelse boeken. Getallen over dieren zijn afgerond en gecontroleerd met de bronnen hieronder. Niet elke dierentuin heeft elk dier, dus kijk vóór je gaat even op de website van je dierentuin.</p>\r\n<div class=\"tbl\"><table><thead><tr><th>Boek van Ellen G. White</th><th>Geciteerde bladzijden</th></tr></thead><tbody><tr><td>Steps to Christ</td><td><a href=\"https://m.egwwritings.org/en/book/108.22\" target=\"_blank\" rel=\"noopener\">9</a>, <a href=\"https://m.egwwritings.org/en/book/108.336\" target=\"_blank\" rel=\"noopener\">86</a></td></tr><tr><td>Education</td><td><a href=\"https://m.egwwritings.org/en/book/29.470\" target=\"_blank\" rel=\"noopener\">99</a>, <a href=\"https://m.egwwritings.org/en/book/29.568\" target=\"_blank\" rel=\"noopener\">117-118</a>, <a href=\"https://m.egwwritings.org/en/book/29.573\" target=\"_blank\" rel=\"noopener\">118-119</a></td></tr><tr><td>The Desire of Ages</td><td><a href=\"https://m.egwwritings.org/en/book/130.247\" target=\"_blank\" rel=\"noopener\">70</a>, <a href=\"https://m.egwwritings.org/en/book/130.448\" target=\"_blank\" rel=\"noopener\">112</a>, <a href=\"https://m.egwwritings.org/en/book/130.1142\" target=\"_blank\" rel=\"noopener\">249</a>, <a href=\"https://m.egwwritings.org/en/book/130.2351\" target=\"_blank\" rel=\"noopener\">479</a>, <a href=\"https://m.egwwritings.org/en/book/130.3488\" target=\"_blank\" rel=\"noopener\">713</a></td></tr><tr><td>Patriarchs and Prophets</td><td><a href=\"https://m.egwwritings.org/en/book/84.124\" target=\"_blank\" rel=\"noopener\">45</a>, <a href=\"https://m.egwwritings.org/en/book/84.163\" target=\"_blank\" rel=\"noopener\">53</a>, <a href=\"https://m.egwwritings.org/en/book/84.704\" target=\"_blank\" rel=\"noopener\">172-173</a>, <a href=\"https://m.egwwritings.org/en/book/84.1980\" target=\"_blank\" rel=\"noopener\">431</a>, <a href=\"https://m.egwwritings.org/en/book/84.2039\" target=\"_blank\" rel=\"noopener\">443</a>, <a href=\"https://m.egwwritings.org/en/book/84.3019\" target=\"_blank\" rel=\"noopener\">644</a></td></tr><tr><td>Prophets and Kings</td><td><a href=\"https://m.egwwritings.org/en/book/88.2425\" target=\"_blank\" rel=\"noopener\">543</a>, <a href=\"https://m.egwwritings.org/en/book/88.2437\" target=\"_blank\" rel=\"noopener\">545</a></td></tr><tr><td>The Great Controversy</td><td><a href=\"https://m.egwwritings.org/en/book/132.2513\" target=\"_blank\" rel=\"noopener\">555</a>, <a href=\"https://m.egwwritings.org/en/book/132.2915\" target=\"_blank\" rel=\"noopener\">645</a>, <a href=\"https://m.egwwritings.org/en/book/132.3065\" target=\"_blank\" rel=\"noopener\">678</a></td></tr><tr><td>Christ’s Object Lessons</td><td><a href=\"https://m.egwwritings.org/en/book/15.858\" target=\"_blank\" rel=\"noopener\">203</a>, <a href=\"https://m.egwwritings.org/en/book/15.871\" target=\"_blank\" rel=\"noopener\">206</a></td></tr><tr><td>Testimonies for the Church, vol. 4</td><td><a href=\"https://m.egwwritings.org/en/book/114.2244\" target=\"_blank\" rel=\"noopener\">455</a></td></tr></tbody></table></div>\r\n<div class=\"tbl\"><table><thead><tr><th>Weetjes over</th><th>Bron</th></tr></thead><tbody><tr><td>Leeuw</td><td><a href=\"https://nationalzoo.si.edu/animals/lion\" target=\"_blank\" rel=\"noopener\">Smithsonian’s National Zoo</a>, <a href=\"https://animals.sandiegozoo.org/animals/lion\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Giraf</td><td><a href=\"https://animals.sandiegozoo.org/animals/giraffe\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Olifant</td><td><a href=\"https://neurocure.de/118/dexterous-elephants.html\" target=\"_blank\" rel=\"noopener\">NeuroCure trunk study</a>, <a href=\"https://animals.sandiegozoo.org/animals/elephant\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Nijlpaard</td><td><a href=\"https://www.nationalgeographic.com/animals/mammals/facts/hippopotamus\" target=\"_blank\" rel=\"noopener\">National Geographic</a></td></tr><tr><td>Klipdas</td><td><a href=\"https://animals.sandiegozoo.org/animals/rock-hyrax\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a>, <a href=\"https://www.zootierliste.de/en/?klasse=1&ordnung=117&familie=11701&art=50906377\" target=\"_blank\" rel=\"noopener\">Zootierliste</a></td></tr><tr><td>Gorilla</td><td><a href=\"https://berggorilla.org/en/gorillas/general/everyday-life/how-do-gorillas-sleep\" target=\"_blank\" rel=\"noopener\">Berggorilla &amp; Regenwald Direkthilfe</a></td></tr><tr><td>Orang-oetan</td><td><a href=\"https://www.sciencenews.org/article/orangutans-take-motherhood-extremes-nursing-young-more-eight-years\" target=\"_blank\" rel=\"noopener\">Science News</a>, <a href=\"https://www.worldwildlife.org/species/orangutan\" target=\"_blank\" rel=\"noopener\">WWF</a></td></tr><tr><td>Kameel</td><td><a href=\"https://www.nationalgeographic.com/animals/mammals/facts/arabian-camel\" target=\"_blank\" rel=\"noopener\">National Geographic</a></td></tr><tr><td>IJsbeer</td><td><a href=\"https://seaworld.org/animals/all-about/polar-bears/characteristics/\" target=\"_blank\" rel=\"noopener\">SeaWorld: characteristics</a>, <a href=\"https://seaworld.org/animals/all-about/polar-bears/senses/\" target=\"_blank\" rel=\"noopener\">SeaWorld: senses</a></td></tr><tr><td>Wolf in Nederland</td><td><a href=\"https://natuurtijdschriften.nl/pub/1031019/zoogdier-32-1-De-wolvenwelpen-van-de-Lage-Landen.pdf\" target=\"_blank\" rel=\"noopener\">Zoogdier: De wolvenwelpen van de Lage Landen</a></td></tr><tr><td>Struisvogel</td><td><a href=\"https://animals.sandiegozoo.org/animals/ostrich\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a>, <a href=\"https://www.guinnessworldrecords.com/world-records/516760-largest-eyes-for-a-land-animal\" target=\"_blank\" rel=\"noopener\">Guinness World Records</a></td></tr><tr><td>Uil</td><td><a href=\"https://www.smithsonianmag.com/science-nature/solving-the-mystery-of-owls-head-turning-abilities-9561557/\" target=\"_blank\" rel=\"noopener\">Smithsonian Magazine</a></td></tr><tr><td>Pauw</td><td><a href=\"https://wildlifepark.novascotia.ca/species/indian-peafowl\" target=\"_blank\" rel=\"noopener\">Shubenacadie Wildlife Park</a></td></tr><tr><td>Ooievaar in Nederland</td><td><a href=\"https://stats.sovon.nl/stats/soort/1340\" target=\"_blank\" rel=\"noopener\">Sovon</a></td></tr><tr><td>Krokodil</td><td><a href=\"https://www.smithsonianmag.com/science-nature/solving-an-alligator-mystery-may-help-humans-regrow-lost-teeth-60257334/\" target=\"_blank\" rel=\"noopener\">Smithsonian Magazine</a></td></tr><tr><td>Reuzenschildpad (Jonathan)</td><td><a href=\"https://en.wikipedia.org/wiki/Jonathan_%28tortoise%29\" target=\"_blank\" rel=\"noopener\">Wikipedia</a></td></tr><tr><td>Pijlgifkikker</td><td><a href=\"https://nationalzoo.si.edu/center-species-survival/news/after-insect-detox-can-once-poisonous-frogs-get-their-spice-back\" target=\"_blank\" rel=\"noopener\">Smithsonian’s National Zoo</a></td></tr><tr><td>Kameleon</td><td><a href=\"https://www.nationalgeographic.com/animals/article/160105-chameleons-tongue-speed-animals-science\" target=\"_blank\" rel=\"noopener\">National Geographic</a>, <a href=\"https://animals.sandiegozoo.org/animals/chameleon\" target=\"_blank\" rel=\"noopener\">San Diego Zoo</a></td></tr><tr><td>Haai</td><td><a href=\"https://www.fisheries.noaa.gov/feature-story/12-shark-facts-may-surprise-you\" target=\"_blank\" rel=\"noopener\">NOAA Fisheries</a></td></tr><tr><td>Kwal</td><td><a href=\"https://oceanservice.noaa.gov/facts/jellyfish.html\" target=\"_blank\" rel=\"noopener\">NOAA Ocean Service</a></td></tr><tr><td>Vlinder</td><td><a href=\"https://carleton.ca/biology/cu-faq/do-butterflies-really-taste-through-their-feet/\" target=\"_blank\" rel=\"noopener\">Carleton University</a>, <a href=\"https://www.scientificamerican.com/article/caterpillar-butterfly-metamorphosis-explainer/\" target=\"_blank\" rel=\"noopener\">Scientific American</a></td></tr><tr><td>Honingbij</td><td><a href=\"https://extension.illinois.edu/blogs/prairies-perennials/2017-08-19-national-honey-bee-day\" target=\"_blank\" rel=\"noopener\">University of Illinois Extension</a></td></tr><tr><td>Schaap</td><td><a href=\"https://www.scientificamerican.com/article/study-shows-sheep-have-ke/\" target=\"_blank\" rel=\"noopener\">Scientific American</a></td></tr><tr><td>Konijn</td><td><a href=\"https://www.rspca.org.uk/adviceandwelfare/pets/rabbits\" target=\"_blank\" rel=\"noopener\">RSPCA</a></td></tr></tbody></table></div>\r\n<p class=\"small\">De foto’s komen uit het Wikipedia-artikel van elk dier (Wikimedia Commons, verschillende vrije licenties); de link “Foto: Wikipedia” onder elke foto gaat naar dat artikel.</p>"
+      }
+    }
+  ],
+  "animals": [
+    {
+      "id": "lion",
+      "section": "savanna",
+      "name": {
+        "en": "Lion",
+        "nl": "Leeuw"
+      },
+      "image": {
+        "photo": "images/lion.jpg",
+        "thumb": "images/lion-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Lion"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A lion's roar can be heard about 8 km away. Lions rest up to 20 hours a day. They are the only cats that live in family groups, called prides.",
+          "bible": "Jesus is called \"the Lion of the tribe of Juda\" (Revelation 5:5): a strong, brave King who wins against evil. One verse later He is a Lamb that was slain (Revelation 5:6). Our mighty King gave His life for us. When Daniel was thrown to the lions, \"God hath sent his angel, and hath shut the lions' mouths\" (Daniel 6:22).",
+          "ellenWhite": "\"God did not prevent Daniel's enemies from casting him into the lions' den; ... but it was that He might make the deliverance of His servant more marked.\" And: \"Heaven is very near those who suffer for righteousness' sake\" (Prophets and Kings, pp. 543, 545).",
+          "quiz": [
+            {
+              "q": "Why is Jesus called both a Lion and a Lamb?",
+              "a": "He is a strong King (Lion) who gave Himself for our sins (Lamb). Both are in Revelation 5:5-6."
+            },
+            {
+              "q": "Who shut the lions' mouths for Daniel?",
+              "a": "An angel God sent (Daniel 6:22)."
+            },
+            {
+              "q": "Proverbs 28:1 says \"the righteous are bold as a...\"?",
+              "a": "Lion. With Jesus we don't have to be afraid."
+            }
+          ],
+          "tryThis": "Roar together as loud as you can. Then whisper: \"Jesus is stronger.\""
+        },
+        "nl": {
+          "didYouKnow": "Het brullen van een leeuw is tot ongeveer 8 km ver te horen. Leeuwen rusten wel 20 uur per dag. Het zijn de enige katachtigen die in familiegroepen leven. Zo'n groep heet een troep.",
+          "bible": "Jezus wordt “de Leeuw uit de stam van Juda” genoemd (Openbaring 5:5): een sterke, dappere Koning Die het kwaad overwint. Eén vers later is Hij een Lam dat geslacht is (Openbaring 5:6). Onze machtige Koning gaf Zijn leven voor ons. Toen Daniël bij de leeuwen werd gegooid, zei hij: “Mijn God heeft Zijn engel gezonden en de muil van de leeuwen dichtgesloten” (Daniël 6:23).",
+          "ellenWhite": "“God heeft niet verhinderd dat Daniëls vijanden hem in de leeuwenkuil wierpen; ... maar Hij deed dit om de bevrijding van Zijn dienaar des te duidelijker te maken.” En: “De hemel is heel dicht bij hen die lijden omwille van de gerechtigheid” (Prophets and Kings, blz. 543, 545).",
+          "quiz": [
+            {
+              "q": "Waarom wordt Jezus zowel een Leeuw als een Lam genoemd?",
+              "a": "Hij is een sterke Koning (Leeuw) Die Zichzelf gaf voor onze zonden (Lam). Allebei staan ze in Openbaring 5:5-6."
+            },
+            {
+              "q": "Wie sloot de muil van de leeuwen voor Daniël?",
+              "a": "Een engel die God stuurde (Daniël 6:23)."
+            },
+            {
+              "q": "In Spreuken 28:1 staat: “de rechtvaardigen zijn vrijmoedig als een jonge ...”?",
+              "a": "Leeuw. Met Jezus hoeven we niet bang te zijn."
+            }
+          ],
+          "tryThis": "Brul samen zo hard als je kunt. Fluister daarna: “Jezus is sterker.”"
+        }
+      }
+    },
+    {
+      "id": "giraffe",
+      "section": "savanna",
+      "name": {
+        "en": "Giraffe",
+        "nl": "Giraf"
+      },
+      "image": {
+        "photo": "images/giraffe.jpg",
+        "thumb": "images/giraffe-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Giraffe"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The giraffe is the tallest animal, up to about 5.5 m. Its neck has 7 bones, the same number as yours. Its heart weighs about 11 kg. Its tongue is about 45 cm long and dark blue-black, which protects it from sunburn.",
+          "bible": "A giraffe spends its day looking up. \"I will lift up mine eyes unto the hills, from whence cometh my help. My help cometh from the LORD\" (Psalm 121:1-2). And its giant heart reminds us of God's promise: \"A new heart also will I give you\" (Ezekiel 36:26). Jesus gives us a big heart full of His love.",
+          "quiz": [
+            {
+              "q": "How many neck bones does a giraffe have?",
+              "a": "Seven, just like you. God used one plan for very different sizes."
+            },
+            {
+              "q": "Why does a giraffe need such a big heart?",
+              "a": "To pump blood all the way up its long neck to its brain."
+            },
+            {
+              "q": "Where does our help come from?",
+              "a": "From the LORD, who made heaven and earth (Psalm 121:2)."
+            }
+          ],
+          "tryThis": "Stretch up on tiptoe like a giraffe and say: \"My help comes from the Lord!\""
+        },
+        "nl": {
+          "didYouKnow": "De giraf is het hoogste dier, tot wel ongeveer 5,5 m. Zijn nek heeft 7 wervels, precies evenveel als jouw nek. Zijn hart weegt ongeveer 11 kg. Zijn tong is ongeveer 45 cm lang en donker blauwzwart, en dat beschermt hem tegen verbranden door de zon.",
+          "bible": "Een giraf kijkt de hele dag omhoog. “Ik sla mijn ogen op naar de bergen, vanwaar mijn hulp komen zal. Mijn hulp is van de HEERE” (Psalm 121:1-2). En zijn reuzenhart doet ons denken aan Gods belofte: “Ik zal u een nieuw hart geven” (Ezechiël 36:26). Jezus geeft ons een groot hart vol van Zijn liefde.",
+          "quiz": [
+            {
+              "q": "Hoeveel nekwervels heeft een giraf?",
+              "a": "Zeven, net als jij. God gebruikte één bouwplan voor heel verschillende maten."
+            },
+            {
+              "q": "Waarom heeft een giraf zo'n groot hart nodig?",
+              "a": "Om het bloed helemaal omhoog door zijn lange nek naar zijn hersenen te pompen."
+            },
+            {
+              "q": "Waar komt onze hulp vandaan?",
+              "a": "Van de HEERE, Die hemel en aarde gemaakt heeft (Psalm 121:2)."
+            }
+          ],
+          "tryThis": "Strek je uit op je tenen, zo lang als een giraf, en zeg: “Mijn hulp komt van de Heere!”"
+        }
+      }
+    },
+    {
+      "id": "zebra",
+      "section": "savanna",
+      "name": {
+        "en": "Zebra",
+        "nl": "Zebra"
+      },
+      "image": {
+        "photo": "images/zebra.jpg",
+        "thumb": "images/zebra-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Plains_zebra"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "No two zebras have the same stripes, just like your fingerprints. A foal learns its mother's stripes, voice and smell in its first days so it can find her in the herd. When a lion comes, the herd bunches together and all the stripes make it hard to pick one out.",
+          "bible": "God knows you personally: \"I have called thee by thy name; thou art mine\" (Isaiah 43:1). You are \"fearfully and wonderfully made\" (Psalm 139:14). Zebras are safer together, and so are Christians: \"not forsaking the assembling of ourselves together\" (Hebrews 10:25).",
+          "quiz": [
+            {
+              "q": "Do two zebras ever have the same stripes?",
+              "a": "No. Every zebra is one of a kind, and so are you."
+            },
+            {
+              "q": "How does a baby zebra find its mother?",
+              "a": "It knows her stripes, voice and smell. Jesus says: \"My sheep hear my voice\" (John 10:27)."
+            },
+            {
+              "q": "Is a zebra white with black stripes or black with white stripes?",
+              "a": "Its skin underneath is dark, so many scientists say black with white stripes."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Geen twee zebra's hebben dezelfde strepen, net zoals niemand dezelfde vingerafdrukken heeft als jij. Een veulen leert in zijn eerste dagen de strepen, de stem en de geur van zijn moeder kennen, zodat het haar in de kudde kan terugvinden. Als er een leeuw aankomt, gaat de kudde dicht bij elkaar staan. Door al die strepen is het dan moeilijk om er één uit te kiezen.",
+          "bible": "God kent jou persoonlijk: “Ik heb u bij uw naam geroepen, u bent van Mij” (Jesaja 43:1). Je bent “op ontzagwekkende wijze wonderlijk gemaakt” (Psalm 139:14). Zebra's zijn samen veiliger, en christenen ook: “laten wij onze onderlinge bijeenkomst niet verzuimen” (Hebreeën 10:25).",
+          "quiz": [
+            {
+              "q": "Hebben twee zebra's ooit dezelfde strepen?",
+              "a": "Nee. Elke zebra is uniek, en jij ook."
+            },
+            {
+              "q": "Hoe vindt een zebraveulen zijn moeder?",
+              "a": "Het kent haar strepen, haar stem en haar geur. Jezus zegt: “Mijn schapen horen Mijn stem” (Johannes 10:27)."
+            },
+            {
+              "q": "Is een zebra wit met zwarte strepen of zwart met witte strepen?",
+              "a": "Zijn huid eronder is donker, dus veel wetenschappers zeggen: zwart met witte strepen."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "elephant",
+      "section": "savanna",
+      "name": {
+        "en": "Elephant",
+        "nl": "Olifant"
+      },
+      "image": {
+        "photo": "images/elephant.jpg",
+        "thumb": "images/elephant-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/African_bush_elephant"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The elephant is the biggest land animal. Its trunk has no bones but tens of thousands of tiny muscle bundles, strong enough to lift a log and gentle enough to pick up a peanut. It eats up to about 150 kg of food a day. A baby grows inside its mother for about 22 months, almost two years. The oldest female, the matriarch, leads the herd and remembers where the water is.",
+          "bible": "God describes a giant animal, behemoth: \"He is the chief of the ways of God\" (Job 40:19). Some think of an elephant or a hippo. Nothing is too big for the God who made it. The grandmother elephant leads her family to water; Jesus leads us to the water of life: \"whosoever drinketh of the water that I shall give him shall never thirst\" (John 4:14).",
+          "quiz": [
+            {
+              "q": "How long is a baby elephant inside its mother?",
+              "a": "About 22 months, longer than any other land animal."
+            },
+            {
+              "q": "Who leads the elephant herd to water?",
+              "a": "The oldest grandmother. Who leads us to living water? Jesus (John 4:14)."
+            },
+            {
+              "q": "Elephants never forget. What does Ecclesiastes 12:1 ask young people to remember?",
+              "a": "\"Remember now thy Creator in the days of thy youth.\""
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De olifant is het grootste landdier. Zijn slurf heeft geen botten, maar wel tienduizenden kleine spierbundeltjes. Daardoor is hij sterk genoeg om een boomstam op te tillen en voorzichtig genoeg om een pinda op te pakken. Een olifant eet tot wel ongeveer 150 kg voedsel per dag. Een olifantenjong groeit ongeveer 22 maanden in de buik van zijn moeder, bijna twee jaar! Het oudste vrouwtje, de matriarch, leidt de kudde en weet nog precies waar het water is.",
+          "bible": "God beschrijft een reusachtig dier, Behemoth: “Hij is het voornaamste van Gods werken” (Job 40:14). Sommigen denken dat het een olifant of een nijlpaard is. Niets is te groot voor de God Die het gemaakt heeft. De olifantenoma leidt haar familie naar het water; Jezus leidt ons naar het water van het leven: “wie gedronken zal hebben van het water dat Ik hem zal geven, zal in eeuwigheid geen dorst meer krijgen” (Johannes 4:14).",
+          "quiz": [
+            {
+              "q": "Hoelang zit een olifantenjong in de buik van zijn moeder?",
+              "a": "Ongeveer 22 maanden, langer dan bij welk ander landdier ook."
+            },
+            {
+              "q": "Wie leidt de olifantenkudde naar het water?",
+              "a": "De oudste oma. En wie leidt ons naar het levende water? Jezus (Johannes 4:14)."
+            },
+            {
+              "q": "Olifanten vergeten nooit iets. Wat vraagt Prediker 12:1 aan jonge mensen om te onthouden?",
+              "a": "“Gedenk uw Schepper in de dagen van uw jeugd.”"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rhino",
+      "section": "savanna",
+      "name": {
+        "en": "Rhinoceros",
+        "nl": "Neushoorn"
+      },
+      "image": {
+        "photo": "images/rhino.jpg",
+        "thumb": "images/rhino-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/White_rhinoceros"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A rhino's horn is made of keratin, the same stuff as your fingernails. Rhinos see poorly but smell and hear very well. They love mud baths, which work as sunscreen and bug spray.",
+          "bible": "A rhino can't see far, so it trusts its nose and ears. We can't see Jesus yet, but we hear Him in His Word: \"For we walk by faith, not by sight\" (2 Corinthians 5:7), and \"faith cometh by hearing, and hearing by the word of God\" (Romans 10:17).",
+          "quiz": [
+            {
+              "q": "What is a rhino horn made of?",
+              "a": "Keratin, like your nails. Bite your nails and you're nibbling rhino horn material!"
+            },
+            {
+              "q": "How do we follow Jesus when we can't see Him?",
+              "a": "By faith, by listening to His Word and praying."
+            },
+            {
+              "q": "The King James Bible mentions a \"unicorn\" (Numbers 23:22). Was it a horse with a horn?",
+              "a": "No. The Hebrew word means a strong wild animal, probably a wild ox."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De hoorn van een neushoorn is gemaakt van keratine, hetzelfde spul als jouw nagels. Neushoorns zien slecht, maar ze ruiken en horen heel goed. Ze houden van modderbaden. Die werken als zonnebrandcrème en als middel tegen insecten.",
+          "bible": "Een neushoorn kan niet ver kijken, dus vertrouwt hij op zijn neus en zijn oren. Wij kunnen Jezus nog niet zien, maar we horen Hem in Zijn Woord: “want wij wandelen door geloof, niet door aanschouwen” (2 Korinthe 5:7), en “het geloof is uit het gehoor, en het gehoor door het Woord van God” (Romeinen 10:17).",
+          "quiz": [
+            {
+              "q": "Waar is de hoorn van een neushoorn van gemaakt?",
+              "a": "Van keratine, net als je nagels. Als je op je nagels bijt, knabbel je dus op neushoornhoorn-materiaal!"
+            },
+            {
+              "q": "Hoe volgen we Jezus als we Hem niet kunnen zien?",
+              "a": "Door geloof: door naar Zijn Woord te luisteren en te bidden."
+            },
+            {
+              "q": "In de Statenvertaling staat een “eenhoorn” (Numeri 23:22). Was dat een paard met een hoorn?",
+              "a": "Nee. Het Hebreeuwse woord betekent een sterk wild dier, waarschijnlijk een wilde os. Daarom staat er in de Herziene Statenvertaling “wildos”."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hippo",
+      "section": "savanna",
+      "name": {
+        "en": "Hippopotamus",
+        "nl": "Nijlpaard"
+      },
+      "image": {
+        "photo": "images/hippo.jpg",
+        "thumb": "images/hippo-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Hippopotamus"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Hippos can't really swim. They walk or bounce along the river bottom and can hold their breath for about 5 minutes. Their skin makes a red-orange liquid, sometimes called \"blood sweat\", that works as sunscreen. Hippopotamus means \"river horse\" in Greek; nijlpaard means \"Nile horse\".",
+          "bible": "The hippo doesn't swim over deep water; it walks through it. God promises: \"When thou passest through the waters, I will be with thee; and through the rivers, they shall not overflow thee\" (Isaiah 43:2). And just as God gave the hippo its own sunscreen, He covers us: \"He shall cover thee with his feathers, and under his wings shalt thou trust\" (Psalm 91:4).",
+          "quiz": [
+            {
+              "q": "Can hippos swim?",
+              "a": "Not really. They walk or bounce along the bottom."
+            },
+            {
+              "q": "What does God promise when life feels like deep water?",
+              "a": "\"I will be with thee\" (Isaiah 43:2)."
+            },
+            {
+              "q": "What does nijlpaard mean?",
+              "a": "Nile horse."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Nijlpaarden kunnen eigenlijk niet zwemmen. Ze lopen of huppelen over de bodem van de rivier en kunnen ongeveer 5 minuten hun adem inhouden. Hun huid maakt een roodoranje vloeistof, die soms “bloedzweet” wordt genoemd en die werkt als zonnebrandcrème. Hippopotamus betekent in het Grieks “rivierpaard”; nijlpaard betekent “paard van de Nijl”.",
+          "bible": "Het nijlpaard zwemt niet over diep water; het loopt er dwars doorheen. God belooft: “Wanneer u door het water gaat, Ik ben bij u, door rivieren, zij zullen u niet overspoelen” (Jesaja 43:2). En zoals God het nijlpaard zijn eigen zonnebrandcrème gaf, zo bedekt Hij ons: “Met Zijn vlerken zal Hij u bedekken, onder Zijn vleugels zult u de toevlucht nemen” (Psalm 91:4).",
+          "quiz": [
+            {
+              "q": "Kunnen nijlpaarden zwemmen?",
+              "a": "Eigenlijk niet. Ze lopen of huppelen over de bodem."
+            },
+            {
+              "q": "Wat belooft God als het leven voelt als diep water?",
+              "a": "“Ik ben bij u” (Jesaja 43:2)."
+            },
+            {
+              "q": "Wat betekent nijlpaard eigenlijk?",
+              "a": "Paard van de Nijl."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "meerkat",
+      "section": "savanna",
+      "name": {
+        "en": "Meerkat",
+        "nl": "Stokstaartje"
+      },
+      "image": {
+        "photo": "images/meerkat.jpg",
+        "thumb": "images/meerkat-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Meerkat"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Meerkats live in groups in underground burrows. While the others dig for food, one meerkat stands guard as the sentinel, and they take turns. They have one alarm call for eagles in the sky and another for danger on the ground.",
+          "bible": "Jesus told His friends: \"Watch and pray, that ye enter not into temptation\" (Matthew 26:41). He also told us to watch and be ready for His coming (Mark 13:37). Meerkats look out for each other: \"Bear ye one another's burdens\" (Galatians 6:2).",
+          "quiz": [
+            {
+              "q": "What does the guard meerkat do?",
+              "a": "Watches for danger and calls a warning so the others can hide."
+            },
+            {
+              "q": "What did Jesus say to do so we won't fall into temptation?",
+              "a": "\"Watch and pray\" (Matthew 26:41)."
+            },
+            {
+              "q": "How can you be a guard meerkat for your brother or sister?",
+              "a": "Look out for them, warn them kindly, and pray for them."
+            }
+          ],
+          "tryThis": "Stand tall like a sentinel and name one person you will pray for today."
+        },
+        "nl": {
+          "didYouKnow": "Stokstaartjes leven in groepen in holen onder de grond. Terwijl de anderen naar eten graven, staat er één stokstaartje op wacht als schildwacht, en ze wisselen elkaar af. Ze hebben één alarmroep voor arenden in de lucht en een andere voor gevaar op de grond.",
+          "bible": "Jezus zei tegen Zijn vrienden: “Waak en bid, opdat u niet in verzoeking komt” (Mattheüs 26:41). Hij zei ook dat we moeten waken en klaar moeten zijn voor Zijn komst (Markus 13:37). Stokstaartjes letten op elkaar: “Draag elkaars lasten” (Galaten 6:2).",
+          "quiz": [
+            {
+              "q": "Wat doet het stokstaartje dat op wacht staat?",
+              "a": "Het let op gevaar en roept een waarschuwing, zodat de anderen zich kunnen verstoppen."
+            },
+            {
+              "q": "Wat zei Jezus dat we moeten doen, zodat we niet in verzoeking vallen?",
+              "a": "“Waak en bid” (Mattheüs 26:41)."
+            },
+            {
+              "q": "Hoe kun jij een wachtstokstaartje zijn voor je broer of zus?",
+              "a": "Let op hen, waarschuw ze vriendelijk en bid voor ze."
+            }
+          ],
+          "tryThis": "Ga rechtop staan als een schildwacht en noem één persoon voor wie je vandaag gaat bidden."
+        }
+      }
+    },
+    {
+      "id": "hyrax",
+      "section": "savanna",
+      "name": {
+        "en": "Rock hyrax",
+        "nl": "Klipdas"
+      },
+      "image": {
+        "photo": "images/hyrax.jpg",
+        "thumb": "images/hyrax-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Rock_hyrax"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The rock hyrax looks like a big guinea pig, but its closest living relatives are elephants and sea cows. Its rubbery, sweaty foot pads grip rocks like suction cups. A colony suns itself on the rocks while one keeps lookout. Few Dutch zoos keep them; Diergaarde Blijdorp is one.",
+          "bible": "\"The conies are but a feeble folk, yet make they their houses in the rocks\" (Proverbs 30:26). The coney is this rock hyrax! It is small and weak, but safe because it hides in the rock. Jesus is our Rock: \"The LORD is my rock, and my fortress\" (Psalm 18:2), and \"that Rock was Christ\" (1 Corinthians 10:4).",
+          "quiz": [
+            {
+              "q": "Which animal in the Bible makes its house in the rocks?",
+              "a": "The coney, which is the rock hyrax (Proverbs 30:26)."
+            },
+            {
+              "q": "Who is our Rock?",
+              "a": "Jesus (1 Corinthians 10:4)."
+            },
+            {
+              "q": "Which giant animal is the hyrax related to?",
+              "a": "The elephant!"
+            }
+          ],
+          "tryThis": "Sing \"The wise man built his house upon the rock\" (Matthew 7:24)."
+        },
+        "nl": {
+          "didYouKnow": "De klipdas lijkt op een grote cavia, maar zijn naaste levende familie zijn olifanten en zeekoeien. Zijn rubberachtige, zweterige voetzolen houden zich vast aan rotsen als zuignapjes. Een groep klipdassen ligt samen in de zon op de rotsen, terwijl er één op de uitkijk staat. Maar weinig Nederlandse dierentuinen hebben ze; Diergaarde Blijdorp is er één van.",
+          "bible": "“De klipdassen zijn een volk dat niet sterk is, maar toch maken zij hun huis in de rotsen” (Spreuken 30:26). In onze Nederlandse Bijbel staat het gewoon: klipdassen! Dat is precies dit dier. Hij is klein en zwak, maar veilig, omdat hij zich verstopt in de rots. Jezus is onze Rots: “De HEERE is mijn rots en mijn burcht” (Psalm 18:3), en “die rots was Christus” (1 Korinthe 10:4).",
+          "quiz": [
+            {
+              "q": "Welk dier in de Bijbel maakt zijn huis in de rotsen?",
+              "a": "De klipdas (Spreuken 30:26)."
+            },
+            {
+              "q": "Wie is onze Rots?",
+              "a": "Jezus (1 Korinthe 10:4)."
+            },
+            {
+              "q": "Met welk reuzendier is de klipdas familie?",
+              "a": "Met de olifant!"
+            }
+          ],
+          "tryThis": "Zing samen “De wijze man bouwde zijn huis op de rots” (Mattheüs 7:24)."
+        }
+      }
+    },
+    {
+      "id": "gorilla",
+      "section": "apes",
+      "name": {
+        "en": "Gorilla",
+        "nl": "Gorilla"
+      },
+      "image": {
+        "photo": "images/gorilla.jpg",
+        "thumb": "images/gorilla-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Western_gorilla"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The gorilla is the biggest ape. A grown male, the silverback, can weigh about 180 kg. Gorillas eat mostly leaves, stems and fruit. Every evening they build a fresh nest of leaves to sleep in. A silverback beats his chest to warn, not to start a fight, and is gentle with the little ones.",
+          "bible": "A brand-new nest every night reminds us that God's love is fresh every day: \"his compassions fail not. They are new every morning\" (Lamentations 3:22-23). The strong silverback is gentle with babies, just like Jesus: \"He shall gather the lambs with his arm, and carry them in his bosom\" (Isaiah 40:11).",
+          "quiz": [
+            {
+              "q": "How often does a gorilla make a new bed?",
+              "a": "Every night."
+            },
+            {
+              "q": "What is new every morning, according to Lamentations 3:23?",
+              "a": "God's mercies."
+            },
+            {
+              "q": "Jesus is strong. How was He with children?",
+              "a": "Gentle and kind. He said \"Suffer little children to come unto me\" (Mark 10:14)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De gorilla is de grootste aap. Een volwassen mannetje, de zilverrug, kan wel 180 kg wegen. Gorilla's eten vooral bladeren, stengels en vruchten. Elke avond maken ze een nieuw nest van bladeren om in te slapen. Een zilverrug slaat op zijn borst om te waarschuwen, niet om ruzie te zoeken, en hij is heel lief voor de kleintjes.",
+          "bible": "Elke nacht een gloednieuw nest laat ons denken aan Gods liefde, die elke dag weer nieuw is: “Zijn barmhartigheden houden niet op; ze zijn elke morgen nieuw” (Klaagliederen 3:22-23). De sterke zilverrug is zacht voor de baby's, net als Jezus: “Hij zal de lammeren in Zijn arm verzamelen en in Zijn schoot dragen” (Jesaja 40:11).",
+          "quiz": [
+            {
+              "q": "Hoe vaak maakt een gorilla een nieuw bed?",
+              "a": "Elke nacht."
+            },
+            {
+              "q": "Wat is elke morgen nieuw, volgens Klaagliederen 3:23?",
+              "a": "Gods barmhartigheden."
+            },
+            {
+              "q": "Jezus is sterk. Hoe was Hij met kinderen?",
+              "a": "Zacht en lief. Hij zei: “Laat de kinderen bij Mij komen” (Markus 10:14)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chimp",
+      "section": "apes",
+      "name": {
+        "en": "Chimpanzee",
+        "nl": "Chimpansee"
+      },
+      "image": {
+        "photo": "images/chimp.jpg",
+        "thumb": "images/chimp-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Chimpanzee"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Chimps use tools. They poke sticks into termite mounds to \"fish\" for termites and crack nuts with stones. They laugh when they are tickled. After a quarrel they make up with hugs, kisses and grooming.",
+          "bible": "Chimps are smart, but only people are made \"in the image of God\" (Genesis 1:27). Only we can pray, read God's Word and choose to love Him. Chimps make up after a fight; God asks us to do the same: \"be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you\" (Ephesians 4:32).",
+          "quiz": [
+            {
+              "q": "What tool does a chimp use to catch termites?",
+              "a": "A stick or a grass stem."
+            },
+            {
+              "q": "What makes people different from every animal?",
+              "a": "We are made in God's image (Genesis 1:27). We can know God, pray and worship Him."
+            },
+            {
+              "q": "How do chimps make up after a fight? How do we?",
+              "a": "Chimps hug and groom. We say sorry and forgive, because Jesus forgave us (Ephesians 4:32)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Chimpansees gebruiken gereedschap. Ze steken stokjes in termietenheuvels om termieten te ‘vissen’ en kraken noten met stenen. Ze lachen als ze gekieteld worden. Na een ruzie maken ze het weer goed met knuffels, kusjes en elkaar vlooien.",
+          "bible": "Chimpansees zijn slim, maar alleen mensen zijn gemaakt “naar het beeld van God” (Genesis 1:27). Alleen wij kunnen bidden, Gods Woord lezen en ervoor kiezen om van Hem te houden. Chimpansees maken het goed na een ruzie; God vraagt ons hetzelfde te doen: “Wees voor elkaar vriendelijk, barmhartig, en vergeef elkaar, zoals ook God in Christus u vergeven heeft” (Efeze 4:32).",
+          "quiz": [
+            {
+              "q": "Welk gereedschap gebruikt een chimpansee om termieten te vangen?",
+              "a": "Een stokje of een grassprietje."
+            },
+            {
+              "q": "Wat maakt mensen anders dan alle dieren?",
+              "a": "Wij zijn gemaakt naar Gods beeld (Genesis 1:27). Wij kunnen God kennen, tot Hem bidden en Hem aanbidden."
+            },
+            {
+              "q": "Hoe maken chimpansees het goed na een ruzie? En wij?",
+              "a": "Chimpansees knuffelen en vlooien elkaar. Wij zeggen sorry en vergeven elkaar, omdat Jezus ons vergeven heeft (Efeze 4:32)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "orangutan",
+      "section": "apes",
+      "name": {
+        "en": "Orangutan",
+        "nl": "Orang-oetan"
+      },
+      "image": {
+        "photo": "images/orangutan.jpg",
+        "thumb": "images/orangutan-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Orangutan"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Orangutan comes from the Malay words for \"person of the forest\". It is the biggest animal that lives in trees. A baby stays with its mother for about 7 or 8 years, the longest childhood of any animal except humans. In the rain an orangutan holds a big leaf over its head as an umbrella.",
+          "bible": "An orangutan mother never leaves her baby. God loves you even more: \"Can a woman forget her sucking child...? yea, they may forget, yet will I not forget thee\" (Isaiah 49:15). \"As one whom his mother comforteth, so will I comfort you\" (Isaiah 66:13).",
+          "quiz": [
+            {
+              "q": "How long does a baby orangutan stay with its mother?",
+              "a": "About 7 or 8 years."
+            },
+            {
+              "q": "What does God promise in Isaiah 49:15?",
+              "a": "He will never forget you."
+            },
+            {
+              "q": "What does orangutan mean?",
+              "a": "Person of the forest."
+            }
+          ],
+          "tryThis": "Give your mum or dad a baby-orangutan hug."
+        },
+        "nl": {
+          "didYouKnow": "Orang-oetan komt van Maleise woorden die ‘mens van het bos’ betekenen. Het is het grootste dier dat in bomen woont. Een baby blijft ongeveer 7 of 8 jaar bij zijn moeder. Dat is de langste kindertijd van alle dieren, behalve de mens. Als het regent, houdt een orang-oetan een groot blad boven zijn hoofd als paraplu.",
+          "bible": "Een orang-oetanmoeder laat haar baby nooit in de steek. God houdt nog veel meer van jou: “Kan een vrouw haar zuigeling vergeten...? Ook al zouden zíj vergeten, Ik zal u niet vergeten” (Jesaja 49:15). “Zoals iemand die door zijn moeder getroost wordt, zo zal Ik u troosten” (Jesaja 66:13).",
+          "quiz": [
+            {
+              "q": "Hoe lang blijft een baby-orang-oetan bij zijn moeder?",
+              "a": "Ongeveer 7 of 8 jaar."
+            },
+            {
+              "q": "Wat belooft God in Jesaja 49:15?",
+              "a": "Hij zal jou nooit vergeten."
+            },
+            {
+              "q": "Wat betekent orang-oetan?",
+              "a": "Mens van het bos."
+            }
+          ],
+          "tryThis": "Geef je papa of mama een knuffel zoals een baby-orang-oetan."
+        }
+      }
+    },
+    {
+      "id": "lemur",
+      "section": "apes",
+      "name": {
+        "en": "Ring-tailed lemur",
+        "nl": "Ringstaartmaki"
+      },
+      "image": {
+        "photo": "images/lemur.jpg",
+        "thumb": "images/lemur-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Ring-tailed_lemur"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Ring-tailed lemurs live in the wild only on Madagascar. Every morning they sit with their arms open and belly toward the sun to warm up. Males have \"stink fights\": they rub smelly scent on their tails and wave them at each other.",
+          "bible": "The lemur starts its day in the sun. We start ours with the Son! Jesus said \"I am the light of the world\" (John 8:12). He Himself rose \"a great while before day\" to pray (Mark 1:35). And for stink fights the Bible has a better idea: \"A soft answer turneth away wrath\" (Proverbs 15:1).",
+          "quiz": [
+            {
+              "q": "Why do lemurs sit in the sun in the morning?",
+              "a": "To warm up after the cool night."
+            },
+            {
+              "q": "When did Jesus pray?",
+              "a": "Early in the morning, before sunrise (Mark 1:35)."
+            },
+            {
+              "q": "What turns away anger better than a stink fight?",
+              "a": "A soft, kind answer (Proverbs 15:1)."
+            }
+          ],
+          "tryThis": "Do the lemur sun pose together and say a one-sentence morning prayer."
+        },
+        "nl": {
+          "didYouKnow": "Ringstaartmaki's leven in het wild alleen op Madagaskar. Elke ochtend gaan ze zitten met hun armen wijd en hun buik naar de zon om op te warmen. Mannetjes houden ‘stinkgevechten’: ze wrijven een vieze geur op hun staart en zwaaien daarmee naar elkaar.",
+          "bible": "De maki begint zijn dag in de zon. Wij beginnen de onze met Gods Zoon! Jezus zei: “Ik ben het Licht van de wereld” (Johannes 8:12). Hij stond zelf “in de morgen, toen het nog zeer donker was” op om te bidden (Markus 1:35). En voor stinkgevechten heeft de Bijbel een beter idee: “Een zacht antwoord keert de grimmigheid af” (Spreuken 15:1).",
+          "quiz": [
+            {
+              "q": "Waarom zitten maki's 's ochtends in de zon?",
+              "a": "Om op te warmen na de koude nacht."
+            },
+            {
+              "q": "Wanneer bad Jezus?",
+              "a": "Vroeg in de ochtend, nog voor zonsopgang (Markus 1:35)."
+            },
+            {
+              "q": "Wat haalt boosheid beter weg dan een stinkgevecht?",
+              "a": "Een zacht, vriendelijk antwoord (Spreuken 15:1)."
+            }
+          ],
+          "tryThis": "Doe samen de zonnehouding van de maki en zeg een ochtendgebed van één zin."
+        }
+      }
+    },
+    {
+      "id": "baboon",
+      "section": "apes",
+      "name": {
+        "en": "Baboon",
+        "nl": "Baviaan"
+      },
+      "image": {
+        "photo": "images/baboon.jpg",
+        "thumb": "images/baboon-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Hamadryas_baboon"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Baboons live in big troops and groom each other to stay clean and show friendship. In ancient Egypt the hamadryas baboon was a holy animal, linked to one of their gods.",
+          "bible": "King Solomon's ships brought \"gold, and silver, ivory, and apes, and peacocks\" (1 Kings 10:22). Egypt worshipped animals, but God calls us to \"worship him that made heaven, and earth, and the sea\" (Revelation 14:7). We admire the baboon and worship its Maker.",
+          "quiz": [
+            {
+              "q": "Which king had apes and peacocks brought by ship?",
+              "a": "King Solomon (1 Kings 10:22)."
+            },
+            {
+              "q": "People in Egypt worshipped baboons. Whom do we worship?",
+              "a": "The Creator, not the creature (Revelation 14:7, Romans 1:25)."
+            },
+            {
+              "q": "Baboons show friendship by grooming. How can you show friendship today?",
+              "a": "Let the kids answer: share, help, say something kind."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Bavianen leven in grote groepen en vlooien elkaar om schoon te blijven en om te laten zien dat ze vrienden zijn. In het oude Egypte was de mantelbaviaan een heilig dier, dat bij een van hun goden hoorde.",
+          "bible": "De schepen van koning Salomo brachten “goud en zilver, ivoor, apen en pauwen” (1 Koningen 10:22). In Egypte aanbaden ze dieren, maar God roept ons op: “aanbid Hem Die de hemel en de aarde en de zee gemaakt heeft” (Openbaring 14:7). Wij bewonderen de baviaan en aanbidden zijn Maker.",
+          "quiz": [
+            {
+              "q": "Welke koning liet apen en pauwen per schip brengen?",
+              "a": "Koning Salomo (1 Koningen 10:22)."
+            },
+            {
+              "q": "Mensen in Egypte aanbaden bavianen. Wie aanbidden wij?",
+              "a": "De Schepper, niet het schepsel (Openbaring 14:7, Romeinen 1:25)."
+            },
+            {
+              "q": "Bavianen laten vriendschap zien door elkaar te vlooien. Hoe kun jij vandaag vriendschap laten zien?",
+              "a": "Laat de kinderen zelf antwoorden: delen, helpen, iets liefs zeggen."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "camel",
+      "section": "north",
+      "name": {
+        "en": "Camel",
+        "nl": "Kameel en dromedaris"
+      },
+      "image": {
+        "photo": "images/camel.jpg",
+        "thumb": "images/camel-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Dromedary"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A camel's hump stores fat, not water. A very thirsty camel can drink about 135 litres in 13 minutes. It has two rows of long eyelashes and can close its nostrils against blowing sand. Easy trick: a dromedary has one hump (lay a D on its side), a Bactrian camel has two (lay a B on its side).",
+          "bible": "When Abraham's servant asked Rebekah for a drink, she said: \"I will draw water for thy camels also, until they have done drinking\" (Genesis 24:19). He had ten camels! She went the extra mile, just as Jesus taught: \"whosoever shall compel thee to go a mile, go with him twain\" (Matthew 5:41). Jesus also said it is easier for a camel to go through the eye of a needle than for a rich man to enter God's kingdom, but \"with God all things are possible\" (Matthew 19:24-26).",
+          "ellenWhite": "Abraham's servant noticed Rebekah because \"her ready courtesy gave evidence of a kind heart and an active, energetic nature\" (Patriarchs and Prophets, pp. 172-173).",
+          "quiz": [
+            {
+              "q": "What is inside a camel's hump?",
+              "a": "Fat, which gives energy on long trips."
+            },
+            {
+              "q": "How many camels did Rebekah give water to?",
+              "a": "Ten (Genesis 24:10). If they were very thirsty, that could be more than 1,000 litres!"
+            },
+            {
+              "q": "What is impossible for people but possible for God?",
+              "a": "Saving us (Matthew 19:26)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "In de bult van een kameel zit vet, geen water. Een kameel met heel veel dorst kan in 13 minuten ongeveer 135 liter drinken. Hij heeft twee rijen lange wimpers en kan zijn neusgaten dichtdoen tegen opwaaiend zand. Handig trucje: een dromedaris heeft één bult (leg een D op zijn kant), een Bactrische kameel heeft er twee (leg een B op zijn kant).",
+          "bible": "Toen de knecht van Abraham Rebekka om wat te drinken vroeg, zei ze: “Ik zal ook voor uw kamelen water putten, totdat zij genoeg gedronken hebben” (Genesis 24:19). Hij had tien kamelen! Ze deed veel meer dan nodig was, precies zoals Jezus leerde: “En wie u dwingt één mijl mee te gaan, ga er twee met hem” (Mattheüs 5:41). Jezus zei ook dat het makkelijker is voor een kameel om door het oog van een naald te gaan dan voor een rijke om in Gods koninkrijk te komen, maar “bij God zijn alle dingen mogelijk” (Mattheüs 19:24-26).",
+          "ellenWhite": "De knecht van Abraham viel Rebekka op, omdat “haar bereidwillige beleefdheid liet zien dat ze een vriendelijk hart had en een actief, energiek karakter” (Patriarchs and Prophets, blz. 172-173).",
+          "quiz": [
+            {
+              "q": "Wat zit er in de bult van een kameel?",
+              "a": "Vet, dat energie geeft op lange tochten."
+            },
+            {
+              "q": "Hoeveel kamelen gaf Rebekka water?",
+              "a": "Tien (Genesis 24:10). Als ze veel dorst hadden, kon dat wel meer dan 1.000 liter zijn!"
+            },
+            {
+              "q": "Wat is onmogelijk voor mensen, maar mogelijk voor God?",
+              "a": "Ons redden (Mattheüs 19:26)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tiger",
+      "section": "north",
+      "name": {
+        "en": "Tiger",
+        "nl": "Tijger"
+      },
+      "image": {
+        "photo": "images/tiger.jpg",
+        "thumb": "images/tiger-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Tiger"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The tiger is the biggest cat in the world. Its skin is striped too, not just its fur, and no two tigers have the same stripes. Unlike most cats, tigers love water and swim well.",
+          "bible": "\"Can the Ethiopian change his skin, or the leopard his spots?\" (Jeremiah 13:23). A tiger can't wash off its stripes, and we can't wash away our sin by ourselves. But Jesus can make us new: \"if any man be in Christ, he is a new creature\" (2 Corinthians 5:17).",
+          "quiz": [
+            {
+              "q": "If a tiger had no fur, would you still see stripes?",
+              "a": "Yes, its skin is striped too."
+            },
+            {
+              "q": "Can a leopard change its spots?",
+              "a": "No (Jeremiah 13:23). But Jesus can change our hearts (2 Corinthians 5:17)."
+            },
+            {
+              "q": "What did David pray in Psalm 51:10?",
+              "a": "\"Create in me a clean heart, O God.\""
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De tijger is de grootste kat ter wereld. Niet alleen zijn vacht is gestreept, ook zijn huid! En geen twee tijgers hebben dezelfde strepen. Anders dan de meeste katten houden tijgers van water en kunnen ze goed zwemmen.",
+          "bible": "“Kan een Ethiopiër zijn huid veranderen, of een luipaard zijn vlekken?” (Jeremia 13:23). Een tijger kan zijn strepen niet wegwassen, en wij kunnen onze zonden niet zelf wegwassen. Maar Jezus kan ons nieuw maken: “Als iemand in Christus is, is hij een nieuwe schepping” (2 Korinthe 5:17).",
+          "quiz": [
+            {
+              "q": "Als een tijger geen vacht had, zou je dan nog strepen zien?",
+              "a": "Ja, want zijn huid is ook gestreept."
+            },
+            {
+              "q": "Kan een luipaard zijn vlekken veranderen?",
+              "a": "Nee (Jeremia 13:23). Maar Jezus kan ons hart veranderen (2 Korinthe 5:17)."
+            },
+            {
+              "q": "Wat bad David in Psalm 51:12?",
+              "a": "“Schep mij een rein hart, o God.”"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "redpanda",
+      "section": "north",
+      "name": {
+        "en": "Red panda",
+        "nl": "Rode panda"
+      },
+      "image": {
+        "photo": "images/redpanda.jpg",
+        "thumb": "images/redpanda-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Red_panda"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The red panda is about the size of a cat and eats mostly bamboo leaves. A long wrist bone works as an extra \"thumb\" to hold bamboo. It sleeps a lot high in the trees, with its bushy tail wrapped around it like a blanket. It was called a panda before the giant panda was.",
+          "bible": "The red panda knows how to rest. Jesus says: \"Come unto me, all ye that labour and are heavy laden, and I will give you rest\" (Matthew 11:28). God even gave us a weekly day of rest, the Sabbath: \"The sabbath was made for man\" (Mark 2:27).",
+          "quiz": [
+            {
+              "q": "What does a red panda use as a blanket?",
+              "a": "Its tail."
+            },
+            {
+              "q": "What does Jesus give tired people?",
+              "a": "Rest (Matthew 11:28)."
+            },
+            {
+              "q": "Which day did God bless as a day of rest?",
+              "a": "The seventh day, the Sabbath (Exodus 20:8-11)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De rode panda is ongeveer zo groot als een kat en eet vooral bamboebladeren. Een lang botje in zijn pols werkt als een extra ‘duim’ om bamboe vast te houden. Hij slaapt veel, hoog in de bomen, met zijn dikke staart om zich heen als een dekentje. Hij werd al panda genoemd voordat de reuzenpanda die naam kreeg.",
+          "bible": "De rode panda weet hoe je moet rusten. Jezus zegt: “Kom naar Mij toe, allen die vermoeid en belast zijn, en Ik zal u rust geven” (Mattheüs 11:28). God gaf ons zelfs elke week een rustdag, de sabbat: “De sabbat is gemaakt omwille van de mens” (Markus 2:27).",
+          "quiz": [
+            {
+              "q": "Wat gebruikt een rode panda als dekentje?",
+              "a": "Zijn staart."
+            },
+            {
+              "q": "Wat geeft Jezus aan mensen die moe zijn?",
+              "a": "Rust (Mattheüs 11:28)."
+            },
+            {
+              "q": "Welke dag zegende God als rustdag?",
+              "a": "De zevende dag, de sabbat (Exodus 20:8-11)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "brownbear",
+      "section": "north",
+      "name": {
+        "en": "Brown bear",
+        "nl": "Bruine beer"
+      },
+      "image": {
+        "photo": "images/brownbear.jpg",
+        "thumb": "images/brownbear-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Brown_bear"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Brown bears sleep through much of the winter in a den, living off their fat. They have a super sense of smell and can run about 50 km/h. Mother bears fiercely protect their cubs.",
+          "bible": "Young David protected his father's sheep from a lion and a bear. Later he said: \"The LORD that delivered me out of the paw of the lion, and out of the paw of the bear, he will deliver me out of the hand of this Philistine\" (1 Samuel 17:37). Remembering how God helped him gave David courage to face Goliath. Jesus is the Good Shepherd who protects us (John 10:11).",
+          "ellenWhite": "Out in the fields with the sheep, \"God was teaching David lessons of trust.\" Caring for his flock, David was learning how much \"the Great Shepherd\" cares for His sheep (Patriarchs and Prophets, p. 644).",
+          "quiz": [
+            {
+              "q": "Which two wild animals did David fight to save his sheep?",
+              "a": "A lion and a bear (1 Samuel 17:34-36)."
+            },
+            {
+              "q": "What gave David courage to face Goliath?",
+              "a": "Remembering how God had helped him before."
+            },
+            {
+              "q": "Why do bears sleep through winter?",
+              "a": "There is little food, so they rest and live off their fat."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Bruine beren slapen een groot deel van de winter in een hol en leven dan van hun vet. Ze kunnen supergoed ruiken en wel 50 km/h hard rennen. Berenmoeders beschermen hun jongen heel fel.",
+          "bible": "De jonge David beschermde de schapen van zijn vader tegen een leeuw en een beer. Later zei hij: “De HEERE, Die mij gered heeft uit de klauw van de leeuw en uit de klauw van de beer, Die zal mij redden uit de hand van deze Filistijn” (1 Samuël 17:37). Omdat David nog wist hoe God hem had geholpen, durfde hij tegen Goliath te vechten. Jezus is de Goede Herder Die ons beschermt (Johannes 10:11).",
+          "ellenWhite": "Buiten in het veld bij de schapen “leerde God David lessen van vertrouwen.” Door voor zijn kudde te zorgen, leerde David hoeveel ‘de grote Herder’ voor Zijn schapen zorgt (Patriarchs and Prophets, blz. 644).",
+          "quiz": [
+            {
+              "q": "Tegen welke twee wilde dieren vocht David om zijn schapen te redden?",
+              "a": "Een leeuw en een beer (1 Samuël 17:34-36)."
+            },
+            {
+              "q": "Waardoor durfde David tegen Goliath te vechten?",
+              "a": "Hij dacht eraan hoe God hem eerder had geholpen."
+            },
+            {
+              "q": "Waarom slapen beren in de winter?",
+              "a": "Er is weinig eten, dus rusten ze en leven ze van hun vet."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "polarbear",
+      "section": "north",
+      "name": {
+        "en": "Polar bear",
+        "nl": "IJsbeer"
+      },
+      "image": {
+        "photo": "images/polarbear.jpg",
+        "thumb": "images/polarbear-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Polar_bear"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A polar bear's skin is black. Its hairs are see-through and only look white in the light. It can smell a seal more than 1 km away, even under about 1 m of snow. Its huge paws spread its weight on thin ice like snowshoes.",
+          "bible": "\"Though your sins be as scarlet, they shall be as white as snow\" (Isaiah 1:18). The polar bear isn't really white underneath, and we aren't good on our own. But Jesus covers us with His goodness, \"the robe of righteousness\" (Isaiah 61:10).",
+          "quiz": [
+            {
+              "q": "What colour is a polar bear's skin?",
+              "a": "Black."
+            },
+            {
+              "q": "What does God promise to do with our sins?",
+              "a": "Make them white as snow (Isaiah 1:18)."
+            },
+            {
+              "q": "God asked Job: \"Hast thou entered into the treasures of the...\"?",
+              "a": "Snow (Job 38:22)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De huid van een ijsbeer is zwart. Zijn haren zijn doorzichtig en lijken alleen wit in het licht. Hij kan een zeehond ruiken van meer dan 1 km ver, zelfs onder ongeveer 1 m sneeuw. Zijn enorme poten verdelen zijn gewicht op dun ijs, net als sneeuwschoenen.",
+          "bible": "“Al waren uw zonden als scharlaken, ze zullen wit worden als sneeuw” (Jesaja 1:18). De ijsbeer is vanbinnen niet echt wit, en wij zijn uit onszelf niet goed. Maar Jezus bedekt ons met Zijn goedheid, “de mantel van de gerechtigheid” (Jesaja 61:10).",
+          "quiz": [
+            {
+              "q": "Welke kleur heeft de huid van een ijsbeer?",
+              "a": "Zwart."
+            },
+            {
+              "q": "Wat belooft God met onze zonden te doen?",
+              "a": "Ze wit maken als sneeuw (Jesaja 1:18)."
+            },
+            {
+              "q": "God vroeg aan Job: “Bent u gekomen tot de voorraadschuren van de...?”",
+              "a": "Sneeuw (Job 38:22)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "wolf",
+      "section": "north",
+      "name": {
+        "en": "Wolf",
+        "nl": "Wolf"
+      },
+      "image": {
+        "photo": "images/wolf.jpg",
+        "thumb": "images/wolf-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Wolf"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Wolves live in families called packs, led by the mother and father. They howl to talk to the pack across long distances. Wild wolves have come back to the Netherlands; the first ones settled on the Veluwe in 2018, and in 2019 the first wild pups in about 200 years were born.",
+          "bible": "Jesus said: \"The good shepherd giveth his life for the sheep.\" A hired man \"seeth the wolf coming, and leaveth the sheep, and fleeth\" (John 10:11-12). Jesus never runs away from us; He gave His life for us. And one day \"the wolf also shall dwell with the lamb\" (Isaiah 11:6).",
+          "quiz": [
+            {
+              "q": "What does the Good Shepherd do when the wolf comes?",
+              "a": "He stays and protects the sheep, even giving His life (John 10:11)."
+            },
+            {
+              "q": "Where will the wolf and the lamb live together in peace?",
+              "a": "In God's new earth (Isaiah 11:6, 65:25)."
+            },
+            {
+              "q": "What did Jesus mean by wolves \"in sheep's clothing\" (Matthew 7:15)?",
+              "a": "People who look good but teach wrong things. We check everything with the Bible."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Wolven leven in families die roedels heten, geleid door de moeder en de vader. Ze huilen om over grote afstanden met de roedel te praten. Wilde wolven zijn teruggekomen in Nederland: de eerste vestigden zich in 2018 op de Veluwe, en in 2019 werden daar de eerste wilde welpen in ongeveer 200 jaar geboren.",
+          "bible": "Jezus zei: “De goede herder geeft zijn leven voor de schapen.” Een huurling “ziet de wolf komen, en hij laat de schapen in de steek en vlucht” (Johannes 10:11-12). Jezus loopt nooit bij ons weg; Hij gaf Zijn leven voor ons. En op een dag “zal de wolf bij het lam verblijven” (Jesaja 11:6).",
+          "quiz": [
+            {
+              "q": "Wat doet de Goede Herder als de wolf komt?",
+              "a": "Hij blijft en beschermt de schapen, en geeft zelfs Zijn leven (Johannes 10:11)."
+            },
+            {
+              "q": "Waar zullen de wolf en het lam samen in vrede leven?",
+              "a": "Op Gods nieuwe aarde (Jesaja 11:6, 65:25)."
+            },
+            {
+              "q": "Wat bedoelde Jezus met wolven “in schaapskleren” (Mattheüs 7:15)?",
+              "a": "Mensen die er goed uitzien, maar verkeerde dingen leren. Wij toetsen alles aan de Bijbel."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "penguin",
+      "section": "birds",
+      "name": {
+        "en": "Penguin",
+        "nl": "Pinguïn"
+      },
+      "image": {
+        "photo": "images/penguin.jpg",
+        "thumb": "images/penguin-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/African_penguin"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Penguins can't fly in the air, but they \"fly\" underwater with their flipper-wings. Dutch zoos keep Humboldt penguins from South America (Wildlands) and African penguins (ARTIS, Burgers' Zoo). Emperor penguin dads hold the egg on their feet for about two months in the freezing Antarctic winter, eating almost nothing. In the cold, penguins huddle together to share warmth.",
+          "bible": "\"If two lie together, then they have heat: but how can one be warm alone?\" (Ecclesiastes 4:11). Penguins can't fly like eagles, but God made them champion swimmers. God gives each of us different gifts to use for others (1 Peter 4:10).",
+          "quiz": [
+            {
+              "q": "Can penguins fly?",
+              "a": "Not in the air, but they fly underwater."
+            },
+            {
+              "q": "How do penguins stay warm?",
+              "a": "They huddle together, just like Ecclesiastes 4:11 says."
+            },
+            {
+              "q": "What gift has God given you?",
+              "a": "Let each child name one, then name one for a brother or sister."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Pinguïns kunnen niet door de lucht vliegen, maar onder water “vliegen” ze met hun vleugels, die op flippers lijken. In Nederlandse dierentuinen wonen humboldtpinguïns uit Zuid-Amerika (Wildlands) en zwartvoetpinguïns uit Afrika (ARTIS, Burgers' Zoo). Bij keizerspinguïns houdt de vader het ei ongeveer twee maanden lang op zijn voeten, in de ijskoude winter van Antarctica, en hij eet in die tijd bijna niets. Als het koud is, kruipen pinguïns dicht tegen elkaar aan om elkaar warm te houden.",
+          "bible": "“Ook als twee samen liggen, hebben zij warmte, maar hoe kan één alleen warm worden?” (Prediker 4:11). Pinguïns kunnen niet vliegen zoals arenden, maar God maakte ze tot kampioen zwemmen. God geeft ieder van ons andere gaven, om daarmee anderen te helpen (1 Petrus 4:10).",
+          "quiz": [
+            {
+              "q": "Kunnen pinguïns vliegen?",
+              "a": "Niet in de lucht, maar wel onder water."
+            },
+            {
+              "q": "Hoe houden pinguïns het warm?",
+              "a": "Ze kruipen dicht tegen elkaar aan, precies zoals Prediker 4:11 zegt."
+            },
+            {
+              "q": "Welke gave heeft God jou gegeven?",
+              "a": "Laat ieder kind er één noemen, en daarna ook één voor een broer of zus."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "flamingo",
+      "section": "birds",
+      "name": {
+        "en": "Flamingo",
+        "nl": "Flamingo"
+      },
+      "image": {
+        "photo": "images/flamingo.jpg",
+        "thumb": "images/flamingo-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Greater_flamingo"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Flamingos are pink because of their food: tiny shrimp and algae full of pink-orange colour. Chicks hatch grey-white. Flamingos often stand and even sleep on one leg, and they eat with their heads upside down in the water.",
+          "bible": "A flamingo becomes the colour of what it eats. We become like what we look at and listen to: \"beholding as in a glass the glory of the Lord, are changed into the same image\" (2 Corinthians 3:18). So \"whatsoever things are pure, whatsoever things are lovely... think on these things\" (Philippians 4:8).",
+          "ellenWhite": "\"It is a law both of the intellectual and the spiritual nature that by beholding we become changed\" (The Great Controversy, p. 555).",
+          "quiz": [
+            {
+              "q": "Why is a flamingo pink?",
+              "a": "Because of the colour in its food."
+            },
+            {
+              "q": "How do we become more like Jesus?",
+              "a": "By looking at Him: reading about Him, singing to Him and talking with Him (2 Corinthians 3:18)."
+            }
+          ],
+          "tryThis": "Stand on one leg like a flamingo. Who can say Philippians 4:8 (or part of it) before wobbling?"
+        },
+        "nl": {
+          "didYouKnow": "Flamingo's zijn roze door hun eten: piepkleine garnaaltjes en algen vol roze-oranje kleurstof. De kuikens komen grijswit uit het ei. Flamingo's staan vaak op één poot en slapen zelfs zo, en ze eten met hun kop ondersteboven in het water.",
+          "bible": "Een flamingo krijgt de kleur van wat hij eet. Wij gaan lijken op waar we naar kijken en luisteren: wij “aanschouwen als in een spiegel de heerlijkheid van de Heere en worden van gedaante veranderd naar hetzelfde beeld” (2 Korinthe 3:18). Daarom: “al wat rein is, al wat lieflijk is ... bedenk dat” (Filippenzen 4:8).",
+          "ellenWhite": "“Het is een wet, zowel voor ons verstand als voor ons geestelijk leven, dat wij veranderd worden door wat wij aanschouwen” (The Great Controversy, blz. 555).",
+          "quiz": [
+            {
+              "q": "Waarom is een flamingo roze?",
+              "a": "Door de kleurstof in zijn eten."
+            },
+            {
+              "q": "Hoe gaan wij meer op Jezus lijken?",
+              "a": "Door naar Hem te kijken: over Hem lezen, voor Hem zingen en met Hem praten (2 Korinthe 3:18)."
+            }
+          ],
+          "tryThis": "Ga op één been staan, net als een flamingo. Wie kan Filippenzen 4:8 (of een stukje ervan) opzeggen voordat hij gaat wiebelen?"
+        }
+      }
+    },
+    {
+      "id": "eagle",
+      "section": "birds",
+      "name": {
+        "en": "Eagle",
+        "nl": "Arend"
+      },
+      "image": {
+        "photo": "images/eagle.jpg",
+        "thumb": "images/eagle-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Golden_eagle"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Eagles see 4 to 8 times sharper than people and can spot a rabbit from far away. They soar for hours on rising warm air, hardly flapping their wings.",
+          "bible": "\"They that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary\" (Isaiah 40:31). The eagle doesn't fly by its own strength alone; it rests on the rising air. We rest on God's strength. A mother eagle stirs up the nest to teach her young to fly, then catches them on her wings, and God teaches us the same way (Deuteronomy 32:11).",
+          "ellenWhite": "She tells of an eagle in the Alps that a storm beat down into a narrow mountain valley. At last \"she darts upward, and, piercing the clouds, is once more in the clear sunlight.\" Then she gives the lesson: \"Into the sunlight of His presence we may rise on the wings of faith\" (Education, pp. 118-119).",
+          "quiz": [
+            {
+              "q": "How does an eagle fly for hours without flapping?",
+              "a": "It rides on rising warm air."
+            },
+            {
+              "q": "Who \"shall mount up with wings as eagles\"?",
+              "a": "\"They that wait upon the LORD\" (Isaiah 40:31)."
+            },
+            {
+              "q": "What did the eagle in the storm do?",
+              "a": "It flew up through the clouds to the sunshine. When life is stormy, we look up to Jesus."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Arenden zien 4 tot 8 keer scherper dan mensen en kunnen van heel ver weg een konijn zien. Ze zweven urenlang op opstijgende warme lucht en klappen daarbij bijna niet met hun vleugels.",
+          "bible": "“Maar wie de HEERE verwachten, zullen hun kracht vernieuwen; zij zullen opvaren met vleugels als arenden; zij zullen lopen en niet moe worden” (Jesaja 40:31). De arend vliegt niet alleen op eigen kracht; hij rust op de opstijgende lucht. Zo rusten wij op Gods kracht. Een moederarend maakt het nest onrustig om haar jongen te leren vliegen, en vangt ze dan op haar vleugels op. Zo leert God ons ook (Deuteronomium 32:11).",
+          "ellenWhite": "Ze vertelt over een arend in de Alpen die door een storm omlaag werd geslagen, een smal bergdal in. Ten slotte “schiet zij omhoog, en door de wolken heen breekt zij weer door in het heldere zonlicht.” Dan geeft ze de les: “In het zonlicht van Zijn aanwezigheid mogen wij opstijgen op de vleugels van het geloof” (Education, blz. 118-119).",
+          "quiz": [
+            {
+              "q": "Hoe kan een arend urenlang vliegen zonder met zijn vleugels te klappen?",
+              "a": "Hij laat zich dragen door opstijgende warme lucht."
+            },
+            {
+              "q": "Wie “zullen opvaren met vleugels als arenden”?",
+              "a": "“Wie de HEERE verwachten” (Jesaja 40:31)."
+            },
+            {
+              "q": "Wat deed de arend in de storm?",
+              "a": "Hij vloog omhoog door de wolken heen, naar de zon. Als het in ons leven stormt, kijken wij omhoog naar Jezus."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ostrich",
+      "section": "birds",
+      "name": {
+        "en": "Ostrich",
+        "nl": "Struisvogel"
+      },
+      "image": {
+        "photo": "images/ostrich.jpg",
+        "thumb": "images/ostrich-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Common_ostrich"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The ostrich is the biggest bird in the world. It can't fly but can run about 70 km/h. Its egg weighs about 1.4 kg, as much as about 24 chicken eggs. Its eye is bigger than its brain! And no, ostriches don't bury their heads in the sand.",
+          "bible": "God Himself describes the ostrich in Job 39:13-18. He says it isn't very wise, yet \"she scorneth the horse and his rider\" because she runs so fast. God made every creature with its own gift, even a funny one. And instead of hiding our heads from problems, we can bring them to Jesus: \"Casting all your care upon him; for he careth for you\" (1 Peter 5:7).",
+          "quiz": [
+            {
+              "q": "Does an ostrich bury its head in the sand?",
+              "a": "No, that is a myth."
+            },
+            {
+              "q": "How many chicken eggs fit in one ostrich egg?",
+              "a": "About 24."
+            },
+            {
+              "q": "What can we do with our worries instead of hiding from them?",
+              "a": "Give them to Jesus, because He cares for us (1 Peter 5:7)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De struisvogel is de grootste vogel van de wereld. Hij kan niet vliegen, maar wel ongeveer 70 km/h hard rennen. Zijn ei weegt ongeveer 1,4 kg, net zoveel als zo'n 24 kippeneieren. Zijn oog is groter dan zijn hersenen! En nee, struisvogels steken hun kop niet in het zand.",
+          "bible": "God beschrijft de struisvogel Zelf in Job 39:16-21. Hij zegt dat ze niet zo heel wijs is, en toch “lacht zij om het paard en zijn ruiter”, omdat ze zo snel rent. God gaf elk dier zijn eigen gave, zelfs een grappige. En in plaats van ons hoofd te verstoppen voor problemen, mogen we ermee naar Jezus gaan: “Werp al uw zorg op Hem, want Hij zorgt voor u” (1 Petrus 5:7).",
+          "quiz": [
+            {
+              "q": "Steekt een struisvogel zijn kop in het zand?",
+              "a": "Nee, dat is een fabeltje."
+            },
+            {
+              "q": "Hoeveel kippeneieren passen er in één struisvogelei?",
+              "a": "Ongeveer 24."
+            },
+            {
+              "q": "Wat kunnen we met onze zorgen doen, in plaats van ons ervoor te verstoppen?",
+              "a": "Ze aan Jezus geven, want Hij zorgt voor ons (1 Petrus 5:7)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "owl",
+      "section": "birds",
+      "name": {
+        "en": "Owl",
+        "nl": "Uil"
+      },
+      "image": {
+        "photo": "images/owl.jpg",
+        "thumb": "images/owl-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Barn_owl"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Owls can turn their heads about 270 degrees, three-quarters of the way round, because their eyes can't move in their sockets. Soft-edged feathers let them fly almost silently. Some owls can hear a mouse moving under the snow.",
+          "bible": "The owl is awake at night, but God is always awake: \"he that keepeth Israel shall neither slumber nor sleep\" (Psalm 121:4). Even at night He sees perfectly: \"the darkness and the light are both alike to thee\" (Psalm 139:12).",
+          "quiz": [
+            {
+              "q": "How far can an owl turn its head?",
+              "a": "About three-quarters of the way round."
+            },
+            {
+              "q": "Who watches over you all night long?",
+              "a": "God, who never sleeps (Psalm 121:4)."
+            },
+            {
+              "q": "Is the dark dark to God?",
+              "a": "No. Darkness and light are the same to Him (Psalm 139:12)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Uilen kunnen hun kop ongeveer 270 graden draaien, driekwart rondje, omdat hun ogen niet kunnen bewegen in hun oogkassen. Dankzij veren met zachte randjes vliegen ze bijna geluidloos. Sommige uilen kunnen een muis horen lopen onder de sneeuw.",
+          "bible": "De uil is 's nachts wakker, maar God is altijd wakker: “Hij Die Israël bewaart, sluimert niet en slaapt niet” (Psalm 121:4). Ook in de nacht ziet Hij alles perfect: “de duisternis en het licht zijn voor U gelijk” (Psalm 139:12).",
+          "quiz": [
+            {
+              "q": "Hoe ver kan een uil zijn kop draaien?",
+              "a": "Ongeveer driekwart rondje."
+            },
+            {
+              "q": "Wie waakt de hele nacht over jou?",
+              "a": "God, Die nooit slaapt (Psalm 121:4)."
+            },
+            {
+              "q": "Is het donker voor God ook donker?",
+              "a": "Nee. Duisternis en licht zijn voor Hem hetzelfde (Psalm 139:12)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parrot",
+      "section": "birds",
+      "name": {
+        "en": "Parrot",
+        "nl": "Papegaai"
+      },
+      "image": {
+        "photo": "images/parrot.jpg",
+        "thumb": "images/parrot-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Scarlet_macaw"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Parrots learn to talk by copying what they hear. A famous African grey parrot called Alex learned more than 100 words. Large macaws can live 50 years or more. Parrots have two toes in front and two behind, so they can hold food like a hand.",
+          "bible": "A parrot becomes like the voices around it. Whom do we copy? \"Be ye therefore followers of God, as dear children\" (Ephesians 5:1). And our words matter: \"Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight, O LORD\" (Psalm 19:14).",
+          "quiz": [
+            {
+              "q": "How does a parrot learn to talk?",
+              "a": "By hearing the same words again and again and copying them."
+            },
+            {
+              "q": "Whom should we copy?",
+              "a": "Jesus (Ephesians 5:1, 1 Peter 2:21)."
+            }
+          ],
+          "tryThis": "Play parrot. One person says a short Bible verse, everyone repeats it in a parrot voice."
+        },
+        "nl": {
+          "didYouKnow": "Papegaaien leren praten door na te doen wat ze horen. Een beroemde grijze roodstaartpapegaai, Alex, leerde meer dan 100 woorden. Grote ara's kunnen 50 jaar of nog ouder worden. Papegaaien hebben twee tenen naar voren en twee naar achteren, zodat ze hun eten kunnen vasthouden als met een hand.",
+          "bible": "Een papegaai gaat klinken als de stemmen om hem heen. Wie doen wij na? “Wees dan navolgers van God, als geliefde kinderen” (Efeze 5:1). En onze woorden zijn belangrijk: “Laten de woorden van mijn mond en de overdenking van mijn hart welgevallig zijn voor Uw aangezicht, HEERE” (Psalm 19:15).",
+          "quiz": [
+            {
+              "q": "Hoe leert een papegaai praten?",
+              "a": "Door steeds weer dezelfde woorden te horen en ze na te zeggen."
+            },
+            {
+              "q": "Wie moeten wij nadoen?",
+              "a": "Jezus (Efeze 5:1, 1 Petrus 2:21)."
+            }
+          ],
+          "tryThis": "Speel papegaaitje. Eén iemand zegt een korte Bijbeltekst, en iedereen zegt hem na met een papegaaienstem."
+        }
+      }
+    },
+    {
+      "id": "peacock",
+      "section": "birds",
+      "name": {
+        "en": "Peacock",
+        "nl": "Pauw"
+      },
+      "image": {
+        "photo": "images/peacock.jpg",
+        "thumb": "images/peacock-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Indian_peafowl"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The male is the peacock and the female the peahen. His train has about 200 feathers with \"eyes\". The colours are not paint: tiny structures in the feathers bend the light, so they shine only when light hits them. Many Dutch zoos let peacocks walk around freely, so listen for their loud call.",
+          "bible": "King Solomon's ships brought peacocks (1 Kings 10:22). A peacock shines only in the light; we shine when we reflect Jesus: \"Let your light so shine before men, that they may see your good works, and glorify your Father\" (Matthew 5:16). And God cares more about the heart than about fancy feathers: \"the LORD looketh on the heart\" (1 Samuel 16:7).",
+          "quiz": [
+            {
+              "q": "What is a female peacock called?",
+              "a": "A peahen."
+            },
+            {
+              "q": "Why do the feathers sparkle?",
+              "a": "They reflect light. We sparkle when we reflect Jesus (Matthew 5:16)."
+            },
+            {
+              "q": "What does God look at most?",
+              "a": "The heart (1 Samuel 16:7)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Het mannetje heet pauw (of pauwhaan) en het vrouwtje pauwhen. Zijn sleep heeft ongeveer 200 veren met “ogen”. De kleuren zijn geen verf: piepkleine structuurtjes in de veren breken het licht, dus ze glanzen alleen als er licht op valt. In veel Nederlandse dierentuinen lopen pauwen vrij rond, dus luister maar eens naar hun luide roep.",
+          "bible": "De schepen van koning Salomo brachten pauwen mee (1 Koningen 10:22). Een pauw schittert alleen in het licht; wij schitteren als we Jezus weerspiegelen: “Laat zo uw licht schijnen voor de mensen, opdat zij uw goede werken zien en uw Vader verheerlijken” (Mattheüs 5:16). En God vindt het hart belangrijker dan mooie veren: “de HEERE ziet het hart aan” (1 Samuël 16:7).",
+          "quiz": [
+            {
+              "q": "Hoe heet een vrouwtjespauw?",
+              "a": "Een pauwhen."
+            },
+            {
+              "q": "Waarom glinsteren de veren?",
+              "a": "Ze weerkaatsen het licht. Wij glinsteren als we Jezus weerspiegelen (Mattheüs 5:16)."
+            },
+            {
+              "q": "Waar kijkt God het meest naar?",
+              "a": "Naar het hart (1 Samuël 16:7)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "stork",
+      "section": "birds",
+      "name": {
+        "en": "Stork",
+        "nl": "Ooievaar"
+      },
+      "image": {
+        "photo": "images/stork.jpg",
+        "thumb": "images/stork-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/White_stork"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "White storks fly thousands of kilometres to Africa or Spain for the winter and come back in spring. Around 1970 fewer than 10 pairs were left in the Netherlands. Thanks to protection, about 2,000 pairs nested here in 2025. Storks don't sing; they clatter their beaks.",
+          "bible": "\"Yea, the stork in the heaven knoweth her appointed times... but my people know not the judgment of the LORD\" (Jeremiah 8:7). The stork knows when it is time to travel. Jesus asks us to know the signs of His coming and be ready: \"be ye also ready\" (Matthew 24:44).",
+          "quiz": [
+            {
+              "q": "Where do many Dutch storks go in winter?",
+              "a": "To Africa or Spain."
+            },
+            {
+              "q": "What does the stork know, according to Jeremiah 8:7?",
+              "a": "Her appointed times."
+            },
+            {
+              "q": "What big event should we be ready for?",
+              "a": "Jesus coming again (Matthew 24:44)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Ooievaars vliegen duizenden kilometers naar Afrika of Spanje om daar te overwinteren, en in het voorjaar komen ze terug. Rond 1970 waren er in Nederland nog maar minder dan 10 paartjes over. Dankzij bescherming broedden hier in 2025 ongeveer 2.000 paartjes. Ooievaars zingen niet; ze klepperen met hun snavel.",
+          "bible": "“Zelfs de ooievaar in de hemel kent zijn vastgestelde tijden ... maar Mijn volk kent het recht van de HEERE niet” (Jeremia 8:7). De ooievaar weet wanneer het tijd is om te vertrekken. Jezus vraagt ons de tekenen van Zijn komst te kennen en klaar te zijn: “wees ook u gereed” (Mattheüs 24:44).",
+          "quiz": [
+            {
+              "q": "Waar gaan veel Nederlandse ooievaars in de winter naartoe?",
+              "a": "Naar Afrika of Spanje."
+            },
+            {
+              "q": "Wat kent de ooievaar, volgens Jeremia 8:7?",
+              "a": "Zijn vastgestelde tijden."
+            },
+            {
+              "q": "Op welke grote gebeurtenis moeten we klaar zijn?",
+              "a": "Dat Jezus terugkomt (Mattheüs 24:44)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dove",
+      "section": "birds",
+      "name": {
+        "en": "Dove and pigeon",
+        "nl": "Duif"
+      },
+      "image": {
+        "photo": "images/dove.jpg",
+        "thumb": "images/dove-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Rock_dove"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "You will see wild pigeons all over the zoo! Homing pigeons can find their way home from hundreds of kilometres away, using the sun and the earth's magnetism. Pigeon racing is a famous Dutch hobby.",
+          "bible": "Noah's dove brought back an olive leaf (Genesis 8:11). At Jesus' baptism the Spirit came down \"like a dove\" and the Father said: \"This is my beloved Son\" (Matthew 3:16-17). When baby Jesus was brought to the temple, Mary and Joseph gave \"a pair of turtledoves, or two young pigeons\" (Luke 2:24), the gift of a poor family. Jesus became poor so we could become rich (2 Corinthians 8:9).",
+          "ellenWhite": "At Jesus' baptism she describes \"a dovelike form of purest light,—fit emblem of Him, the meek and lowly One\" (The Desire of Ages, p. 112).",
+          "quiz": [
+            {
+              "q": "What did Noah's dove bring back?",
+              "a": "An olive leaf (Genesis 8:11)."
+            },
+            {
+              "q": "When did the Holy Spirit come down like a dove?",
+              "a": "At Jesus' baptism (Matthew 3:16)."
+            },
+            {
+              "q": "What did Mary and Joseph give at the temple?",
+              "a": "Two turtledoves or two young pigeons (Luke 2:24)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Overal in de dierentuin zie je wilde duiven! Postduiven kunnen van honderden kilometers ver de weg naar huis vinden, met behulp van de zon en het magnetisme van de aarde. Duivensport is een bekende Nederlandse hobby.",
+          "bible": "De duif van Noach bracht een olijfblad terug (Genesis 8:11). Bij de doop van Jezus kwam de Geest neer “als een duif”, en de Vader zei: “Dit is Mijn Zoon, de Geliefde” (Mattheüs 3:16-17). Toen baby Jezus naar de tempel werd gebracht, gaven Maria en Jozef “een paar tortelduiven of twee jonge duiven” (Lukas 2:24), het offer van een arm gezin. Jezus werd arm, zodat wij rijk zouden worden (2 Korinthe 8:9).",
+          "ellenWhite": "Over de doop van Jezus beschrijft ze “een duifachtige gestalte van het zuiverste licht — een passend zinnebeeld van Hem, de Zachtmoedige en Nederige” (The Desire of Ages, blz. 112).",
+          "quiz": [
+            {
+              "q": "Wat bracht de duif van Noach terug?",
+              "a": "Een olijfblad (Genesis 8:11)."
+            },
+            {
+              "q": "Wanneer kwam de Heilige Geest neer als een duif?",
+              "a": "Bij de doop van Jezus (Mattheüs 3:16)."
+            },
+            {
+              "q": "Wat gaven Maria en Jozef in de tempel?",
+              "a": "Twee tortelduiven of twee jonge duiven (Lukas 2:24)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "snake",
+      "section": "reptiles",
+      "name": {
+        "en": "Snake",
+        "nl": "Slang"
+      },
+      "image": {
+        "photo": "images/snake.jpg",
+        "thumb": "images/snake-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Green_tree_python"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Snakes smell with their tongues: each flick picks up smells for a special organ in the roof of the mouth. They have no eyelids; a clear scale covers each eye. They have no outer ears but feel vibrations through the ground. They shed their skin in one piece.",
+          "bible": "Satan used a serpent to tempt Eve (Genesis 3). Right away God gave the first promise of Jesus: the woman's descendant would crush the serpent's head (Genesis 3:15). Later, Israelites bitten by snakes were healed when they looked at a bronze snake on a pole (Numbers 21:8-9). Jesus said: \"as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up\" (John 3:14). We look to Jesus on the cross and live.",
+          "ellenWhite": "Before sin, \"the serpent was then one of the wisest and most beautiful creatures on the earth. It had wings,\" and it shone with \"the color and brilliancy of burnished gold\" (Patriarchs and Prophets, p. 53). About the bronze snake she writes: \"So the sinner may look to Christ, and live\" (p. 431).",
+          "quiz": [
+            {
+              "q": "How does a snake smell?",
+              "a": "With its tongue."
+            },
+            {
+              "q": "What is the very first promise of Jesus in the Bible?",
+              "a": "That the woman's seed would crush the serpent's head (Genesis 3:15)."
+            },
+            {
+              "q": "What did bitten Israelites have to do to live?",
+              "a": "Look at the bronze snake (Numbers 21:8-9). We look to Jesus (John 3:14-15)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Slangen ruiken met hun tong: elke keer dat de tong naar buiten schiet, vangt hij geurtjes op voor een speciaal orgaan boven in de bek. Ze hebben geen oogleden; over elk oog zit een doorzichtig schubje. Ze hebben geen oren aan de buitenkant, maar voelen trillingen via de grond. Ze vervellen in één stuk.",
+          "bible": "Satan gebruikte een slang om Eva te verleiden (Genesis 3). Meteen gaf God de eerste belofte over Jezus: de nakomeling van de vrouw zou de slang de kop vermorzelen (Genesis 3:15). Later werden Israëlieten die door slangen gebeten waren genezen als ze keken naar een koperen slang op een paal (Numeri 21:8-9). Jezus zei: “Zoals Mozes de slang in de woestijn verhoogd heeft, zo moet de Zoon des mensen verhoogd worden” (Johannes 3:14). Wij kijken naar Jezus aan het kruis en leven.",
+          "ellenWhite": "Voor de zondeval “was de slang een van de wijste en mooiste schepselen op aarde. Hij had vleugels”, en hij glansde met “de kleur en de glans van gepolijst goud” (Patriarchs and Prophets, blz. 53). Over de koperen slang schrijft ze: “Zo mag de zondaar naar Christus opzien en leven” (blz. 431).",
+          "quiz": [
+            {
+              "q": "Hoe ruikt een slang?",
+              "a": "Met zijn tong."
+            },
+            {
+              "q": "Wat is de allereerste belofte over Jezus in de Bijbel?",
+              "a": "Dat het nageslacht van de vrouw de slang de kop zou vermorzelen (Genesis 3:15)."
+            },
+            {
+              "q": "Wat moesten de gebeten Israëlieten doen om te blijven leven?",
+              "a": "Kijken naar de koperen slang (Numeri 21:8-9). Wij kijken naar Jezus (Johannes 3:14-15)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "crocodile",
+      "section": "reptiles",
+      "name": {
+        "en": "Crocodile",
+        "nl": "Krokodil"
+      },
+      "image": {
+        "photo": "images/crocodile.jpg",
+        "thumb": "images/crocodile-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Nile_crocodile"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A crocodile can replace each tooth up to about 50 times. It can go months without eating. Crocodiles have one of the strongest bites ever measured, yet a mother carries her newly hatched babies gently in her mouth.",
+          "bible": "God describes leviathan, an armoured creature many think was like a crocodile: \"Canst thou draw out leviathan with an hook?\" (Job 41:1). No person can tame it, but God made it and is far stronger: \"who then is able to stand before me?\" (Job 41:10). Psalm 104:26 even says God made leviathan \"to play\" in the sea. Nothing scary is stronger than our God.",
+          "quiz": [
+            {
+              "q": "How many times can a crocodile replace a tooth?",
+              "a": "Up to about 50 times."
+            },
+            {
+              "q": "How does a mother crocodile carry her babies?",
+              "a": "Gently, in her mouth."
+            },
+            {
+              "q": "Who is stronger than leviathan?",
+              "a": "God, who made it (Job 41:10)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Een krokodil kan elke tand wel zo'n 50 keer vervangen. Hij kan maandenlang zonder eten. Krokodillen hebben een van de sterkste beten die ooit zijn gemeten, en toch draagt een moeder haar pas uitgekomen jongen heel voorzichtig in haar bek.",
+          "bible": "God beschrijft de leviathan, een gepantserd dier waarvan veel mensen denken dat het op een krokodil leek: “Kunt u de leviathan met een vishaak trekken?” (Job 40:20). Geen mens kan hem temmen, maar God heeft hem gemaakt en is veel sterker: “Wie is hij dan die voor Mijn aangezicht zou kunnen standhouden?” (Job 41:1). Psalm 104:26 zegt zelfs dat God de leviathan maakte “om daarin te spelen”, in de zee. Niets engs is sterker dan onze God.",
+          "quiz": [
+            {
+              "q": "Hoe vaak kan een krokodil een tand vervangen?",
+              "a": "Wel zo'n 50 keer."
+            },
+            {
+              "q": "Hoe draagt een moederkrokodil haar jongen?",
+              "a": "Heel voorzichtig, in haar bek."
+            },
+            {
+              "q": "Wie is sterker dan de leviathan?",
+              "a": "God, Die hem gemaakt heeft (Job 41:1)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tortoise",
+      "section": "reptiles",
+      "name": {
+        "en": "Giant tortoise",
+        "nl": "Reuzenschildpad"
+      },
+      "image": {
+        "photo": "images/tortoise.jpg",
+        "thumb": "images/tortoise-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Aldabra_giant_tortoise"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Giant tortoises can live more than 150 years. Jonathan, a tortoise on the island of St Helena, hatched around 1832, which makes him about 194 years old. A tortoise's shell is part of its skeleton, so it can never crawl out of it.",
+          "bible": "God is older than the oldest tortoise: \"from everlasting to everlasting, thou art God\" (Psalm 90:2). A tortoise always has its home with it. Jesus asks us to stay close to Him always: \"Abide in me, and I in you\" (John 15:4).",
+          "quiz": [
+            {
+              "q": "Can a tortoise crawl out of its shell?",
+              "a": "No, the shell is part of its body."
+            },
+            {
+              "q": "Who is older than the oldest tortoise?",
+              "a": "God, who is \"from everlasting to everlasting\" (Psalm 90:2)."
+            },
+            {
+              "q": "Which fruit of the Spirit is the tortoise good at?",
+              "a": "Patience, called longsuffering in Galatians 5:22."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Reuzenschildpadden kunnen meer dan 150 jaar oud worden. Jonathan, een schildpad op het eiland Sint-Helena, kwam rond 1832 uit het ei. Hij is dus ongeveer 194 jaar oud. Het schild van een schildpad hoort bij zijn skelet, dus hij kan er nooit uit kruipen.",
+          "bible": "God is ouder dan de oudste schildpad: “van eeuwigheid tot eeuwigheid bent U God” (Psalm 90:2). Een schildpad heeft zijn huis altijd bij zich. Jezus vraagt ons om altijd dicht bij Hem te blijven: “Blijf in Mij, en Ik in u” (Johannes 15:4).",
+          "quiz": [
+            {
+              "q": "Kan een schildpad uit zijn schild kruipen?",
+              "a": "Nee, het schild hoort bij zijn lichaam."
+            },
+            {
+              "q": "Wie is ouder dan de oudste schildpad?",
+              "a": "God, Die er is “van eeuwigheid tot eeuwigheid” (Psalm 90:2)."
+            },
+            {
+              "q": "In welke vrucht van de Geest is de schildpad goed?",
+              "a": "Geduld, in Galaten 5:22 “lankmoedigheid” genoemd."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "frog",
+      "section": "reptiles",
+      "name": {
+        "en": "Frog",
+        "nl": "Kikker"
+      },
+      "image": {
+        "photo": "images/frog.jpg",
+        "thumb": "images/frog-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Poison_dart_frog"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Poison dart frogs have bright colours that say \"don't eat me!\" Their poison comes from the insects they eat in the wild, so frogs raised in a zoo are not poisonous. Frogs drink through their skin, and they start life as tadpoles.",
+          "bible": "In the second plague, frogs filled Egypt, even beds and ovens (Exodus 8:3). Moses asked Pharaoh when he wanted the frogs gone. Pharaoh answered: \"To morrow\" (Exodus 8:10). One more night with the frogs! God says the best time to follow Him is right now: \"behold, now is the day of salvation\" (2 Corinthians 6:2).",
+          "quiz": [
+            {
+              "q": "Moses asked when the frogs should go. What did Pharaoh say?",
+              "a": "\"Tomorrow!\" (Exodus 8:10)."
+            },
+            {
+              "q": "When is the best time to follow Jesus?",
+              "a": "Today (2 Corinthians 6:2, Hebrews 3:15)."
+            },
+            {
+              "q": "Why aren't zoo poison frogs dangerous?",
+              "a": "Their poison comes from their wild food."
+            }
+          ],
+          "tryThis": "Everyone croaks together: \"Not tomorrow, today!\""
+        },
+        "nl": {
+          "didYouKnow": "Pijlgifkikkers hebben felle kleuren die zeggen: “Eet mij niet op!” Hun gif komt van de insecten die ze in het wild eten, dus kikkers die in een dierentuin opgroeien zijn niet giftig. Kikkers drinken door hun huid, en ze beginnen hun leven als kikkervisje.",
+          "bible": "Bij de tweede plaag zat heel Egypte vol kikkers, zelfs in bedden en ovens (Exodus 7:28). Mozes vroeg de farao wanneer hij de kikkers weg wilde hebben. De farao antwoordde: “Morgen” (Exodus 8:6). Nog een nacht met de kikkers! God zegt dat het beste moment om Hem te volgen nu is: “Zie, nu is het de dag van de zaligheid” (2 Korinthe 6:2).",
+          "quiz": [
+            {
+              "q": "Mozes vroeg wanneer de kikkers weg moesten. Wat zei de farao?",
+              "a": "“Morgen!” (Exodus 8:6)."
+            },
+            {
+              "q": "Wanneer is het beste moment om Jezus te volgen?",
+              "a": "Vandaag (2 Korinthe 6:2, Hebreeën 3:15)."
+            },
+            {
+              "q": "Waarom zijn gifkikkers in de dierentuin niet gevaarlijk?",
+              "a": "Hun gif komt van hun eten in het wild."
+            }
+          ],
+          "tryThis": "Kwaak allemaal samen: “Niet morgen, vandaag!”"
+        }
+      }
+    },
+    {
+      "id": "chameleon",
+      "section": "reptiles",
+      "name": {
+        "en": "Chameleon",
+        "nl": "Kameleon"
+      },
+      "image": {
+        "photo": "images/chameleon.jpg",
+        "thumb": "images/chameleon-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Veiled_chameleon"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Chameleons change colour mostly to show their mood and control their temperature, not just to hide. Each eye moves on its own, so a chameleon can look forward and backward at the same time. Its tongue can shoot out up to about twice its body length, faster than you can blink.",
+          "bible": "\"Be not conformed to this world: but be ye transformed by the renewing of your mind\" (Romans 12:2). Daniel didn't just blend in in Babylon; he stayed true to God (Daniel 1:8). A chameleon can look two ways at once, but Jesus said: \"No man can serve two masters\" (Matthew 6:24).",
+          "quiz": [
+            {
+              "q": "Why does a chameleon change colour?",
+              "a": "Mostly to show its mood and to warm up or cool down."
+            },
+            {
+              "q": "A chameleon can look two ways at once. Can we follow two masters?",
+              "a": "No (Matthew 6:24)."
+            },
+            {
+              "q": "Who stayed true to God in a foreign land instead of blending in?",
+              "a": "Daniel (Daniel 1:8)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Kameleons veranderen vooral van kleur om te laten zien hoe ze zich voelen en om hun temperatuur te regelen, niet alleen om zich te verstoppen. Elk oog beweegt los van het andere, dus een kameleon kan tegelijk naar voren en naar achteren kijken. Zijn tong kan wel zo'n twee keer zijn lichaamslengte naar buiten schieten, sneller dan jij met je ogen kunt knipperen.",
+          "bible": "“Word niet aan deze wereld gelijkvormig, maar word veranderd door de vernieuwing van uw denken” (Romeinen 12:2). Daniël ging in Babel niet gewoon met iedereen mee; hij bleef God trouw (Daniël 1:8). Een kameleon kan twee kanten tegelijk op kijken, maar Jezus zei: “Niemand kan twee heren dienen” (Mattheüs 6:24).",
+          "quiz": [
+            {
+              "q": "Waarom verandert een kameleon van kleur?",
+              "a": "Vooral om te laten zien hoe hij zich voelt, en om op te warmen of af te koelen."
+            },
+            {
+              "q": "Een kameleon kan twee kanten tegelijk op kijken. Kunnen wij twee heren volgen?",
+              "a": "Nee (Mattheüs 6:24)."
+            },
+            {
+              "q": "Wie bleef in een vreemd land God trouw, in plaats van met iedereen mee te doen?",
+              "a": "Daniël (Daniël 1:8)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sealion",
+      "section": "ocean",
+      "name": {
+        "en": "Sea lion and seal",
+        "nl": "Zeeleeuw en zeehond"
+      },
+      "image": {
+        "photo": "images/sealion.jpg",
+        "thumb": "images/sealion-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/California_sea_lion"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Sea lions have small ear flaps and can \"walk\" on all four flippers. Seals have only ear holes and wiggle along on their bellies. Wild Dutch seals live in the Wadden Sea, and seal centres like the one in Pieterburen rescue sick or lost pups and return them to the sea. A seal's whiskers can feel the tiny water ripples of a swimming fish.",
+          "bible": "\"God created great whales, and every living creature that moveth, which the waters brought forth abundantly\" (Genesis 1:21). Like the seal rescuers, Jesus came to find those who are lost: \"the Son of man is come to seek and to save that which was lost\" (Luke 19:10).",
+          "quiz": [
+            {
+              "q": "How can you tell a sea lion from a seal?",
+              "a": "Sea lions have ear flaps and walk on their flippers. Seals have no flaps and wiggle."
+            },
+            {
+              "q": "Where do wild seals live in the Netherlands?",
+              "a": "In the Wadden Sea and the North Sea."
+            },
+            {
+              "q": "Who came to rescue the lost?",
+              "a": "Jesus (Luke 19:10)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Zeeleeuwen hebben kleine oorschelpjes en kunnen op alle vier hun flippers ‘lopen’. Zeehonden hebben alleen gaatjes als oren en schuiven op hun buik vooruit. In de Waddenzee leven wilde Nederlandse zeehonden. Zeehondencentra, zoals dat in Pieterburen, redden zieke of verdwaalde pups en brengen ze daarna terug naar zee. Met zijn snorharen kan een zeehond de piepkleine golfjes voelen van een vis die voorbij zwemt.",
+          "bible": "“En God schiep de grote zeedieren en alle levende wezens die zich bewegen, waarvan het water wemelde” (Genesis 1:21). Net als de zeehondenredders kwam Jezus om te zoeken wie verloren is: “Want de Zoon des mensen is gekomen om te zoeken en zalig te maken wat verloren was” (Lukas 19:10).",
+          "quiz": [
+            {
+              "q": "Hoe zie je het verschil tussen een zeeleeuw en een zeehond?",
+              "a": "Zeeleeuwen hebben oorschelpjes en lopen op hun flippers. Zeehonden hebben geen oorschelpjes en schuiven op hun buik."
+            },
+            {
+              "q": "Waar leven wilde zeehonden in Nederland?",
+              "a": "In de Waddenzee en de Noordzee."
+            },
+            {
+              "q": "Wie kwam om de verlorenen te redden?",
+              "a": "Jezus (Lukas 19:10)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "shark",
+      "section": "ocean",
+      "name": {
+        "en": "Shark",
+        "nl": "Haai"
+      },
+      "image": {
+        "photo": "images/shark.jpg",
+        "thumb": "images/shark-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Blacktip_reef_shark"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Some sharks lose and regrow thousands of teeth in their lifetime. Sharks can sense the tiny electric signals made by other animals' muscles, even a fish hiding in the sand. Their skin feels like sandpaper. Most kinds of sharks are not dangerous to people.",
+          "bible": "A shark can find a fish hidden in the sand. Nothing at all is hidden from God: \"Neither is there any creature that is not manifest in his sight\" (Hebrews 4:13). But God doesn't search for us to catch us; He knows us and loves us: \"O LORD, thou hast searched me, and known me\" (Psalm 139:1).",
+          "quiz": [
+            {
+              "q": "About how many teeth can a shark use up in its life?",
+              "a": "Thousands."
+            },
+            {
+              "q": "Can anything hide from God?",
+              "a": "No (Hebrews 4:13). And He loves us completely."
+            },
+            {
+              "q": "What does shark skin feel like?",
+              "a": "Sandpaper."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Sommige haaien verliezen in hun leven duizenden tanden, en er groeien steeds weer nieuwe. Haaien kunnen de piepkleine elektrische signaaltjes voelen die de spieren van andere dieren maken, zelfs van een vis die zich in het zand verstopt. Hun huid voelt aan als schuurpapier. De meeste soorten haaien zijn niet gevaarlijk voor mensen.",
+          "bible": "Een haai kan een vis vinden die in het zand verstopt zit. Voor God is helemaal niets verborgen: “En er is geen schepsel onzichtbaar voor Hem” (Hebreeën 4:13). Maar God zoekt ons niet om ons te vangen; Hij kent ons en houdt van ons: “HEERE, U doorgrondt en kent mij” (Psalm 139:1).",
+          "quiz": [
+            {
+              "q": "Hoeveel tanden kan een haai ongeveer verslijten in zijn leven?",
+              "a": "Duizenden."
+            },
+            {
+              "q": "Kan er iets verborgen blijven voor God?",
+              "a": "Nee (Hebreeën 4:13). En Hij houdt helemaal van ons."
+            },
+            {
+              "q": "Hoe voelt de huid van een haai?",
+              "a": "Als schuurpapier."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "jellyfish",
+      "section": "ocean",
+      "name": {
+        "en": "Jellyfish",
+        "nl": "Kwal"
+      },
+      "image": {
+        "photo": "images/jellyfish.jpg",
+        "thumb": "images/jellyfish-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Aurelia_aurita"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A jellyfish is about 95% water. It has no brain, heart, bones or blood. Most jellyfish drift wherever the current takes them, and some even glow in the dark.",
+          "bible": "God doesn't want us to be like jellyfish, \"tossed to and fro, and carried about with every wind of doctrine\" (Ephesians 4:14). He wants us \"rooted and built up in him\" (Colossians 2:7). A jellyfish has no backbone, but God says: \"Be strong and of a good courage... for the LORD thy God is with thee\" (Joshua 1:9).",
+          "quiz": [
+            {
+              "q": "What is a jellyfish mostly made of?",
+              "a": "Water."
+            },
+            {
+              "q": "Does a jellyfish have a brain?",
+              "a": "No!"
+            },
+            {
+              "q": "How do we keep from drifting like a jellyfish?",
+              "a": "By staying rooted in Jesus: reading His Word and praying every day (Colossians 2:7)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Een kwal bestaat voor ongeveer 95% uit water. Hij heeft geen hersenen, geen hart, geen botten en geen bloed. De meeste kwallen drijven gewoon mee waar de stroming ze naartoe brengt, en sommige geven zelfs licht in het donker.",
+          "bible": "God wil niet dat wij zijn als kwallen, “heen en weer geslingerd en meegevoerd door allerlei wind van leer” (Efeze 4:14). Hij wil dat wij “geworteld en opgebouwd in Hem” zijn (Kolossenzen 2:7). Een kwal heeft geen ruggengraat, maar God zegt: “Wees sterk en moedig... want de HEERE, uw God, is met u” (Jozua 1:9).",
+          "quiz": [
+            {
+              "q": "Waar is een kwal vooral van gemaakt?",
+              "a": "Water."
+            },
+            {
+              "q": "Heeft een kwal hersenen?",
+              "a": "Nee!"
+            },
+            {
+              "q": "Hoe zorgen we dat we niet zomaar meedrijven zoals een kwal?",
+              "a": "Door geworteld te blijven in Jezus: elke dag Zijn Woord lezen en bidden (Kolossenzen 2:7)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "clownfish",
+      "section": "ocean",
+      "name": {
+        "en": "Clownfish",
+        "nl": "Clownvis"
+      },
+      "image": {
+        "photo": "images/clownfish.jpg",
+        "thumb": "images/clownfish-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Ocellaris_clownfish"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "The clownfish lives among the stinging tentacles of a sea anemone. A slimy coat keeps it from being stung. The clownfish cleans the anemone and chases away fish that want to eat it, and the anemone protects the clownfish.",
+          "bible": "The clownfish is safe in a place where others get stung. We are safe in Jesus: \"your life is hid with Christ in God\" (Colossians 3:3). \"He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty\" (Psalm 91:1).",
+          "quiz": [
+            {
+              "q": "Why doesn't the anemone sting the clownfish?",
+              "a": "Its slimy coat protects it."
+            },
+            {
+              "q": "Where is our safe hiding place?",
+              "a": "In Jesus (Colossians 3:3, Psalm 91:1)."
+            },
+            {
+              "q": "What does the clownfish do for the anemone?",
+              "a": "Cleans it and protects it. Friends help each other."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De clownvis woont tussen de prikkende tentakels van een zeeanemoon. Een laagje slijm op zijn huid zorgt ervoor dat hij niet geprikt wordt. De clownvis maakt de anemoon schoon en jaagt vissen weg die de anemoon willen opeten, en de anemoon beschermt de clownvis.",
+          "bible": "De clownvis is veilig op een plek waar anderen geprikt worden. Wij zijn veilig in Jezus: “uw leven is met Christus verborgen in God” (Kolossenzen 3:3). “Wie in de schuilplaats van de Allerhoogste is gezeten, overnacht in de schaduw van de Almachtige” (Psalm 91:1).",
+          "quiz": [
+            {
+              "q": "Waarom prikt de anemoon de clownvis niet?",
+              "a": "Zijn laagje slijm beschermt hem."
+            },
+            {
+              "q": "Waar is onze veilige schuilplaats?",
+              "a": "In Jezus (Kolossenzen 3:3, Psalm 91:1)."
+            },
+            {
+              "q": "Wat doet de clownvis voor de anemoon?",
+              "a": "Hij maakt hem schoon en beschermt hem. Vrienden helpen elkaar."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fish",
+      "section": "ocean",
+      "name": {
+        "en": "Fish",
+        "nl": "Vissen"
+      },
+      "image": {
+        "photo": "images/fish.jpg",
+        "thumb": "images/fish-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Shoaling_and_schooling"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Fish breathe with gills that take oxygen out of the water. Many fish swim in schools, turning together as if they were one animal.",
+          "bible": "Jesus called fishermen: \"Follow me, and I will make you fishers of men\" (Matthew 4:19). He fed 5,000 people with a boy's five loaves and two small fishes (John 6:9-11). After He rose, the disciples caught exactly 153 fish (John 21:11). Jesus also said that as Jonah was three days in the great fish, He would be three days in the grave (Matthew 12:40). Early Christians drew a simple fish as a secret sign: the Greek word for fish, ICHTHYS, spells the first letters of \"Jesus Christ, God's Son, Saviour\".",
+          "ellenWhite": "Jesus filled Peter's empty nets to show that He \"whose word could gather the fishes from the sea could also impress human hearts,\" so His followers could become \"fishers of men\" (The Desire of Ages, p. 249).",
+          "quiz": [
+            {
+              "q": "How many fish did the disciples catch after Jesus rose?",
+              "a": "153 (John 21:11)."
+            },
+            {
+              "q": "What did a boy share so Jesus could feed 5,000 people?",
+              "a": "Five loaves and two fishes (John 6:9)."
+            },
+            {
+              "q": "What does \"fishers of men\" mean?",
+              "a": "Helping people come to know Jesus."
+            }
+          ],
+          "tryThis": "Draw the fish sign with your finger on the glass (or on paper) and say what the letters mean."
+        },
+        "nl": {
+          "didYouKnow": "Vissen ademen met kieuwen, die zuurstof uit het water halen. Veel vissen zwemmen in scholen en draaien allemaal tegelijk, alsof ze samen één dier zijn.",
+          "bible": "Jezus riep vissers: “Kom achter Mij aan en Ik zal u vissers van mensen maken” (Mattheüs 4:19). Hij gaf 5.000 mensen te eten met de vijf broden en twee visjes van een jongen (Johannes 6:9-11). Nadat Hij was opgestaan, vingen de discipelen precies 153 vissen (Johannes 21:11). Jezus zei ook: zoals Jona drie dagen in de grote vis was, zo zou Hij drie dagen in het graf zijn (Mattheüs 12:40). De eerste christenen tekenden een eenvoudige vis als geheim teken: het Griekse woord voor vis, ICHTHYS, vormt de beginletters van “Jezus Christus, Gods Zoon, Redder/Verlosser”.",
+          "ellenWhite": "Jezus vulde de lege netten van Petrus om te laten zien dat Hij, “Wiens woord de vissen uit de zee kon samenbrengen, ook mensenharten kon raken”, zodat Zijn volgelingen “vissers van mensen” konden worden (The Desire of Ages, blz. 249).",
+          "quiz": [
+            {
+              "q": "Hoeveel vissen vingen de discipelen nadat Jezus was opgestaan?",
+              "a": "153 (Johannes 21:11)."
+            },
+            {
+              "q": "Wat deelde een jongen, zodat Jezus 5.000 mensen te eten kon geven?",
+              "a": "Vijf broden en twee vissen (Johannes 6:9)."
+            },
+            {
+              "q": "Wat betekent “vissers van mensen”?",
+              "a": "Mensen helpen om Jezus te leren kennen."
+            }
+          ],
+          "tryThis": "Teken met je vinger het visteken op het glas (of op papier) en vertel wat de letters betekenen."
+        }
+      }
+    },
+    {
+      "id": "butterfly",
+      "section": "insects",
+      "name": {
+        "en": "Butterfly",
+        "nl": "Vlinder"
+      },
+      "image": {
+        "photo": "images/butterfly.jpg",
+        "thumb": "images/butterfly-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Monarch_butterfly"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A butterfly's life has four stages: egg, caterpillar, chrysalis and butterfly. Inside the chrysalis the caterpillar's body mostly breaks down into a kind of soup and is rebuilt as a butterfly. Butterflies taste with their feet. Many Dutch zoos have a warm butterfly house where butterflies land on visitors.",
+          "bible": "The caterpillar goes into the chrysalis and comes out completely new. Jesus was laid in a tomb, and on Sunday morning the angel said: \"He is not here: for he is risen\" (Matthew 28:6). Because He lives, we will be changed too when He comes: \"we shall all be changed, In a moment, in the twinkling of an eye, at the last trump\" (1 Corinthians 15:51-52).",
+          "ellenWhite": "On the morning Jesus returns, \"The living righteous are changed 'in a moment, in the twinkling of an eye.'\" And a lovely detail for kids: \"Little children are borne by holy angels to their mothers' arms\" (The Great Controversy, p. 645).",
+          "quiz": [
+            {
+              "q": "What are the four stages of a butterfly's life?",
+              "a": "Egg, caterpillar, chrysalis, butterfly."
+            },
+            {
+              "q": "What does a butterfly taste with?",
+              "a": "Its feet!"
+            },
+            {
+              "q": "When will God's people be changed in the twinkling of an eye?",
+              "a": "When Jesus comes again (1 Corinthians 15:52)."
+            }
+          ],
+          "tryThis": "In the butterfly house, stand very still. If a butterfly lands on you, whisper: \"Behold, I make all things new\" (Revelation 21:5)."
+        },
+        "nl": {
+          "didYouKnow": "Het leven van een vlinder heeft vier fasen: ei, rups, pop en vlinder. In de pop valt het lichaam van de rups bijna helemaal uit elkaar tot een soort soep, en daarvan wordt een vlinder opgebouwd. Vlinders proeven met hun pootjes. Veel Nederlandse dierentuinen hebben een warme vlindertuin, waar vlinders op de bezoekers komen zitten.",
+          "bible": "De rups gaat de pop in en komt er helemaal nieuw weer uit. Jezus werd in een graf gelegd, en op zondagmorgen zei de engel: “Hij is hier niet, want Hij is opgestaan” (Mattheüs 28:6). Omdat Hij leeft, zullen ook wij veranderd worden als Hij komt: “wij zullen allen veranderd worden, in een ondeelbaar ogenblik, in een oogwenk, bij de laatste bazuin” (1 Korinthe 15:51-52).",
+          "ellenWhite": "Op de morgen dat Jezus terugkomt, “worden de levende rechtvaardigen veranderd, ‘in een ondeelbaar ogenblik, in een oogwenk’.” En een prachtig detail voor kinderen: “Kleine kinderen worden door heilige engelen in de armen van hun moeder gedragen” (The Great Controversy, blz. 645).",
+          "quiz": [
+            {
+              "q": "Wat zijn de vier fasen in het leven van een vlinder?",
+              "a": "Ei, rups, pop, vlinder."
+            },
+            {
+              "q": "Waarmee proeft een vlinder?",
+              "a": "Met zijn pootjes!"
+            },
+            {
+              "q": "Wanneer worden Gods kinderen in een oogwenk veranderd?",
+              "a": "Als Jezus terugkomt (1 Korinthe 15:52)."
+            }
+          ],
+          "tryThis": "Sta in de vlindertuin heel stil. Als er een vlinder op je komt zitten, fluister dan: “Zie, Ik maak alle dingen nieuw” (Openbaring 21:5)."
+        }
+      }
+    },
+    {
+      "id": "ant",
+      "section": "insects",
+      "name": {
+        "en": "Leafcutter ant",
+        "nl": "Bladsnijdersmier"
+      },
+      "image": {
+        "photo": "images/ant.jpg",
+        "thumb": "images/ant-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Leafcutter_ant"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Leafcutter ants cut pieces of leaf and carry them home, many times heavier than themselves. They don't eat the leaves. They use them to grow a fungus garden, and they eat the fungus. They were farmers long before people! A colony can have millions of ants, and each ant has its own job.",
+          "bible": "\"Go to the ant, thou sluggard; consider her ways, and be wise: Which having no guide, overseer, or ruler, Provideth her meat in the summer\" (Proverbs 6:6-8). Every ant has a job, and so does every person in God's family: \"For as the body is one, and hath many members\" (1 Corinthians 12:12).",
+          "ellenWhite": "\"The ants teach lessons of patient industry, of perseverance in surmounting obstacles, of providence for the future\" (Education, pp. 117-118).",
+          "quiz": [
+            {
+              "q": "Do leafcutter ants eat the leaves?",
+              "a": "No. They grow fungus on them and eat that."
+            },
+            {
+              "q": "What does Proverbs 6:6 tell a lazy person to do?",
+              "a": "\"Go to the ant... and be wise.\""
+            },
+            {
+              "q": "What job can you do in your family or church this week?",
+              "a": "Let each child pick one."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Bladsnijdersmieren knippen stukjes blad af en dragen die naar huis, ook al zijn die stukjes vele malen zwaarder dan zijzelf. Ze eten de bladeren niet op. Ze kweken er een schimmeltuin op, en die schimmel eten ze. Ze waren al boeren lang voordat mensen dat waren! Een kolonie kan miljoenen mieren hebben, en elke mier heeft zijn eigen taak.",
+          "bible": "“Ga naar de mier, luiaard, kijk naar haar wegen en word wijs. Zij heeft geen leider, opziener of heerser, toch bereidt zij in de zomer haar voedsel” (Spreuken 6:6-8). Elke mier heeft een taak, en zo heeft ook ieder mens in Gods gezin een taak: “Want zoals het lichaam één is en veel leden heeft” (1 Korinthe 12:12).",
+          "ellenWhite": "“De mieren leren ons lessen over geduldige ijver, over volhouden bij het overwinnen van moeilijkheden, en over vooruitzien naar de toekomst” (Education, blz. 117-118).",
+          "quiz": [
+            {
+              "q": "Eten bladsnijdersmieren de bladeren op?",
+              "a": "Nee. Ze kweken er schimmel op en eten die."
+            },
+            {
+              "q": "Wat moet een luiaard volgens Spreuken 6:6 doen?",
+              "a": "“Ga naar de mier... en word wijs.”"
+            },
+            {
+              "q": "Welke taak kun jij deze week doen in je gezin of in de kerk?",
+              "a": "Laat elk kind er één kiezen."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bee",
+      "section": "insects",
+      "name": {
+        "en": "Honeybee",
+        "nl": "Honingbij"
+      },
+      "image": {
+        "photo": "images/bee.jpg",
+        "thumb": "images/bee-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Western_honey_bee"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "To make about half a kilo of honey, bees visit around 2 million flowers. When a bee finds good flowers, it flies home and does a \"waggle dance\" that shows the others where to go. Bees carry pollen from flower to flower, which helps fruit grow.",
+          "bible": "\"How sweet are thy words unto my taste! yea, sweeter than honey to my mouth!\" (Psalm 119:103). A bee that finds good flowers can't keep it to itself; it dances to tell the others. We share the good news about Jesus: \"Go ye into all the world, and preach the gospel\" (Mark 16:15).",
+          "ellenWhite": "\"The industrious bee gives to men of intelligence an example that they would do well to imitate. These insects observe perfect order, and no idler is allowed in the hive\" (Testimonies for the Church, vol. 4, p. 455).",
+          "quiz": [
+            {
+              "q": "How does a bee tell the others where the flowers are?",
+              "a": "With a waggle dance."
+            },
+            {
+              "q": "What is sweeter than honey?",
+              "a": "God's words (Psalm 119:103)."
+            },
+            {
+              "q": "Samson's riddle: \"Out of the strong came forth sweetness.\" What was it?",
+              "a": "Honey that bees made inside a lion's skeleton (Judges 14:8-14)."
+            },
+            {
+              "q": "Who ate locusts and wild honey?",
+              "a": "John the Baptist (Matthew 3:4)."
+            }
+          ],
+          "tryThis": "Do a waggle dance, then tell someone one good thing about Jesus."
+        },
+        "nl": {
+          "didYouKnow": "Om ongeveer een halve kilo honing te maken, bezoeken bijen zo’n 2 miljoen bloemen. Als een bij goede bloemen vindt, vliegt ze naar huis en doet ze een ‘kwispeldans’, die de andere bijen laat zien waar ze heen moeten. Bijen nemen stuifmeel mee van bloem naar bloem, en daardoor kan er fruit groeien.",
+          "bible": "“Hoe zoet zijn Uw woorden voor mijn gehemelte, zoeter dan honing voor mijn mond!” (Psalm 119:103). Een bij die goede bloemen vindt, kan dat niet voor zichzelf houden; ze danst om het de anderen te vertellen. Zo delen wij het goede nieuws over Jezus: “Ga heen in de hele wereld en predik het Evangelie” (Markus 16:15).",
+          "ellenWhite": "“De ijverige bij geeft verstandige mensen een voorbeeld dat ze goed zouden doen na te volgen. Deze insecten houden een volmaakte orde aan, en in de korf wordt geen luiaard toegelaten” (Testimonies for the Church, vol. 4, blz. 455).",
+          "quiz": [
+            {
+              "q": "Hoe vertelt een bij de anderen waar de bloemen zijn?",
+              "a": "Met een kwispeldans."
+            },
+            {
+              "q": "Wat is zoeter dan honing?",
+              "a": "Gods woorden (Psalm 119:103)."
+            },
+            {
+              "q": "Het raadsel van Simson: “Uit de sterke is zoetigheid gekomen.” Wat was het?",
+              "a": "Honing die bijen hadden gemaakt in het geraamte van een leeuw (Richteren 14:8-14)."
+            },
+            {
+              "q": "Wie at sprinkhanen en wilde honing?",
+              "a": "Johannes de Doper (Mattheüs 3:4)."
+            }
+          ],
+          "tryThis": "Doe een kwispeldans en vertel daarna aan iemand één mooi ding over Jezus."
+        }
+      }
+    },
+    {
+      "id": "sheep",
+      "section": "farm",
+      "name": {
+        "en": "Sheep",
+        "nl": "Schaap"
+      },
+      "image": {
+        "photo": "images/sheep.jpg",
+        "thumb": "images/sheep-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Sheep"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Sheep can recognise about 50 other sheep faces and remember them for years. They know their shepherd's voice and follow it. A sheep with a heavy wool coat that rolls onto its back can't get up by itself; the shepherd has to come and turn it over.",
+          "bible": "\"The LORD is my shepherd; I shall not want\" (Psalm 23:1). Jesus said: \"My sheep hear my voice, and I know them, and they follow me\" (John 10:27). In His story, the shepherd leaves 99 sheep to find the one that is lost (Luke 15:4-7). And Jesus Himself is \"the Lamb of God, which taketh away the sin of the world\" (John 1:29).",
+          "ellenWhite": "\"Jesus knows us individually, and is touched with the feeling of our infirmities. He knows us all by name\" (The Desire of Ages, p. 479).",
+          "quiz": [
+            {
+              "q": "How many sheep did the shepherd leave to find the lost one?",
+              "a": "99 (Luke 15:4)."
+            },
+            {
+              "q": "What did John the Baptist call Jesus?",
+              "a": "\"The Lamb of God\" (John 1:29)."
+            },
+            {
+              "q": "A sheep stuck on its back needs help. What does Jesus do when we fall?",
+              "a": "He comes and lifts us up (Psalm 23:3, 145:14)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Schapen kunnen de gezichten van zo’n 50 andere schapen herkennen en die jarenlang onthouden. Ze kennen de stem van hun herder en volgen hem. Een schaap met een zware wollen vacht dat op zijn rug rolt, kan niet zelf meer overeind komen; de herder moet komen om het om te draaien.",
+          "bible": "“De HEERE is mijn Herder, mij zal niets ontbreken” (Psalm 23:1). Jezus zei: “Mijn schapen horen Mijn stem, en Ik ken ze, en zij volgen Mij” (Johannes 10:27). In Zijn verhaal laat de herder 99 schapen achter om dat ene schaap te zoeken dat verdwaald is (Lukas 15:4-7). En Jezus Zelf is “het Lam van God, Dat de zonde van de wereld wegneemt” (Johannes 1:29).",
+          "ellenWhite": "“Jezus kent ons ieder persoonlijk en heeft medelijden met onze zwakheden. Hij kent ons allemaal bij naam” (The Desire of Ages, blz. 479).",
+          "quiz": [
+            {
+              "q": "Hoeveel schapen liet de herder achter om het verloren schaap te zoeken?",
+              "a": "99 (Lukas 15:4)."
+            },
+            {
+              "q": "Hoe noemde Johannes de Doper Jezus?",
+              "a": "“Het Lam van God” (Johannes 1:29)."
+            },
+            {
+              "q": "Een schaap dat op zijn rug ligt, heeft hulp nodig. Wat doet Jezus als wij vallen?",
+              "a": "Hij komt en helpt ons weer overeind (Psalm 23:3, 145:14)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "goat",
+      "section": "farm",
+      "name": {
+        "en": "Goat",
+        "nl": "Geit"
+      },
+      "image": {
+        "photo": "images/goat.jpg",
+        "thumb": "images/goat-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Goat"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Goats have rectangular pupils, so they can see almost all the way around without turning their heads. They are amazing climbers, and some even climb trees. They don't really eat tin cans; they nibble everything because they are curious.",
+          "bible": "\"The high hills are a refuge for the wild goats\" (Psalm 104:18). Jesus told a story of sheep and goats (Matthew 25:31-46). It isn't the goats' fault; He used them as a picture. The \"sheep\" were people who fed the hungry and visited the sick, and Jesus said: \"Inasmuch as ye have done it unto one of the least of these my brethren, ye have done it unto me\" (Matthew 25:40).",
+          "quiz": [
+            {
+              "q": "Why are a goat's pupils rectangular?",
+              "a": "So it can see almost all around."
+            },
+            {
+              "q": "In Jesus' story, what did the \"sheep\" do?",
+              "a": "They fed the hungry, gave drinks, welcomed strangers and visited the sick (Matthew 25:35-36)."
+            },
+            {
+              "q": "When you help someone, whom are you really helping?",
+              "a": "Jesus (Matthew 25:40)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Geiten hebben rechthoekige pupillen, zodat ze bijna helemaal rondom kunnen kijken zonder hun hoofd te draaien. Het zijn geweldige klimmers, en sommige klimmen zelfs in bomen. Ze eten niet echt blikjes; ze knabbelen overal aan omdat ze nieuwsgierig zijn.",
+          "bible": "“De hoge bergen zijn een toevlucht voor de wilde geiten” (Psalm 104:18). Jezus vertelde een verhaal over schapen en bokken (Mattheüs 25:31-46). Het is niet de schuld van de bokken; Hij gebruikte ze als voorbeeld. De ‘schapen’ waren mensen die hongerigen te eten gaven en zieken bezochten, en Jezus zei: “Voor zover u dit gedaan hebt voor een van deze minste broeders van Mij, hebt u dat voor Mij gedaan” (Mattheüs 25:40).",
+          "quiz": [
+            {
+              "q": "Waarom zijn de pupillen van een geit rechthoekig?",
+              "a": "Zodat hij bijna helemaal rondom kan kijken."
+            },
+            {
+              "q": "Wat deden de ‘schapen’ in het verhaal van Jezus?",
+              "a": "Ze gaven hongerigen te eten en dorstigen te drinken, ze namen vreemdelingen op en bezochten zieken (Mattheüs 25:35-36)."
+            },
+            {
+              "q": "Als jij iemand helpt, wie help je dan eigenlijk?",
+              "a": "Jezus (Mattheüs 25:40)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "donkey",
+      "section": "farm",
+      "name": {
+        "en": "Donkey",
+        "nl": "Ezel"
+      },
+      "image": {
+        "photo": "images/donkey.jpg",
+        "thumb": "images/donkey-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Donkey"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Donkeys aren't stubborn, they are careful: when something feels unsafe they stop and think. Many donkeys have a dark stripe down the back and across the shoulders that forms a cross. An old legend says it is because a donkey carried Jesus. Donkeys remember places and friends for many years.",
+          "bible": "Jesus rode into Jerusalem on a young donkey, just as Zechariah promised: \"thy King cometh unto thee... lowly, and riding upon an ass\" (Zechariah 9:9, Matthew 21:5-7). A king on a war horse comes to fight. Jesus came humble, bringing peace. Balaam's donkey saw God's angel when Balaam didn't, and God let it speak (Numbers 22:28).",
+          "ellenWhite": "Writing about Balaam beating his donkey: \"Few realize as they should the sinfulness of abusing animals or leaving them to suffer from neglect. He who created man made the lower animals also\" (Patriarchs and Prophets, p. 443).",
+          "quiz": [
+            {
+              "q": "Which animal did Jesus ride into Jerusalem?",
+              "a": "A young donkey (Matthew 21:7)."
+            },
+            {
+              "q": "Which donkey talked?",
+              "a": "Balaam's donkey (Numbers 22:28)."
+            },
+            {
+              "q": "What shape can you find on many donkeys' backs?",
+              "a": "A cross."
+            },
+            {
+              "q": "Why are we kind to animals?",
+              "a": "God made them and cares for them. \"A righteous man regardeth the life of his beast\" (Proverbs 12:10)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Ezels zijn niet koppig, ze zijn voorzichtig: als iets niet veilig voelt, blijven ze staan en denken ze na. Veel ezels hebben een donkere streep over hun rug en over hun schouders, die samen een kruis vormen. Een oude legende zegt dat dit komt doordat een ezel Jezus gedragen heeft. Ezels onthouden plekken en vrienden vele jaren lang.",
+          "bible": "Jezus reed Jeruzalem binnen op een jonge ezel, precies zoals Zacharia had beloofd: “uw Koning komt tot u... nederig en rijdend op een ezel” (Zacharia 9:9, Mattheüs 21:5-7). Een koning op een strijdpaard komt om te vechten. Jezus kwam nederig en bracht vrede. De ezelin van Bileam zag Gods engel toen Bileam hem niet zag, en God liet haar spreken (Numeri 22:28).",
+          "ellenWhite": "Over Bileam die zijn ezelin sloeg: “Weinigen beseffen zoals ze zouden moeten hoe zondig het is om dieren te mishandelen of ze door verwaarlozing te laten lijden. Hij Die de mens schiep, heeft ook de dieren gemaakt” (Patriarchs and Prophets, blz. 443).",
+          "quiz": [
+            {
+              "q": "Op welk dier reed Jezus Jeruzalem binnen?",
+              "a": "Op een jonge ezel (Mattheüs 21:7)."
+            },
+            {
+              "q": "Welke ezel kon praten?",
+              "a": "De ezelin van Bileam (Numeri 22:28)."
+            },
+            {
+              "q": "Welke vorm kun je op de rug van veel ezels vinden?",
+              "a": "Een kruis."
+            },
+            {
+              "q": "Waarom zijn we lief voor dieren?",
+              "a": "God heeft ze gemaakt en zorgt voor ze. “De rechtvaardige kent de behoefte van zijn vee” (Spreuken 12:10)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chicken",
+      "section": "farm",
+      "name": {
+        "en": "Chicken",
+        "nl": "Kip"
+      },
+      "image": {
+        "photo": "images/chicken.jpg",
+        "thumb": "images/chicken-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Chicken"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A mother hen clucks to her chicks while they are still inside their eggs, and the chicks peep back. When danger comes she spreads her wings over them. Roosters have a built-in clock and often crow before sunrise.",
+          "bible": "Jesus said: \"how often would I have gathered thy children together, even as a hen gathereth her chickens under her wings\" (Matthew 23:37). Peter promised never to deny Jesus, but before the rooster crowed he denied Him three times (Matthew 26:34, 74-75). After Jesus rose, He forgave Peter and asked him three times: \"lovest thou me?\" (John 21:15-17).",
+          "ellenWhite": "As the rooster crowed, \"the Saviour turned from the frowning judges, and looked full upon His poor disciple.\" In Jesus' face Peter \"read deep pity and sorrow, but there was no anger there\" (The Desire of Ages, p. 713).",
+          "quiz": [
+            {
+              "q": "What does a hen do when danger comes?",
+              "a": "Gathers her chicks under her wings."
+            },
+            {
+              "q": "What happened when the rooster crowed?",
+              "a": "Peter remembered Jesus' words and cried (Matthew 26:75)."
+            },
+            {
+              "q": "Did Jesus forgive Peter?",
+              "a": "Yes. He asked three times \"lovest thou me?\" and gave him a job: \"Feed my sheep\" (John 21:17)."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Een moederkip tokt al tegen haar kuikens als ze nog in hun eieren zitten, en de kuikens piepen terug. Als er gevaar dreigt, spreidt ze haar vleugels over hen uit. Hanen hebben een ingebouwde klok en kraaien vaak al voordat de zon opkomt.",
+          "bible": "Jezus zei: “hoe vaak heb Ik uw kinderen bijeen willen brengen, zoals een hen haar kuikens bijeenbrengt onder haar vleugels” (Mattheüs 23:37). Petrus beloofde dat hij Jezus nooit zou verloochenen, maar voordat de haan kraaide, had hij Hem drie keer verloochend (Mattheüs 26:34, 74-75). Nadat Jezus was opgestaan, vergaf Hij Petrus en vroeg Hij hem drie keer: “hebt u Mij lief?” (Johannes 21:15-17).",
+          "ellenWhite": "Toen de haan kraaide, “wendde de Heiland Zich af van de boos kijkende rechters en keek Zijn arme discipel recht aan.” In het gezicht van Jezus “las Petrus diep medelijden en verdriet, maar er was geen boosheid” (The Desire of Ages, blz. 713).",
+          "quiz": [
+            {
+              "q": "Wat doet een kip als er gevaar dreigt?",
+              "a": "Ze verzamelt haar kuikens onder haar vleugels."
+            },
+            {
+              "q": "Wat gebeurde er toen de haan kraaide?",
+              "a": "Petrus dacht aan de woorden van Jezus en huilde (Mattheüs 26:75)."
+            },
+            {
+              "q": "Heeft Jezus Petrus vergeven?",
+              "a": "Ja. Hij vroeg drie keer “hebt u Mij lief?” en gaf hem een taak: “Hoed Mijn schapen” (Johannes 21:17)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pig",
+      "section": "farm",
+      "name": {
+        "en": "Pig",
+        "nl": "Varken"
+      },
+      "image": {
+        "photo": "images/pig.jpg",
+        "thumb": "images/pig-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Pig"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "Pigs are among the smartest animals. They can learn their names and solve puzzles. Pigs can hardly sweat, so they roll in mud to cool down and protect their skin from sunburn.",
+          "bible": "In Jesus' story, a son wasted all his money and ended up feeding pigs, so hungry he wanted their food (Luke 15:15-16). He went home, and \"when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him\" (Luke 15:20). That is how God welcomes us back. (God also gave Israel health laws, and the pig was on the \"not for eating\" list, Leviticus 11:7.)",
+          "ellenWhite": "\"But while he is yet 'a great way off' the father discerns his form. Love is of quick sight\" (Christ's Object Lessons, p. 203). And to us: \"If you take even one step toward Him in repentance, He will hasten to enfold you in His arms of infinite love\" (p. 206).",
+          "quiz": [
+            {
+              "q": "What job did the lost son end up doing?",
+              "a": "Feeding pigs (Luke 15:15)."
+            },
+            {
+              "q": "What did the father do when he saw his son coming?",
+              "a": "He ran, hugged him and kissed him (Luke 15:20)."
+            },
+            {
+              "q": "Why do pigs roll in mud?",
+              "a": "To cool down, because they can hardly sweat."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "Varkens horen bij de slimste dieren. Ze kunnen hun naam leren en puzzels oplossen. Varkens kunnen bijna niet zweten, dus rollen ze in de modder om af te koelen en om hun huid te beschermen tegen zonnebrand.",
+          "bible": "In een verhaal van Jezus verkwistte een zoon al zijn geld en moest hij uiteindelijk varkens voeren. Hij had zo’n honger dat hij hun voer wel wilde eten (Lukas 15:15-16). Hij ging terug naar huis, en “toen hij nog ver weg was, zag zijn vader hem en werd met ontferming bewogen; hij liep snel naar hem toe, viel hem om de hals en kuste hem” (Lukas 15:20). Zo verwelkomt God ons als we terugkomen. (God gaf Israël ook gezondheidswetten, en het varken stond op de lijst van dieren die je niet mocht eten, Leviticus 11:7.)",
+          "ellenWhite": "“Maar terwijl hij nog ‘ver weg’ is, ziet de vader zijn gestalte al. Liefde ziet scherp” (Christ's Object Lessons, blz. 203). En tegen ons zegt ze: “Als je ook maar één stap naar Hem toe zet in berouw, dan haast Hij Zich om je te omarmen met Zijn armen van oneindige liefde” (blz. 206).",
+          "quiz": [
+            {
+              "q": "Welk werk moest de verloren zoon uiteindelijk doen?",
+              "a": "Varkens voeren (Lukas 15:15)."
+            },
+            {
+              "q": "Wat deed de vader toen hij zijn zoon zag aankomen?",
+              "a": "Hij rende naar hem toe, omhelsde hem en kuste hem (Lukas 15:20)."
+            },
+            {
+              "q": "Waarom rollen varkens in de modder?",
+              "a": "Om af te koelen, want ze kunnen bijna niet zweten."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rabbit",
+      "section": "farm",
+      "name": {
+        "en": "Rabbit",
+        "nl": "Konijn"
+      },
+      "image": {
+        "photo": "images/rabbit.jpg",
+        "thumb": "images/rabbit-thumb.jpg",
+        "credit": "https://en.wikipedia.org/wiki/Domestic_rabbit"
+      },
+      "content": {
+        "en": {
+          "didYouKnow": "A rabbit's teeth never stop growing, so it chews a lot. Rabbits eat some of their own soft droppings to digest their food a second time. A happy rabbit does a jump-and-twist in the air called a binky.",
+          "bible": "Rabbits are always listening, with ears that turn toward every sound. \"Let every man be swift to hear, slow to speak, slow to wrath\" (James 1:19). And a binky is a picture of joy: \"This is the day which the LORD hath made; we will rejoice and be glad in it\" (Psalm 118:24).",
+          "quiz": [
+            {
+              "q": "Do a rabbit's teeth ever stop growing?",
+              "a": "No, never."
+            },
+            {
+              "q": "What does James 1:19 say we should be quick to do?",
+              "a": "Listen."
+            },
+            {
+              "q": "What makes you want to jump for joy like a rabbit?",
+              "a": "Let each child answer, then thank God for it together."
+            }
+          ]
+        },
+        "nl": {
+          "didYouKnow": "De tanden van een konijn blijven altijd groeien, daarom knaagt het veel. Konijnen eten een deel van hun eigen zachte keutels op, zodat ze hun eten een tweede keer kunnen verteren. Een blij konijn maakt een sprongetje met een draai in de lucht. Dat heet een ‘binky’.",
+          "bible": "Konijnen luisteren altijd, met oren die naar elk geluid draaien. “Laat ieder mens snel zijn om te horen, traag om te spreken, traag tot toorn” (Jakobus 1:19). En een binky is een plaatje van blijdschap: “Dit is de dag die de HEERE gemaakt heeft; laten wij ons daarin verheugen en verblijd zijn” (Psalm 118:24).",
+          "quiz": [
+            {
+              "q": "Stoppen de tanden van een konijn ooit met groeien?",
+              "a": "Nee, nooit."
+            },
+            {
+              "q": "Waar moeten we volgens Jakobus 1:19 snel in zijn?",
+              "a": "In luisteren."
+            },
+            {
+              "q": "Waardoor zou jij van blijdschap willen springen, net als een konijn?",
+              "a": "Laat elk kind antwoorden, en dank God er daarna samen voor."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

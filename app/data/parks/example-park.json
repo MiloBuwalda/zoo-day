@@ -1,0 +1,326 @@
+{
+  "id": "example-park",
+  "name": "Example Zoo (demo coordinates)",
+  "placeholder": true,
+  "center": {
+    "lat": 51,
+    "lng": 4
+  },
+  "defaultRadiusM": 100,
+  "matching": {
+    "maxAccuracyM": 50,
+    "exitBufferM": 15,
+    "switchMarginM": 10,
+    "confirmFixes": 2,
+    "notInParkM": 1500
+  },
+  "locations": [
+    {
+      "id": "gate",
+      "target": "gate",
+      "lat": 50.995863,
+      "lng": 3.999428,
+      "radiusM": 60,
+      "note": "Entrance"
+    },
+    {
+      "id": "end",
+      "target": "end",
+      "lat": 50.995863,
+      "lng": 4.000572,
+      "radiusM": 60,
+      "note": "Exit"
+    },
+    {
+      "id": "lion-1",
+      "target": "lion",
+      "lat": 51,
+      "lng": 4,
+      "note": "Example: lions at 51.00000, 4.00000"
+    },
+    {
+      "id": "giraffe-1",
+      "target": "giraffe",
+      "lat": 51.001304,
+      "lng": 3.995297
+    },
+    {
+      "id": "zebra-1",
+      "target": "zebra",
+      "lat": 51.001304,
+      "lng": 3.99594
+    },
+    {
+      "id": "elephant-1",
+      "target": "elephant",
+      "lat": 51.001709,
+      "lng": 3.994654
+    },
+    {
+      "id": "rhino-1",
+      "target": "rhino",
+      "lat": 51.001709,
+      "lng": 3.995297
+    },
+    {
+      "id": "hippo-1",
+      "target": "hippo",
+      "lat": 51.001709,
+      "lng": 3.99594
+    },
+    {
+      "id": "meerkat-1",
+      "target": "meerkat",
+      "lat": 51.002113,
+      "lng": 3.994654
+    },
+    {
+      "id": "hyrax-1",
+      "target": "hyrax",
+      "lat": 51.002113,
+      "lng": 3.995297
+    },
+    {
+      "id": "gorilla-1",
+      "target": "gorilla",
+      "lat": 51.002861,
+      "lng": 3.997756
+    },
+    {
+      "id": "chimp-1",
+      "target": "chimp",
+      "lat": 51.002861,
+      "lng": 3.998399
+    },
+    {
+      "id": "orangutan-1",
+      "target": "orangutan",
+      "lat": 51.002861,
+      "lng": 3.999042
+    },
+    {
+      "id": "lemur-1",
+      "target": "lemur",
+      "lat": 51.003266,
+      "lng": 3.997756
+    },
+    {
+      "id": "baboon-1",
+      "target": "baboon",
+      "lat": 51.003266,
+      "lng": 3.998399
+    },
+    {
+      "id": "camel-1",
+      "target": "camel",
+      "lat": 51.002674,
+      "lng": 4.001713
+    },
+    {
+      "id": "tiger-1",
+      "target": "tiger",
+      "lat": 51.002674,
+      "lng": 4.002356
+    },
+    {
+      "id": "redpanda-1",
+      "target": "redpanda",
+      "lat": 51.002674,
+      "lng": 4.002999
+    },
+    {
+      "id": "brownbear-1",
+      "target": "brownbear",
+      "lat": 51.003079,
+      "lng": 4.001713
+    },
+    {
+      "id": "polarbear-1",
+      "target": "polarbear",
+      "lat": 51.003079,
+      "lng": 4.002356
+    },
+    {
+      "id": "wolf-1",
+      "target": "wolf",
+      "lat": 51.003079,
+      "lng": 4.002999
+    },
+    {
+      "id": "penguin-1",
+      "target": "penguin",
+      "lat": 51.000844,
+      "lng": 4.004412
+    },
+    {
+      "id": "flamingo-1",
+      "target": "flamingo",
+      "lat": 51.000844,
+      "lng": 4.005055
+    },
+    {
+      "id": "eagle-1",
+      "target": "eagle",
+      "lat": 51.000844,
+      "lng": 4.005698
+    },
+    {
+      "id": "ostrich-1",
+      "target": "ostrich",
+      "lat": 51.001249,
+      "lng": 4.004412
+    },
+    {
+      "id": "owl-1",
+      "target": "owl",
+      "lat": 51.001249,
+      "lng": 4.005055
+    },
+    {
+      "id": "parrot-1",
+      "target": "parrot",
+      "lat": 51.001249,
+      "lng": 4.005698
+    },
+    {
+      "id": "peacock-1",
+      "target": "peacock",
+      "lat": 51.001653,
+      "lng": 4.004412
+    },
+    {
+      "id": "stork-1",
+      "target": "stork",
+      "lat": 51.001653,
+      "lng": 4.005055
+    },
+    {
+      "id": "dove-1",
+      "target": "dove",
+      "lat": 51.001653,
+      "lng": 4.005698
+    },
+    {
+      "id": "snake-1",
+      "target": "snake",
+      "lat": 50.998347,
+      "lng": 4.004412
+    },
+    {
+      "id": "crocodile-1",
+      "target": "crocodile",
+      "lat": 50.998347,
+      "lng": 4.005055
+    },
+    {
+      "id": "tortoise-1",
+      "target": "tortoise",
+      "lat": 50.998347,
+      "lng": 4.005698
+    },
+    {
+      "id": "frog-1",
+      "target": "frog",
+      "lat": 50.998751,
+      "lng": 4.004412
+    },
+    {
+      "id": "chameleon-1",
+      "target": "chameleon",
+      "lat": 50.998751,
+      "lng": 4.005055
+    },
+    {
+      "id": "sealion-1",
+      "target": "sealion",
+      "lat": 50.996516,
+      "lng": 4.001713
+    },
+    {
+      "id": "shark-1",
+      "target": "shark",
+      "lat": 50.996516,
+      "lng": 4.002356
+    },
+    {
+      "id": "jellyfish-1",
+      "target": "jellyfish",
+      "lat": 50.996516,
+      "lng": 4.002999
+    },
+    {
+      "id": "clownfish-1",
+      "target": "clownfish",
+      "lat": 50.996921,
+      "lng": 4.001713
+    },
+    {
+      "id": "fish-1",
+      "target": "fish",
+      "lat": 50.996921,
+      "lng": 4.002356
+    },
+    {
+      "id": "butterfly-1",
+      "target": "butterfly",
+      "lat": 50.99633,
+      "lng": 3.997756
+    },
+    {
+      "id": "ant-1",
+      "target": "ant",
+      "lat": 50.99633,
+      "lng": 3.998399
+    },
+    {
+      "id": "bee-1",
+      "target": "bee",
+      "lat": 50.99633,
+      "lng": 3.999042
+    },
+    {
+      "id": "sheep-1",
+      "target": "sheep",
+      "lat": 50.997887,
+      "lng": 3.994654
+    },
+    {
+      "id": "goat-1",
+      "target": "goat",
+      "lat": 50.997887,
+      "lng": 3.995297
+    },
+    {
+      "id": "donkey-1",
+      "target": "donkey",
+      "lat": 50.997887,
+      "lng": 3.99594
+    },
+    {
+      "id": "chicken-1",
+      "target": "chicken",
+      "lat": 50.998291,
+      "lng": 3.994654
+    },
+    {
+      "id": "pig-1",
+      "target": "pig",
+      "lat": 50.998291,
+      "lng": 3.995297
+    },
+    {
+      "id": "rabbit-1",
+      "target": "rabbit",
+      "lat": 50.998291,
+      "lng": 3.99594
+    },
+    {
+      "id": "penguin-2",
+      "target": "penguin",
+      "lat": 51.001114,
+      "lng": 4.003555,
+      "radiusM": 40,
+      "note": "Second viewing window"
+    }
+  ]
+}
