@@ -97,3 +97,16 @@ body.has-nearby main { padding-bottom: 180px; }
 @media print {
   .gps, .nearby, .sim, .record, .not-here-badge { display: none !important; }
 }
+
+/* ---- pop-up for a spot with several animals ---- */
+.nearby.is-group { grid-template-columns: 1fr auto; }
+.nearby-list { grid-column: 1 / -1; list-style: none; margin: 6px 0 0; padding: 0; max-height: min(52vh, 360px); overflow-y: auto; }
+.nearby-list li { display: grid; grid-template-columns: 44px 1fr auto auto; gap: 10px; align-items: center; padding: 6px 0; border-top: 1px solid var(--line); }
+.nearby-mini { width: 44px; height: 44px; border-radius: 10px; object-fit: cover; border-left: 4px solid var(--sec); }
+.nearby-mini.nearby-dot { display: block; }
+.nearby-li-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.2; }
+.nearby-li-text strong { font-size: 1.05rem; }
+.nearby-li-text small { font-size: .8rem; color: var(--muted); }
+.nearby-seen { display: grid; place-items: center; width: 36px; height: 36px; cursor: pointer; }
+.nearby-seen input { width: 22px; height: 22px; accent-color: var(--sec); cursor: pointer; }
+.nearby-go { font: inherit; font-size: 1.4rem; font-weight: 800; line-height: 1; width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--accent); color: var(--accent-ink); cursor: pointer; }

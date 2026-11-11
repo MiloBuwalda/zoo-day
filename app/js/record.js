@@ -2,7 +2,7 @@
 // point, then download a park JSON file to put in data/parks/.
 
 import { h } from "./render.js";
-import { DEFAULT_MATCHING, DEFAULT_RADIUS_M } from "./geo.js";
+import { DEFAULT_MATCHING, DEFAULT_RADIUS_M, targetKey, targetsOf } from "./geo.js";
 
 const STORE_KEY = "zoo-day-recorded";
 const SAMPLES = 5;
@@ -35,18 +35,24 @@ export function nextLocationId(target, taken) {
 /**
  * Builds a park file from the recorded points.
  * keepUnrecorded: also keep the base park's points for targets you didn't record.
+ * A recorded point replaces every base point with the same target (or the same
+ * group of targets), and keeps the label, radius and note it was given.
  */
 export function buildParkExport(base, recorded, { id, name, keepUnrecorded }) {
-  const recordedTargets = new Set(recorded.map((p) => p.target));
+  const recordedKeys = new Set(recorded.map(targetKey));
   const kept = keepUnrecorded && base
     ? base.locations
-        .filter((l) => !recordedTargets.has(l.target))
-        .map(({ entry, ...l }) => l) // drop the joined content
+        .filter((l) => !recordedKeys.has(targetKey(l)))
+        .map(({ entry, entries, ...l }) => l) // drop the joined content
     : [];
   const taken = new Set(kept.map((l) => l.id));
   const fresh = recorded.map((p) => {
-    const loc = { id: taken.has(p.id) ? nextLocationId(p.target, taken) : p.id, target: p.target, lat: r6(p.lat), lng: r6(p.lng) };
+    const loc = { id: taken.has(p.id) ? nextLocationId(p.id.replace(/-d+$/, ""), taken) : p.id, target: p.target };
+    if (p.label) loc.label = p.label;
+    loc.lat = r6(p.lat);
+    loc.lng = r6(p.lng);
     if (p.radiusM) loc.radiusM = p.radiusM;
+    if (p.note) loc.note = p.note;
     if (p.accuracyM != null) loc.accuracyM = p.accuracyM;
     if (p.recordedAt) loc.recordedAt = p.recordedAt;
     taken.add(loc.id);
@@ -65,6 +71,7 @@ export function buildParkExport(base, recorded, { id, name, keepUnrecorded }) {
     locations,
   };
   if (kept.length && base?.placeholder) park.placeholder = true;
+  if (kept.length && base?.source) park.source = base.source; // credit for the kept points
   return park;
 }
 
@@ -132,19 +139,31 @@ export function createRecorder({ source, getContent, getLang, getT, getPark }) {
       message = "";
       return render();
     }
-    const id = nextLocationId(target, new Set(recorded.map((p) => p.id)));
-    recorded.push({ id, target, lat: r6(avg.lat), lng: r6(avg.lng), accuracyM: acc, recordedAt: new Date().toISOString() });
+    const taken = new Set(recorded.map((p) => p.id));
+    const spot = spotFor(target);
+    const point = spot
+      ? { id: taken.has(spot.id) ? nextLocationId(spot.id, taken) : spot.id, spot: spot.id, target: spot.target, label: spot.label, radiusM: spot.radiusM, note: spot.note }
+      : { id: nextLocationId(target, taken), target };
+    const id = point.id;
+    recorded.push({ ...point, lat: r6(avg.lat), lng: r6(avg.lng), accuracyM: acc, recordedAt: new Date().toISOString() });
     saveRecorded(recorded);
     message = t("recordSaved", { id, acc });
     render();
   }
 
+  // "spot:<id>" in the target list = re-record a point of the loaded park.
+  function spotFor(value) {
+    if (!value?.startsWith("spot:")) return null;
+    return getPark()?.locations.find((l) => l.id === value.slice(5)) || null;
+  }
+
   function exportJSON() {
     const park = getPark();
-    const keep = form.keep ?? !(park?.placeholder ?? true);
+    const keep = form.keep ?? (!!park && !park.placeholder);
+    const real = park && !park.placeholder ? park : null;
     const out = buildParkExport(park, recorded, {
-      id: form.id || slugify(form.name) || "my-park",
-      name: form.name || "My park",
+      id: form.id || slugify(form.name) || real?.id || "my-park",
+      name: form.name || real?.name || "My park",
       keepUnrecorded: keep,
     });
     return JSON.stringify(out, null, 2) + "\n";
@@ -182,14 +201,21 @@ export function createRecorder({ source, getContent, getLang, getT, getPark }) {
     const lang = getLang();
     const content = getContent();
     const park = getPark();
-    const nameOf = (id) => content.animals.find((a) => a.id === id)?.name[lang] ?? content.sections.find((s) => s.id === id)?.title[lang] ?? id;
+    const nameOne = (id) => content.animals.find((a) => a.id === id)?.name[lang] ?? content.sections.find((s) => s.id === id)?.title[lang] ?? id;
+    const nameOf = (p) => (typeof p.label === "string" ? p.label : p.label?.[lang]) || targetsOf(p).map(nameOne).join(", ");
     const countFor = (id) => recorded.filter((p) => p.target === id).length;
-    const label = (id) => nameOf(id) + (countFor(id) ? `  ✓${countFor(id)}` : "");
+    const label = (id) => nameOne(id) + (countFor(id) ? `  ✓${countFor(id)}` : "");
+    const spots = park && !park.placeholder ? park.locations : [];
+    const spotLabel = (l) => {
+      const n = recorded.filter((p) => p.spot === l.id).length;
+      return `${nameOf(l)} (${l.id})` + (n ? `  ✓${n}` : "");
+    };
 
     const select = h(
       "select",
       { id: "record-target" },
       h("option", { value: "" }, "—"),
+      spots.length ? h("optgroup", { label: "📍 " + park.name }, spots.map((l) => h("option", { value: "spot:" + l.id, selected: form.target === "spot:" + l.id }, spotLabel(l)))) : null,
       h("optgroup", { label: "★" }, content.sections.filter((s) => s.type === "page" && s.id !== "sources").map((s) => h("option", { value: s.id, selected: form.target === s.id }, label(s.id)))),
       content.sections
         .filter((s) => s.type === "animals")
@@ -217,14 +243,14 @@ export function createRecorder({ source, getContent, getLang, getT, getPark }) {
         saveRecorded(recorded);
         render();
       });
-      return h("tr", {}, h("td", {}, p.id), h("td", {}, nameOf(p.target)), h("td", {}, `${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`), h("td", {}, `±${p.accuracyM} m`), h("td", {}, del));
+      return h("tr", {}, h("td", {}, p.id), h("td", {}, nameOf(p)), h("td", {}, `${p.lat.toFixed(6)}, ${p.lng.toFixed(6)}`), h("td", {}, `±${p.accuracyM} m`), h("td", {}, del));
     });
 
     const idIn = h("input", { type: "text", value: form.id, placeholder: "artis", pattern: "[a-z0-9-]+" });
     idIn.addEventListener("input", () => (form.id = idIn.value.trim()));
     const nameIn = h("input", { type: "text", value: form.name, placeholder: "ARTIS Amsterdam" });
     nameIn.addEventListener("input", () => (form.name = nameIn.value.trim()));
-    const keepIn = h("input", { type: "checkbox", checked: form.keep ?? !(park?.placeholder ?? true) });
+    const keepIn = h("input", { type: "checkbox", checked: form.keep ?? (!!park && !park.placeholder) });
     keepIn.addEventListener("change", () => (form.keep = keepIn.checked));
 
     const dl = h("button", { type: "button", disabled: !recorded.length }, t("recordDownload"));

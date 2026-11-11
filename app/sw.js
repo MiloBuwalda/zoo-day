@@ -6,7 +6,7 @@
 //
 // Bump VERSION after changing files so phones drop the old cache.
 
-const VERSION = "zoo-gps-v1";
+const VERSION = "zoo-gps-v2";
 const SHELL = [
   "./",
   "index.html",

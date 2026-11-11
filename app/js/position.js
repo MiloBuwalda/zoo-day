@@ -116,7 +116,7 @@ export function mountSimPanel(source, { getPark, getContent, getLang, getT }) {
     "select",
     { "aria-label": t("simJump") },
     h("option", { value: "" }, "—"),
-    (park?.locations || []).map((l) => h("option", { value: l.id }, `${nameOf(l.target)} (${l.id})`)),
+    (park?.locations || []).map((l) => h("option", { value: l.id }, `${(typeof l.label === "string" ? l.label : l.label?.[lang]) || [].concat(l.target).map(nameOf).join(", ")} (${l.id})`)),
     park ? h("option", { value: "__outside" }, t("simOutside")) : null,
   );
   const north = h("input", { type: "number", step: "5", value: "0", "aria-label": "north" });

@@ -8,7 +8,8 @@ import { createRecorder } from "./record.js";
 
 const SEEN_KEY = "zoo-day-seen";
 const LANG_KEY = "zoo-day-lang";
-const PARK_KEY = "zoo-day-park";
+// New key: the first version also saved the default park, which wasn't a real choice.
+const PARK_KEY = "zoo-day-park-choice";
 
 const store = {
   get(key, fallback) {
@@ -50,12 +51,15 @@ async function main() {
   // --- park ---
   let park = null;
   const savedPark = store.get(PARK_KEY, undefined);
-  const initialPark = params.get("park") || (savedPark !== undefined ? savedPark : parkIndex.length === 1 ? parkIndex[0].id : null);
+  const initialPark = params.get("park") || (savedPark !== undefined ? savedPark : parkIndex[0]?.id ?? null);
 
-  async function selectPark(id) {
+  // Only a choice (the park menu, ?park=, or GPS finding the park you're in) is
+  // remembered; the default (first park in the index) is not, so a new default
+  // reaches phones that opened the site before.
+  async function selectPark(id, { remember = true } = {}) {
     const entry = parkIndex.find((p) => p.id === id) || null;
     park = entry ? await loadPark(entry, content).catch((e) => (console.error(e), null)) : null;
-    store.set(PARK_KEY, park ? park.id : null);
+    if (remember) store.set(PARK_KEY, park ? park.id : null);
     nearby.setPark(park);
     renderAll();
   }
@@ -122,7 +126,7 @@ async function main() {
     syncSeen();
   }
 
-  await selectPark(initialPark);
+  await selectPark(initialPark, { remember: params.has("park") });
 
   // Content is rendered after load, so jump to #anchor ourselves.
   if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();

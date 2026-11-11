@@ -66,12 +66,46 @@ Edit `content.json` directly; it is now the source of truth. (`npm run extract` 
 ```
 
 - `target` is an animal id from `content.json`, or the page `gate` or `end`.
+- `target` can also be a **list**, for one spot where you see several animals: a mixed enclosure, a greenhouse, a petting farm. The pop-up then lists them all, each with its own "Seen it!" tick and open button. Give such a spot a `label`:
+  ```json
+  { "id": "savanna", "target": ["giraffe", "zebra", "rhino"], "label": { "en": "Savanna", "nl": "Savanne" }, "lat": 52.7795, "lng": 6.8858, "radiusM": 70 }
+  ```
 - One animal can have several points: a large enclosure, or several viewing windows.
 - `radiusM` is optional per point. Use smaller radii where enclosures are close together.
+- `note` (per point) and `source` (per park) are free text for whoever edits the file; the app ignores them.
 - Animals without a point are shown greyed out as "not at this park" and never pop up.
 - When the app loads, each location is joined to its content, so every entry has its id, GPS point and full content.
 
-The included `example-park.json` is a **demo** with made-up coordinates around 51.00000, 4.00000. The lions sit exactly on that point. Replace it with a real park.
+The first park in `parks/index.json` is the default until you pick another one in the park menu (or GPS finds the park you're in).
+
+### The parks
+
+- **`wildlands.json`**: Wildlands Adventure Zoo Emmen, see below.
+- **`example-park.json`**: a **demo** with made-up coordinates around 51.00000, 4.00000 (the lions sit exactly on that point). Handy for trying the simulator.
+
+## Wildlands Adventure Zoo Emmen
+
+27 of the 47 animals have a spot, in 20 points:
+
+| Area | Spots |
+|---|---|
+| Entrance | Entrance and exit (the `gate` and `end` pages together: it's one gate) |
+| Serenga | Lion · Savanna (giraffe, zebra, rhino) · Meerkat · Baboon · Camel · Animazia aquariums (fish, clownfish, tortoise) · Hippo · Dogon village petting farm (goat, donkey, chicken, pig, rabbit, pigeon) |
+| Nortica | Sea lions · Seals · Snowy owl · Penguins · Polar bears (2 points) · Shark (North Sea aquarium) |
+| Jungola | Elephant · Ring-tailed lemur (in Rimbula) · Butterfly Temple (butterfly, python, crocodile) · Koi pond (fish) |
+
+**Where the coordinates come from:** the animal markers in OpenStreetMap (© OpenStreetMap contributors, ODbL), checked against the Wildlands article on Dutch Wikipedia, November 2026. Each OSM marker was within about 25 m of a visitor path; the savanna point was moved closer to the path along its west side. **None of it has been checked on site yet.**
+
+**On the day:** open the site with `?record=1`. The target menu starts with this park's spots (📍 Wildlands…). Pick one, stand where you watch the animals and press **Save point here**. The spot keeps its animals, label and radius and only gets new coordinates. Most worth doing:
+- **Shark**: the position of the North Sea aquarium is a guess.
+- **Petting farm and sea lions**: they're only about 25 m apart.
+- **Savanna**: is the point where you actually look at the giraffes?
+
+Then download the park JSON ("keep points I didn't record" is ticked) and replace `app/data/parks/wildlands.json` with it.
+
+**Not mapped, look out for them:** the parrot (Wikipedia mentions a lovebird aviary in Serenga and about 30 bird species in Rimbula), the frog and chameleon (maybe in the Butterfly Temple), and the peacock and stork (sometimes free-roaming or nesting wild). If you find one, record it the same way: pick the animal and save the point. Gorilla, chimp, orangutan, tiger, red panda, brown bear, wolf, flamingo, eagle, ostrich, rock hyrax, jellyfish, leafcutter ant, honeybee and sheep aren't at Wildlands as far as the sources show.
+
+A few spots stretch the lesson a little: the tortoises are African spurred tortoises (big, but not true giant tortoises), the elephants are Asian, and the "pigeons" at the farm are fancy pigeons.
 
 ## How matching works
 
@@ -85,7 +119,7 @@ The included `example-park.json` is a **demo** with made-up coordinates around 5
 ## Adding a park
 
 1. **Get coordinates**, either way works:
-   - **In the park:** open `https://<your-site>/?record=1`, press **📍 GPS**, pick an animal, stand at the viewing spot and press **Save point here**. The app averages 5 fixes and warns if accuracy is worse than ±20 m. Repeat for each animal, plus `gate` at the entrance and `end` at the exit. Points are kept on the phone until you clear them.
+   - **In the park:** open `https://<your-site>/?record=1`, press **📍 GPS**, pick an animal, stand at the viewing spot and press **Save point here**. The app averages 5 fixes and warns if accuracy is worse than ±20 m. Repeat for each animal, plus `gate` at the entrance and `end` at the exit. Points are kept on the phone until you clear them. If the park already has a file, its spots are at the top of the menu: re-recording one keeps its animals, label and radius.
    - **At the desk:** right-click a spot in Google Maps or OpenStreetMap, copy the coordinates and type them into the JSON.
 2. In record mode, fill in the park id and name, then press **Download park JSON**. Or press **Copy JSON** and mail it to yourself.
 3. Save the file as `app/data/parks/<id>.json` and add a line to `app/data/parks/index.json`:

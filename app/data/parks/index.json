@@ -1,6 +1,15 @@
 {
   "parks": [
     {
+      "id": "wildlands",
+      "name": "Wildlands Adventure Zoo Emmen",
+      "file": "wildlands.json",
+      "center": {
+        "lat": 52.78026,
+        "lng": 6.887114
+      }
+    },
+    {
       "id": "example-park",
       "name": "Example Zoo (demo coordinates)",
       "file": "example-park.json",

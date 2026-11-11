@@ -1,0 +1,33 @@
+{
+  "id": "wildlands",
+  "name": "Wildlands Adventure Zoo Emmen",
+  "source": "Starting points from the animal markers in OpenStreetMap (© OpenStreetMap contributors, ODbL) and the Wildlands article on Dutch Wikipedia, November 2026. Not yet checked on site: re-record each spot with ?record=1 on the day.",
+  "center": { "lat": 52.78026, "lng": 6.887114 },
+  "defaultRadiusM": 35,
+  "matching": { "maxAccuracyM": 35, "exitBufferM": 10, "switchMarginM": 8, "confirmFixes": 2, "notInParkM": 1000 },
+  "locations": [
+    { "id": "entrance", "target": ["gate", "end"], "label": { "en": "Entrance and exit", "nl": "Ingang en uitgang" }, "lat": 52.782398, "lng": 6.891486, "radiusM": 40, "note": "Main entrance under the Atlas Theater; it is also the exit." },
+
+    { "id": "lion", "target": "lion", "lat": 52.780588, "lng": 6.885972, "radiusM": 45 },
+    { "id": "savanna", "target": ["giraffe", "zebra", "rhino"], "label": { "en": "Savanna", "nl": "Savanne" }, "lat": 52.7795, "lng": 6.8858, "radiusM": 70, "note": "Rothschild giraffes, Grant's zebras and white rhinos share the savanna, seen from the path on its west side and from the Serenga Safari truck." },
+    { "id": "meerkat", "target": "meerkat", "lat": 52.779846, "lng": 6.884805, "radiusM": 30 },
+    { "id": "baboon", "target": "baboon", "lat": 52.778362, "lng": 6.885434, "radiusM": 35, "note": "Hamadryas baboons in the 'ruined amphitheatre'." },
+    { "id": "camel", "target": "camel", "lat": 52.780099, "lng": 6.887429, "radiusM": 40, "note": "Bactrian camels in the desert next to Animazia." },
+    { "id": "animazia", "target": ["fish", "clownfish", "tortoise"], "label": { "en": "Animazia aquariums", "nl": "Animazia (aquaria)" }, "lat": 52.78071, "lng": 6.88737, "radiusM": 35, "note": "Indoors: big sea aquarium at the entrance, small aquariums with clownfish, African spurred tortoises at the exit (large, but not a true giant tortoise)." },
+    { "id": "hippo", "target": "hippo", "lat": 52.781198, "lng": 6.888236, "radiusM": 40 },
+    { "id": "farm", "target": ["goat", "donkey", "chicken", "pig", "rabbit", "dove"], "label": { "en": "Dogon village petting farm", "nl": "Kinderboerderij Dogondorp" }, "lat": 52.782556, "lng": 6.889269, "radiusM": 25, "note": "Goats, dwarf donkeys, chickens, Kunekune pigs, rabbits and fancy pigeons. Right next to the sea lions." },
+
+    { "id": "sealion", "target": "sealion", "lat": 52.782424, "lng": 6.889631, "radiusM": 25, "note": "California sea lions, harbour town of Nortica." },
+    { "id": "seal", "target": "sealion", "lat": 52.782053, "lng": 6.889196, "radiusM": 30, "note": "Harbour seals." },
+    { "id": "owl", "target": "owl", "lat": 52.781258, "lng": 6.889746, "radiusM": 25, "note": "Snowy owl aviary by the sawmill." },
+    { "id": "penguin", "target": "penguin", "lat": 52.781141, "lng": 6.889049, "radiusM": 30, "note": "Humboldt penguins, above and under water." },
+    { "id": "polarbear-1", "target": "polarbear", "lat": 52.780746, "lng": 6.888817, "radiusM": 30 },
+    { "id": "polarbear-2", "target": "polarbear", "lat": 52.780471, "lng": 6.889149, "radiusM": 40 },
+    { "id": "shark", "target": "shark", "lat": 52.780977, "lng": 6.88953, "radiusM": 25, "note": "North Sea aquarium (catsharks, smooth-hound) at the research station. Position is a guess: check it." },
+
+    { "id": "elephant", "target": "elephant", "lat": 52.782463, "lng": 6.887957, "radiusM": 50, "note": "Asian elephants; also seen from inside Rimbula." },
+    { "id": "lemur", "target": "lemur", "lat": 52.782361, "lng": 6.886323, "radiusM": 40, "note": "Ring-tailed lemurs inside the Rimbula greenhouse." },
+    { "id": "butterfly-temple", "target": ["butterfly", "snake", "crocodile"], "label": { "en": "Butterfly Temple", "nl": "Vlindertempel" }, "lat": 52.783141, "lng": 6.889861, "radiusM": 30, "note": "Tropical greenhouse at the start of Jungola: butterflies, reticulated pythons and dwarf crocodiles." },
+    { "id": "koi", "target": "fish", "lat": 52.782819, "lng": 6.890473, "radiusM": 30, "note": "Koi in the pond around the monkey ruin by the Mondiala square." }
+  ]
+}

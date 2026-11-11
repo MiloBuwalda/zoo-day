@@ -4,7 +4,7 @@
 //   data/parks/index.json    – which parks exist
 //   data/parks/<id>.json     – where things are in one park
 
-import { distanceM } from "./geo.js";
+import { distanceM, targetsOf, targetKey } from "./geo.js";
 
 const isNum = (v) => typeof v === "number" && Number.isFinite(v);
 const isStr = (v) => typeof v === "string" && v.trim() !== "";
@@ -103,7 +103,13 @@ export function validatePark(park, content) {
     if (!isStr(l.id)) errors.push(`${at}: missing id`);
     else if (ids.has(l.id)) errors.push(`${at}: duplicate location id`);
     ids.add(l.id);
-    if (!targets.has(l.target)) errors.push(`${at}: unknown target "${l.target}"`);
+    const ts = targetsOf(l);
+    if (!ts.length) errors.push(`${at}: missing target`);
+    if (Array.isArray(l.target) && new Set(ts).size !== ts.length) errors.push(`${at}: the same target is listed twice`);
+    for (const t of ts) if (!targets.has(t)) errors.push(`${at}: unknown target "${t}"`);
+    if (l.label !== undefined && !isStr(l.label) && !(l.label && typeof l.label === "object" && Object.values(l.label).every(isStr))) {
+      errors.push(`${at}: label must be text or { "en": "…", "nl": "…" }`);
+    }
     if (!validLatLng(l)) { errors.push(`${at}: invalid lat/lng`); continue; }
     if (l.radiusM !== undefined && !(isNum(l.radiusM) && l.radiusM > 0)) errors.push(`${at}: radiusM must be a positive number`);
     if (center && validLatLng(center) && distanceM(center, l) > 2000) warnings.push(`${at}: more than 2 km from the park centre (typo?)`);
@@ -111,12 +117,12 @@ export function validatePark(park, content) {
   }
   for (let i = 0; i < good.length; i++) {
     for (let j = i + 1; j < good.length; j++) {
-      if (good[i].target !== good[j].target && distanceM(good[i], good[j]) < 5) {
+      if (targetKey(good[i]) !== targetKey(good[j]) && distanceM(good[i], good[j]) < 5) {
         warnings.push(`${where}: ${good[i].id} and ${good[j].id} point at different targets but are less than 5 m apart`);
       }
     }
   }
-  const mapped = new Set(good.map((l) => l.target));
+  const mapped = new Set(good.flatMap(targetsOf));
   const missing = (content.animals || []).filter((a) => !mapped.has(a.id)).map((a) => a.id);
   if (missing.length) warnings.push(`${where}: ${missing.length} animal(s) have no location here: ${missing.join(", ")}`);
   return { errors, warnings };
@@ -128,14 +134,18 @@ function validLatLng(p) {
 
 /**
  * Joins a park to the content: every location gets its target's full record,
- * so one entry holds the id, the GPS point and all content.
+ * so one entry holds the id, the GPS point and all content. A location with
+ * several targets gets them all in `entries` (`entry` is set for one target).
  */
 export function joinPark(park, content) {
   const targets = targetIndex(content);
   const locations = (park.locations || [])
-    .filter((l) => targets.has(l.target) && validLatLng(l))
-    .map((l) => ({ ...l, entry: targets.get(l.target) }));
-  return { ...park, locations, targets: new Set(locations.map((l) => l.target)) };
+    .filter((l) => targetsOf(l).length && targetsOf(l).every((t) => targets.has(t)) && validLatLng(l))
+    .map((l) => {
+      const entries = targetsOf(l).map((t) => targets.get(t));
+      return entries.length === 1 ? { ...l, entry: entries[0], entries } : { ...l, entries };
+    });
+  return { ...park, locations, targets: new Set(locations.flatMap(targetsOf)) };
 }
 
 // --- browser loading ---------------------------------------------------------

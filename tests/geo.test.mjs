@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { distanceM, offsetM, findMatch, createTracker } from "../app/js/geo.js";
+import { distanceM, offsetM, findMatch, createTracker, targetsOf, targetKey, keyTargets } from "../app/js/geo.js";
 
 const LION = { lat: 51.0, lng: 4.0 };
 const near = (point, northM, eastM = 0) => offsetM(point, northM, eastM);
@@ -150,4 +150,33 @@ test("tracker: reset forgets the current match", () => {
   run(t, [near(LION, 5), near(LION, 5)]);
   t.reset();
   assert.equal(t.current, null);
+});
+
+// --- spots with several animals ------------------------------------------------
+
+test("targetsOf / targetKey / keyTargets", () => {
+  assert.deepEqual(targetsOf({ target: "lion" }), ["lion"]);
+  assert.deepEqual(targetsOf({ target: ["giraffe", "zebra"] }), ["giraffe", "zebra"]);
+  assert.equal(targetKey({ target: ["giraffe", "zebra"] }), "giraffe+zebra");
+  assert.deepEqual(keyTargets("giraffe+zebra"), ["giraffe", "zebra"]);
+  assert.deepEqual(keyTargets("lion"), ["lion"]);
+});
+
+test("tracker: a spot with several animals enters and leaves as one target", () => {
+  const savanna = { id: "savanna", target: ["giraffe", "zebra", "rhino"], ...near(LION, 0, 120), radiusM: 50 };
+  const t = createTracker({ defaultRadiusM: 50, locations: [lion, savanna] });
+  const out = run(t, [near(LION, 0, 110), near(LION, 0, 110), near(LION, 0, 5), near(LION, 0, 5)]);
+  assert.deepEqual(types(out[1]), ["enter:giraffe+zebra+rhino"]);
+  assert.equal(out[1].status.target, "giraffe+zebra+rhino");
+  assert.deepEqual(types(out[3]), ["leave:giraffe+zebra+rhino", "enter:lion"]);
+});
+
+test("tracker: two points of the same group count as the same target", () => {
+  const a = { id: "farm-1", target: ["goat", "pig"], ...LION };
+  const b = { id: "farm-2", target: ["goat", "pig"], ...near(LION, 60) };
+  const t = createTracker({ defaultRadiusM: 40, locations: [a, b] });
+  run(t, [near(LION, 5), near(LION, 5)]);
+  const walk = run(t, [20, 30, 40, 55].map((n) => near(LION, n)));
+  assert.ok(walk.every((r) => r.events.length === 0));
+  assert.equal(t.current.location.id, "farm-2");
 });

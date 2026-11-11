@@ -1,9 +1,13 @@
 // Location matching. Pure functions, no DOM: runs in the browser and in Node tests.
 //
 // A "fix" is { lat, lng, accuracy } (accuracy in metres, as reported by the GPS).
-// A "location" is { id, target, lat, lng, radiusM? } from a park file.
+// A "location" is { id, target, lat, lng, radiusM?, label? } from a park file.
 // A "target" is the animal or page id a location points to. One target can
 // have several locations (e.g. two viewing spots at the penguins).
+// One location can also point to several ids at once, as a list:
+//   { "id": "savanna", "target": ["giraffe", "zebra", "rhino"], ... }
+// for a spot where you see several animals (a mixed enclosure, a greenhouse).
+// The matching treats such a group like any other target, keyed "giraffe+zebra+rhino".
 
 export const EARTH_RADIUS_M = 6371008.8;
 export const DEFAULT_RADIUS_M = 100;
@@ -33,6 +37,22 @@ export function offsetM(point, northM, eastM) {
   return { lat, lng };
 }
 
+/** The ids a location points to, always as a list. */
+export function targetsOf(location) {
+  const t = location?.target;
+  return Array.isArray(t) ? t : t == null ? [] : [t];
+}
+
+/** One string per target or group of targets: "lion", "giraffe+zebra+rhino". */
+export function targetKey(location) {
+  return targetsOf(location).join("+");
+}
+
+/** The ids in a key made by targetKey. */
+export function keyTargets(key) {
+  return key ? String(key).split("+") : [];
+}
+
 export function radiusOf(location, defaultRadiusM = DEFAULT_RADIUS_M) {
   return location.radiusM ?? defaultRadiusM;
 }
@@ -53,11 +73,11 @@ export function findMatch(fix, locations, defaultRadiusM = DEFAULT_RADIUS_M) {
   return best;
 }
 
-/** Nearest location of one target (any radius), or null if it has none. */
-function nearestOfTarget(fix, locations, target) {
+/** Nearest location of one target key (any radius), or null if it has none. */
+function nearestOfTarget(fix, locations, key) {
   let best = null;
   for (const location of locations) {
-    if (location.target !== target) continue;
+    if (targetKey(location) !== key) continue;
     const d = distanceM(fix, location);
     if (!best || d < best.distanceM) best = { location, distanceM: d };
   }
@@ -72,6 +92,7 @@ function nearestOfTarget(fix, locations, target) {
  *
  * events: [{ type: "leave", target }, { type: "enter", target, location, distanceM }]
  * status: { state: "weak" | "outside" | "none" | "near", accuracy, target?, distanceM? }
+ * target is a target key (see targetKey): "lion", or "giraffe+zebra+rhino" for a group.
  */
 export function createTracker(park) {
   const opts = { ...DEFAULT_MATCHING, ...(park.matching || {}) };
@@ -104,13 +125,13 @@ export function createTracker(park) {
     if (cur) {
       const better =
         candidate &&
-        candidate.location.target !== current.target &&
+        targetKey(candidate.location) !== current.target &&
         candidate.distanceM + opts.switchMarginM <= cur.distanceM;
       desired = better ? candidate : { location: cur.location, distanceM: cur.distanceM };
     } else {
       desired = candidate; // may be null = nothing nearby
     }
-    const desiredTarget = desired ? desired.location.target : null;
+    const desiredTarget = desired ? targetKey(desired.location) : null;
 
     if (desiredTarget === (current?.target ?? null)) {
       pending = null;
